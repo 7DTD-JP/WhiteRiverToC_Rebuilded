@@ -2,7 +2,8 @@
 This project is for rebuilding "WhiteRiverToC" mod. This mod has been stopped update on A20.5 that is no compatible with A21.
 
 ## VerA21.1.0
-Revised some xml to remove errors and warnings. Please note: We did look all of them carefully so we will fix and add contents for future updates. Please join our Discord to share your ideas.
+Revised some xml to remove errors and warnings. <br>
+*Please note: We did look all of them carefully so we will fix and add contents for future updates. Please join our Discord to share your ideas.
 
 ## Join us our projects
 1. Join Discord: https://discord.gg/Va9CMv59Ej
