@@ -1,0 +1,11 @@
+<config>
+	<!-- Reviewed by 7DAYSTODIE_JP. We just revised to remove some warnings/errors but did not look carefully. Join Discord to report bugs, supports and requests. Discord: https://discord.gg/Va9CMv59Ej -->
+	<!-- Adding Steel Ammo to ui_display so stats display correctly -->
+	<append xpath="/ui_display_info/item_display">
+		<item_display_info display_type="ammoBulletSteel" display_group="groupAmmo">
+			<display_entry name="EntityDamage" title_key="statEntityDamageRanged"/>
+			<display_entry name="BlockDamage" title_key="statBlockDamage"/>
+			<display_entry name="DegradationPerUse" title_key="statDegradationPerUse" display_type="Percent" negative_preferred="true"/>
+		</item_display_info>
+	</append>
+</config>
