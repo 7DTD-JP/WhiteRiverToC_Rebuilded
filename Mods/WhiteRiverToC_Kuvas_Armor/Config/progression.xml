@@ -1,6 +1,0 @@
-<config>
-	<!-- Reviewed by 7DAYSTODIE_JP. We just revised to remove some warnings/errors but did not look carefully. Join Discord to report bugs, supports and requests. Discord: https://discord.gg/Va9CMv59Ej -->
-	<!-- Add the Kuva Armor so it unlocks with the perk -->
-	<!-- Temporary changed by 7DAYSTODIE_JP -->
-	<!-- <append xpath="/progression/perks/perk[@name='perkLightArmor']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">,item_toc_kuvablue_hood_name,item_toc_kuvablue_chest_name,item_toc_kuvablue_gloves_name,item_toc_kuvablue_pants_name,item_toc_kuvablue_boots_name</append> -->
-</config>
