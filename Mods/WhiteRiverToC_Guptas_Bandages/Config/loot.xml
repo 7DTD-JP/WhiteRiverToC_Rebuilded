@@ -1,0 +1,8 @@
+<config>
+	<!-- Reviewed by 7DAYSTODIE_JP. We just revised to remove some warnings/errors but did not look carefully. Join Discord to report bugs, supports and requests. Discord: https://discord.gg/Va9CMv59Ej -->
+	<append xpath="lootcontainers">
+		<lootgroup name="groupWhiteRiverTOCGuptas" loot_quality_template="questT3QualTemplate">
+			<item name="medicalGuptaFirstAidBandage" count="2,5"/>
+		</lootgroup>
+	</append>
+</config>
