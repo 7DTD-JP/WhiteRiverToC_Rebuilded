@@ -1,0 +1,8 @@
+<config>
+	<!-- Reviewed by 7DAYSTODIE_JP. We just revised to remove some warnings/errors but did not look carefully. Join Discord to report bugs, supports and requests. Discord: https://discord.gg/Va9CMv59Ej -->
+	<append xpath="/recipes">
+		<recipe name="questitem_toc_brass_name" count="1" craft_time="1" craft_exp_gain="0">
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+	</append>
+</config>
