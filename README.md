@@ -37,4 +37,3 @@ WhiteRiverToC_Spirit_of_Vengence: Trying to fix. Removed from download. <br>
 ## Links
 Discord for support: https://discord.gg/Va9CMv59Ej<br>
 Forum for general discussions: https://community.7daystodie.com/topic/12269-white-river-tools-of-citizenship-quests-a20-with-df-multiple-languages<br>
-Github for latest updates: https://github.com/7DTD-JP/WhiteRiverToC_Rebuilded
