@@ -60,7 +60,7 @@
 			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
 		</quest>
-		<quest id="+Kill 100 Zombies">
+		<quest id="Kill_100_Zombies">
 			<property name="name_key" value="quest_toc_100z_name"/>
 			<property name="subtitle_key" value="quest_toc_100z_subtitle"/>
 			<property name="description_key" value="quest_toc_100z_description"/>
@@ -96,7 +96,7 @@
 			<reward type="LootItem" id="groupQuestToCSeeds" ischosen="true" value="1"/>
 			<reward type="LootItem" id="groupQuestToCDrinks" ischosen="true" value="1"/>
 		</quest>
-		<quest id="+Kill 1000 Zombies">
+		<quest id="Kill_1000_Zombies">
 			<property name="name_key" value="quest_toc_1000z_name"/>
 			<property name="subtitle_key" value="quest_toc_1000z_subtitle"/>
 			<property name="description_key" value="quest_toc_1000z_description"/>
@@ -129,7 +129,7 @@
 			<reward type="SkillPoints" value="1"/>
 			<reward type="Item" id="questitem_toc_elitecard_name" value="1"/>
 		</quest>
-		<quest id="+Obtain a Random Elite Quest">
+		<quest id="Obtain_a_Random_Elite_Quest">
 			<property name="name_key" value="quest_toc_randomelite_name"/>
 			<property name="subtitle_key" value="quest_toc_randomelite_subtitle"/>
 			<property name="description_key" value="quest_toc_randomelite_description"/>
@@ -164,7 +164,7 @@
 	</insertBefore>
 	<append xpath="/quests/quest_list[@id='trader_quests']">
 		<quest id='quest_whiteRiverCitizen3'/>
-		<quest id='+Kill 100 Zombies'/>
-		<quest id='+Kill 1000 Zombies'/>
+		<quest id='Kill_100_Zombies'/>
+		<quest id='Kill_1000_Zombies'/>
 	</append>
 </config>

@@ -1,11 +1,12 @@
 <config>
 	<!-- Reviewed by 7DAYSTODIE_JP. We just revised to remove some warnings/errors but did not look carefully. Join Discord to report bugs, supports and requests. Discord: https://discord.gg/Va9CMv59Ej -->
 	<append xpath="/entity_classes">
+		<!-- Revised by 7DAYSTODIE_JP -->
 		<entity_class name="vehicleAmeliaGyrocopter">
-			<property name="Tags" value="vehicle,vehicleAmelia"/>
 			<property name="Class" value="EntityVGyroCopter"/>
+			<property name="Tags" value="vehicle,usesGas,vehicleAmelia"/>
 			<property name="Parent" value="Cars"/>
-			<property name="Prefab" value="#Entities/Vehicles?gyrocopter_Prefab.prefab"/>
+			<property name="Prefab" value="@:Entities/Vehicles/gyrocopter_Prefab.prefab"/>
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="IgnoreTrigger" value="true"/>
@@ -21,6 +22,7 @@
 			<property name="MapIcon" value="ui_game_symbol_gyrocopter"/>
 			<property name="NavObject" value="gyrocopter"/>
 		</entity_class>
+		<!-- END -->
 	</append>
 	<append xpath="/entity_classes/entity_class[@name='playerMale']">
 		<effect_group>

@@ -21,8 +21,8 @@
 			<stack_type value="ignore"/>
 			<effect_group>
 				<!--  Up/Down, Left/Right, Forward/Backward                                            -->
-				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/car_seat_uprightPrefab.prefab" local_offset="0.15,.99,.49" local_rotation="-14,0,0" parent_transform="GameObject"/>
-				<!--<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/car_seat_uprightPrefab.prefab" local_offset="0.15,0.15,-1" local_rotation="0,0,0" parent_transform="Mesh"/>-->
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/Vehicles/Car/car_seat_uprightPrefab.prefab" local_offset="0.15,.99,.49" local_rotation="-14,0,0" parent_transform="GameObject"/>
+				<!--<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="@:Entities/Vehicles/Car/car_seat_uprightPrefab.prefab" local_offset="0.15,0.15,-1" local_rotation="0,0,0" parent_transform="Mesh"/>-->
 			</effect_group>
 		</buff>
 		<buff name="ToCWendigoDeco" hidden="true">

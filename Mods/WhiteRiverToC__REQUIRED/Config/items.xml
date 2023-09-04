@@ -37,7 +37,7 @@
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Kill 100 Zombies"/>
+				<property name="QuestGiven" value="Kill_100_Zombies"/>
 				<property name="Delay" value="0"/>
 			</property>
 		</item>
@@ -62,7 +62,7 @@
 			<property name="Description" value=""/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Kill 1000 Zombies"/>
+				<property name="QuestGiven" value="Kill_1000_Zombies"/>
 				<property name="Delay" value="0"/>
 			</property>
 		</item>
@@ -86,7 +86,7 @@
 			<property name="Group" value="Special Items"/>
 			<property class="Action0">
 				<property name="Class" value="Quest"/>
-				<property name="QuestGiven" value="+Obtain a Random Elite Quest"/>
+				<property name="QuestGiven" value="Obtain_a_Random_Elite_Quest"/>
 				<property name="Delay" value="0"/>
 			</property>
 		</item>
