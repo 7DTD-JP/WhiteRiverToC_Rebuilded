@@ -1,0 +1,48 @@
+<config>
+	<remove xpath="/traders/trader_item_groups/trader_item_group[@name='traderGeneral']/item[@group='books']"/>
+	<remove xpath="/traders/trader_info[@id='1']//item[@group='books']"/>
+	<remove xpath="/traders/trader_info[@id='1']//item[@group='skillMagazines']"/>
+	<remove xpath="/traders/trader_info[@id='1']//item[@group='skillMagazinesTraderJoel']"/>
+	<remove xpath="/traders/trader_info[@id='6']//item[@group='books']"/>
+	<remove xpath="/traders/trader_info[@id='6']//item[@group='skillMagazinesTraderBob']"/>
+	<remove xpath="/traders/trader_info[@id='2']//item[@group='commonBooks']"/>
+	<remove xpath="/traders/trader_info[@id='2']//item[@group='rareBooks']"/>
+	<remove xpath="/traders/trader_info[@id='2']//item[@group='perkBooks']"/>
+	<remove xpath="/traders/trader_info[@id='2']//item[@group='skillMagazines']"/>
+	<remove xpath="/traders/trader_info[@id='2']//item[@group='skillMagazinesTraderJen']"/>
+	<remove xpath="/traders/trader_info[@id='7']//item[@group='books']"/>
+	<remove xpath="/traders/trader_info[@id='7']//item[@group='skillMagazinesTraderHugh']"/>
+	<remove xpath="/traders/trader_info[@id='8']//item[@group='books']"/>
+	<remove xpath="/traders/trader_info[@id='8']//item[@group='skillMagazines']"/>
+	<remove xpath="/traders/trader_info[@id='8']//item[@group='skillMagazinesTraderRekt']"/>
+	<!-- Always Open Trader -->
+	<!-- OK 08252023 -->
+	<removeattribute xpath="/traders/trader_info[@id='1']/@open_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='1']/@close_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='6']/@open_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='6']/@close_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='2']/@open_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='2']/@close_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='7']/@open_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='7']/@close_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='8']/@open_time"/>
+	<removeattribute xpath="/traders/trader_info[@id='8']/@close_time"/>
+	<!-- Challenges  -->
+	<!-- <insertBefore xpath="/traders/trader_item_groups/trader_item_group[@name='commonBooks']">  -->
+		<!-- Taza's -->
+		<!-- <trader_item_group name="groupQuestChallenge_Tazas" count="1">  -->
+			<!-- <item name="qt_Tazas" count="1" prob="0.05"/>  -->
+			<!-- <item name="qc_Tazas" count="1"/>  -->
+		<!-- </trader_item_group>  -->
+		<!-- Amelia's -->
+		<!-- <trader_item_group name="groupQuestChallenge_Amelias" count="1">  -->
+			<!-- <item name="qt_Amelias" count="1" prob="0.05"/>  -->
+			<!-- <item name="qc_Amelias" count="1"/>  -->
+		<!-- </trader_item_group>  -->
+		<!-- Vengeance -->
+		<!-- <trader_item_group name="groupQuestChallenge_Vengeance" count="1">  -->
+			<!-- <item name="qt_Vengeance" count="1" prob="0.05"/>  -->
+			<!-- <item name="qc_Vengeance" count="1"/>  -->
+		<!-- </trader_item_group>  -->
+	<!-- </insertBefore>  -->
+</config>

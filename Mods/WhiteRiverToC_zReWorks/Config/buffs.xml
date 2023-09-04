@@ -1,0 +1,1036 @@
+<config>
+	<append xpath="/buffs/buff[@name='buffCampfireAOEEffect']">
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$challengeQuest" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$challengeQuest"  operation="set" value="0"/>
+		</effect_group>
+	</append>
+	
+	
+	<append xpath="/buffs">
+		<!-- WRC_Station -->
+		<buff name="buffWRC_Station" hidden="true">
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffWRC_StationEffect"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffWRC_StationEffect"/>
+			</effect_group>
+		</buff>
+		<buff name="buffWRC_StationEffect" name_key="buffWRC_StationEffectName" description_key="buffWRC_StationEffectDesc" icon="ui_game_symbol_campfire">
+			<stack_type value="replace"/>
+			<duration value="2"/>
+			<effect_group>
+				<passive_effect name="NoiseMultiplier" operation="perc_add" value=".5"/>
+			</effect_group>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$challengeQuest" operation="set" value="1"/>
+			<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$challengeQuest"  operation="set" value="0"/>
+		</effect_group>
+		</buff>
+		</append>
+	
+		<!-- <buff name="challengeQuestCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$challengequest" operation="set" value="1"/>
+				<requirement name="HoldingItemHasTags" tags="harvestingToolsCSM" operation="Equals" value="1"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$challengequest" operation="set" value="0"/>
+				<requirement name="HoldingItemHasTags" tags="harvestingToolsCSM" operation="Equals" value="0"/>
+			</effect_group>
+		</buff> -->
+		
+	<!-- Backpacks -->
+	<!-- OK 08252023 -->
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+		<effect_group name="backpack">
+			<!-- TEST -->
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="bumbagCheck">
+				<requirement name="WornItems" tags="bumbag" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="bumbagCheck">
+				<requirement name="WornItems" tags="bumbag" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="largeBackpackCheck">
+				<requirement name="WornItems" tags="largeBackpack" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="largeBackpackCheck">
+				<requirement name="WornItems" tags="largeBackpack" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackBasicPerceptionCheck">
+				<requirement name="WornItems" tags="BackpackBasicPerception" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackBasicPerceptionCheck">
+				<requirement name="WornItems" tags="BackpackBasicPerception" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackMiddlePerceptionCheck">
+				<requirement name="WornItems" tags="BackpackMiddlePerception" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackMiddlePerceptionCheck">
+				<requirement name="WornItems" tags="BackpackMiddlePerception" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackAdvancedPerceptionCheck">
+				<requirement name="WornItems" tags="BackpackAdvancedPerception" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackAdvancedPerceptionCheck">
+				<requirement name="WornItems" tags="BackpackAdvancedPerception" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackBasicStrengthCheck">
+				<requirement name="WornItems" tags="BackpackBasicStrength" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackBasicStrengthCheck">
+				<requirement name="WornItems" tags="BackpackBasicStrength" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackMiddleStrengthCheck">
+				<requirement name="WornItems" tags="BackpackMiddleStrength" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackMiddleStrengthCheck">
+				<requirement name="WornItems" tags="BackpackMiddleStrength" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackAdvancedStrengthCheck">
+				<requirement name="WornItems" tags="BackpackAdvancedStrength" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackAdvancedStrengthCheck">
+				<requirement name="WornItems" tags="BackpackAdvancedStrength" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackBasicFortitudeCheck">
+				<requirement name="WornItems" tags="BackpackBasicFortitude" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackBasicFortitudeCheck">
+				<requirement name="WornItems" tags="BackpackBasicFortitude" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackMiddleFortitudeCheck">
+				<requirement name="WornItems" tags="BackpackMiddleFortitude" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackMiddleFortitudeCheck">
+				<requirement name="WornItems" tags="BackpackMiddleFortitude" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackAdvancedFortitudeCheck">
+				<requirement name="WornItems" tags="BackpackAdvancedFortitude" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackAdvancedFortitudeCheck">
+				<requirement name="WornItems" tags="BackpackAdvancedFortitude" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackBasicAgilityCheck">
+				<requirement name="WornItems" tags="BackpackBasicAgility" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackBasicAgilityCheck">
+				<requirement name="WornItems" tags="BackpackBasicAgility" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackMiddleAgilityCheck">
+				<requirement name="WornItems" tags="BackpackMiddleAgility" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackMiddleAgilityCheck">
+				<requirement name="WornItems" tags="BackpackMiddleAgility" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackAdvancedAgilityCheck">
+				<requirement name="WornItems" tags="BackpackAdvancedAgility" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackAdvancedAgilityCheck">
+				<requirement name="WornItems" tags="BackpackAdvancedAgility" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackBasicIntellectCheck">
+				<requirement name="WornItems" tags="BackpackBasicIntellect" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackBasicIntellectCheck">
+				<requirement name="WornItems" tags="BackpackBasicIntellect" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackMiddleIntellectCheck">
+				<requirement name="WornItems" tags="BackpackMiddleIntellect" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackMiddleIntellectCheck">
+				<requirement name="WornItems" tags="BackpackMiddleIntellect" operation="LT" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="BackpackAdvancedIntellectCheck">
+				<requirement name="WornItems" tags="BackpackAdvancedIntellect" operation="Equals" value="1"/>
+			</triggered_effect>
+			<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="BackpackAdvancedIntellectCheck">
+				<requirement name="WornItems" tags="BackpackAdvancedIntellect" operation="LT" value="1"/>
+			</triggered_effect>
+		</effect_group>
+	</append>
+	<append xpath="/buffs">
+		<buff name="bumbagCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="60"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.01"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.01"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.01"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/pursePrefab.prefab" parentTransform="Spine" localPos="0.25,0,-0.045" localRot="-173,-270,-95">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+			<!-- 
+				<effect_group>
+					<passive_effect name="DisableItem" operation="base_set" value="1" tags="csm" />
+				</effect_group> 
+				-->
+		</buff>
+		<buff name="largeBackpackCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="40"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackBasicPerceptionCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="50"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackMiddlePerceptionCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="40"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="DisableItem" operation="base_set" value="1" tags="harvestingToolsSkillMagazine,repairToolsSkillMagazine,knucklesSkillMagazine,bladesSkillMagazine,clubsSkillMagazine,sledgehammersSkillMagazine,bowsSkillMagazine,handgunsSkillMagazine,shotgunsSkillMagazine,machineGunsSkillMagazine,roboticsSkillMagazine,armorSkillMagazine,medicalSkillMagazine,foodSkillMagazine,seedSkillMagazine,electricianSkillMagazine,workstationSkillMagazine,vehiclesSkillMagazine"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackAdvancedPerceptionCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="30"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="DisableItem" operation="base_set" value="1" tags="skillASStrength,skillASFortitude,skillASAgility,skillASIntellect,,harvestingToolsSkillMagazine,repairToolsSkillMagazine,knucklesSkillMagazine,bladesSkillMagazine,clubsSkillMagazine,sledgehammersSkillMagazine,bowsSkillMagazine,handgunsSkillMagazine,shotgunsSkillMagazine,machineGunsSkillMagazine,roboticsSkillMagazine,armorSkillMagazine,medicalSkillMagazine,foodSkillMagazine,seedSkillMagazine,electricianSkillMagazine,workstationSkillMagazine,vehiclesSkillMagazine"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackBasicStrengthCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="50"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackMiddleStrengthCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="40"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="DisableItem" operation="base_set" value="1" tags="salvageToolsSkillMagazine,knucklesSkillMagazine,bladesSkillMagazine,spearsSkillMagazine,bowsSkillMagazine,handgunsSkillMagazine,riflesSkillMagazine,machineGunsSkillMagazine,explosivesSkillMagazine,roboticsSkillMagazine,armorSkillMagazine,medicalSkillMagazine,seedSkillMagazine,electricianSkillMagazine,trapsSkillMagazine,workstationSkillMagazine,vehiclesSkillMagazine"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackAdvancedStrengthCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="30"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="DisableItem" operation="base_set" value="1" tags="skillASPerception,skillASFortitude,skillASAgility,skillASIntellect,salvageToolsSkillMagazine,knucklesSkillMagazine,bladesSkillMagazine,spearsSkillMagazine,bowsSkillMagazine,handgunsSkillMagazine,riflesSkillMagazine,machineGunsSkillMagazine,explosivesSkillMagazine,roboticsSkillMagazine,armorSkillMagazine,medicalSkillMagazine,seedSkillMagazine,electricianSkillMagazine,trapsSkillMagazine,workstationSkillMagazine,vehiclesSkillMagazine"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackBasicStrengthCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="50"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackMiddleFortitudeCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="40"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="DisableItem" operation="base_set" value="1" tags="harvestingToolsSkillMagazine,repairToolsSkillMagazine,salvageToolsSkillMagazine,bladesSkillMagazine,clubsSkillMagazine,sledgehammersSkillMagazine,spearsSkillMagazine,bowsSkillMagazine,handgunsSkillMagazine,shotgunsSkillMagazine,riflesSkillMagazine,explosivesSkillMagazine,roboticsSkillMagazine,medicalSkillMagazine,foodSkillMagazine,electricianSkillMagazine,trapsSkillMagazine,workstationSkillMagazine,vehiclesSkillMagazine"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackAdvancedFortitudeCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="30"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="DisableItem" operation="base_set" value="1" tags="skillASPerception,skillASStrength,skillASAgility,skillASIntellect,harvestingToolsSkillMagazine,repairToolsSkillMagazine,salvageToolsSkillMagazine,bladesSkillMagazine,clubsSkillMagazine,sledgehammersSkillMagazine,spearsSkillMagazine,bowsSkillMagazine,handgunsSkillMagazine,shotgunsSkillMagazine,riflesSkillMagazine,explosivesSkillMagazine,roboticsSkillMagazine,medicalSkillMagazine,foodSkillMagazine,electricianSkillMagazine,trapsSkillMagazine,workstationSkillMagazine,vehiclesSkillMagazine"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackBasicAgilityCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="50"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackMiddleAgilityCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="40"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="DisableItem" operation="base_set" value="1" tags="harvestingToolsSkillMagazine,repairToolsSkillMagazine,salvageToolsSkillMagazine,knucklesSkillMagazine,clubsSkillMagazine,sledgehammersSkillMagazine,spearsSkillMagazine,shotgunsSkillMagazine,riflesSkillMagazine,machineGunsSkillMagazine,explosivesSkillMagazine,roboticsSkillMagazine,armorSkillMagazine,medicalSkillMagazine,foodSkillMagazine,seedSkillMagazine,electricianSkillMagazine,trapsSkillMagazine,workstationSkillMagazine,vehiclesSkillMagazine"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackAdvancedAgilityCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="30"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="DisableItem" operation="base_set" value="1" tags="skillASPerception,skillASStrength,skillASFortitude,skillASIntellect,harvestingToolsSkillMagazine,repairToolsSkillMagazine,salvageToolsSkillMagazine,knucklesSkillMagazine,clubsSkillMagazine,sledgehammersSkillMagazine,spearsSkillMagazine,shotgunsSkillMagazine,riflesSkillMagazine,machineGunsSkillMagazine,explosivesSkillMagazine,roboticsSkillMagazine,armorSkillMagazine,medicalSkillMagazine,foodSkillMagazine,seedSkillMagazine,electricianSkillMagazine,trapsSkillMagazine,workstationSkillMagazine,vehiclesSkillMagazine"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackBasicIntellectCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="50"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackMiddleIntellectCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="40"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="DisableItem" operation="base_set" value="1" tags="harvestingToolsSkillMagazine,repairToolsSkillMagazine,salvageToolsSkillMagazine,knucklesSkillMagazine,bladesSkillMagazine,clubsSkillMagazine,sledgehammersSkillMagazine,spearsSkillMagazine,bowsSkillMagazine,handgunsSkillMagazine,shotgunsSkillMagazine,riflesSkillMagazine,machineGunsSkillMagazine,explosivesSkillMagazine,armorSkillMagazine,foodSkillMagazine,seedSkillMagazine,trapsSkillMagazine"/>
+			</effect_group>
+		</buff>
+		<buff name="BackpackAdvancedIntellectCheck" hidden="true">
+			<stack_type value="ignore"/>
+			<update_rate value="0.2"/>
+			<duration value="0"/>
+			<effect_group name="config" tiered="false">
+				<passive_effect name="CarryCapacity" operation="base_add" value="30"/>
+				<passive_effect name="RunSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="WalkSpeed" operation="perc_subtract" value="0.075"/>
+				<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.075"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePart" part="backpack">
+					<requirement name="IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddPart" part="backpack" prefab="@:Entities/LootContainers/weapon_bags_largePrefab.prefab" parentTransform="Spine" localPos="0.31,0.05,-0.44" localRot="0,0,90">
+					<requirement name="!IsFPV"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="RemovePart" part="backpack"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="DisableItem" operation="base_set" value="1" tags="skillASPerception,skillASStrength,skillASFortitude,skillASAgility,harvestingToolsSkillMagazine,repairToolsSkillMagazine,salvageToolsSkillMagazine,knucklesSkillMagazine,bladesSkillMagazine,clubsSkillMagazine,sledgehammersSkillMagazine,spearsSkillMagazine,bowsSkillMagazine,handgunsSkillMagazine,shotgunsSkillMagazine,riflesSkillMagazine,machineGunsSkillMagazine,explosivesSkillMagazine,armorSkillMagazine,foodSkillMagazine,seedSkillMagazine,trapsSkillMagazine"/>
+			</effect_group>
+		</buff>
+	</append>
+	<!-- Death Penalties -->
+	<!-- OK 08252023 -->
+	<remove xpath="/buffs/buff[@name='buffNearDeathRegen']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @action='RemoveAllNegativeBuffs']"/>
+	<!-- <remove xpath="/buffs/buff[@name='buffNearDeathRegen']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @buff='buffLegSprained']"/> -->
+	<setattribute xpath="/buffs/buff[@name='buffLegSprained']" name="remove_on_death">false</setattribute>
+	<setattribute xpath="/buffs/buff[@name='buffLegBroken']" name="remove_on_death">false</setattribute>
+	<setattribute xpath="/buffs/buff[@name='buffArmSprained']" name="remove_on_death">false</setattribute>
+	<setattribute xpath="/buffs/buff[@name='buffArmBroken']" name="remove_on_death">false</setattribute>
+	<setattribute xpath="/buffs/buff[@name='buffInjuryConcussion']" name="remove_on_death">false</setattribute>
+	<setattribute xpath="/buffs/buff[@name='buffDysenteryAddCure']" name="remove_on_death">false</setattribute>
+	<setattribute xpath="/buffs/buff[@name='buffInfectionAddCure']" name="remove_on_death">false</setattribute>
+	<setattribute xpath="/buffs/buff[@name='buffInfection01GetBetter']" name="remove_on_death">false</setattribute>
+	<setattribute xpath="/buffs/buff[@name='buffInfection02GetBetter']" name="remove_on_death">false</setattribute>
+	<setattribute xpath="/buffs/buff[@name='buffInfection03GetBetter']" name="remove_on_death">false</setattribute>
+	<setattribute xpath="/buffs/buff[@name='buffDysentery01GetBetter']" name="remove_on_death">false</setattribute>
+	<setattribute xpath="/buffs/buff[@name='buffDysentery01GetBetterDiarrhea']" name="remove_on_death">false</setattribute>
+	<set xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@trigger='onSelfEnteredGame' and @action='ModifyCVar' and @cvar='$infectionMaxDuration']/@value">18000</set>
+	<setattribute xpath="/buffs/buff[@name='buffInfectionMain']" name="remove_on_death">false</setattribute>
+	<remove xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@trigger='onSelfBuffStart' and @action='AddBuff' and @buff='buffNewbieCoat']"/>
+	<remove xpath="/buffs/buff[@name='buffInfection04']"/>
+	<insertAfter xpath="/buffs/buff[@name='buffInfection03GetBetter']">
+		<buff name="buffInfection04" tooltip_key="buffInfection04Tooltip" icon="ui_game_symbol_infection" icon_color="255,0,0">
+			<damage_type value="Infection"/>
+			<stack_type value="ignore"/>
+			<duration value=".1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyStats" stat="Health" operation="subtract" value="99999999"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyCVar" cvar="infectionCounter" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffInfection01Main"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffInfectionMain"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffInfectionCatch"/>
+				<triggered_effect trigger="onSelfDied" action="RemoveBuff" buff="buffInfection04"/>
+			</effect_group>
+		</buff>
+	</insertAfter>
+	<!-- Wasteland Radiation -->
+	<!-- OK 08252023 -->
+	<!-- CREATES THE BUFFS THAT CONTROL THE RADIATION EFFECTS IN THE WASTELAND BIOME AND HOW THE HAZMAT SUIT AND ARMOR LINER WORK -->
+	<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+		<!-- APPLY RADIATION EXPOSURE BUFF -->
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation01">
+			<requirement name="!HasBuff" buff="god"/>
+			<requirement name="!HasBuff" buff="buffRadSuit"/>
+			<requirement name="InBiome" biome="8"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation01">
+			<requirement name="!HasBuff" buff="god"/>
+			<requirement name="CVarCompare" cvar="_biomeradiation" operation="GT" value="2.5"/>
+		</triggered_effect>
+		<!-- RAPT: ADD INCREASING/DECREASING RADIATION POISONING BUFFS -->
+		<!-- NOTE: TRIGGERS RED BLINKING ICON WHEN INCREASING OR YELLOW STATIC ICON WHEN DECREASING -->
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation01Inc">
+			<requirement name="InBiome" biome="8"/>
+			<requirement name="!HasBuff" buff="god"/>
+			<requirement name="HasBuff" buff="buffRadiation01"/>
+			<requirement name="!HasBuff" buff="buffRadSuit"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation01Dec">
+			<requirement name="InBiome" biome="8"/>
+			<requirement name="!HasBuff" buff="god"/>
+			<requirement name="HasBuff" buff="buffRadiation01"/>
+			<requirement name="HasBuff" buff="buffRadSuit"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffRadiation01Dec">
+			<requirement name="!InBiome" biome="8"/>
+			<requirement name="!HasBuff" buff="god"/>
+			<requirement name="HasBuff" buff="buffRadiation01"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiation01Inc">
+			<requirement name="HasBuff" buff="buffRadiation01Dec"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiation01Dec">
+			<requirement name="HasBuff" buff="buffRadiation01Inc"/>
+		</triggered_effect>
+		<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiation01Dec">
+			<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="Equals" value="0"/>
+		</triggered_effect>
+		<!-- RAD SUIT PROTECTION BUFF -->
+		<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="buffRadSuit">
+			<requirement name="HasBuff" buff="buffRadSuitMask"/>
+			<requirement name="HasBuff" buff="buffRadSuitChest"/>
+			<requirement name="HasBuff" buff="buffRadSuitGloves"/>
+			<requirement name="HasBuff" buff="buffRadSuitLegs"/>
+			<requirement name="HasBuff" buff="buffRadSuitBoots"/>
+		</triggered_effect>
+	</append>
+	<append xpath="/buffs">
+		<!-- RAPT NOTE: DELETED TO REMOVE ICON FROM RAD BUFF ...
+		<buff name="buffRadiation01" name_key="buffRadiation01Name" description_key="buffRadiation01Desc" tooltip_key="buffRadiation01Tooltip" icon="ui_game_symbol_radiation" icon_color="255,255,0" icon_blink="true">
+			<damage_type value="radiation"/>
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<display_value value="$buffStatusRadiation"/><display_value_key value="{0:0.0}%"/>
+			<update_rate value="3"/>
+		-->
+		<!-- RAPT NOTE: CHANGED TO SHOW NO ICON, ICON IS ASSIGNED BY INCREASING OR DECREASING -->
+		<buff name="buffRadiation01" name_key="buffRadiation01Name" description_key="buffRadiation01Desc" tooltip_key="buffRadiation01Tooltip">
+			<!-- END -->
+			<effect_group name="Radiation">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Health" operation="subtract" value="@$buffStatusRadiationPerc"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyStats" stat="Stamina" operation="subtract" value="@$buffStatusRadiationPerc"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="player#vomit" play_in_head="true">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="2.5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffDysenteryMain">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GTE" value="20"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="GTE" value="99.5"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffFatigued">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GTE" value="50"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="0.1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="PlaySound" sound="buff_bleeding" play_in_head="true">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GTE" value="90"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="StopSound" sound="buff_bleeding" play_in_head="true">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="90"/>
+					<requirement name="NotHasBuff" buff="buffInjuryBleeding"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="StopSound" sound="buff_bleeding" play_in_head="true"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffInternalBleeding">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GTE" value="100"/>
+				</triggered_effect>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="add" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0">
+					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="2"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="RadiationSignal" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="1" fade=".2" effect_name="Hot">
+					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="1"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" intensity="0" fade=".2" effect_name="Hot">
+					<requirement name="CVarCompare" cvar="RadiationSignal" operation="Equals" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Hot"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity=".01" fade="2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffStatusRadiation" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfDied" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffRadiation01">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$buffStatusRadiation" operation="set" value="0.15"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" effect_name="Radiation" intensity="0.05" fade="2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Radiation" intensity="0" fade="2"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" effect_name="Blur" intensity="0" fade="2"/>
+				<passive_effect name="HealthMaxBlockage" operation="base_add" value="@$buffStatusRadiation"/>
+				<passive_effect name="StaminaMaxBlockage" operation="base_add" value="@$buffStatusRadiation"/>
+				<passive_effect name="FoodMaxBlockage" operation="base_add" value="@$buffStatusRadiation"/>
+				<passive_effect name="WaterMaxBlockage" operation="base_add" value="@$buffStatusRadiation"/>
+				<passive_effect name="BuffResistance" operation="perc_subtract" value="@$buffStatusRadiationPerc" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo,buffInjuryBleedingBarbedWire"/>
+				<passive_effect name="HealthChangeOT" operation="base_subtract" value="@$buffStatusRadiationPerc">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GTE" value="80"/>
+				</passive_effect>
+			</effect_group>
+			<!-- RAPT: REMOVE RADIATION LEVELING GROUP, SPLIT TO INCREASING AND DECREASING ...
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value="randomfloat(.015,.05)">
+					<requirement name="!InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value="randomfloat(.1,.15)">
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="NotHasBuff" buff="buffRadSuit"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value="@_wetness">
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="NotHasBuff" buff="buffRadSuit"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value="randomfloat(2,7)">
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="_underwater" operation="Equals" value="1"/>
+					<requirement name="NotHasBuff" buff="buffRadSuit"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value="@$shelteredPerc">
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value="@$shadedPerc">
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value="@_underwater">
+					<requirement name="!InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value="@_wetness">
+					<requirement name="!InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value=".1">
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="HasBuff" buff="buffLaceration"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value=".05">
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="HasBuff" buff="buffInjuryAbrasion"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value="@_biomeradiation">
+					<requirement name="CVarCompare" cvar="_biomeradiation" operation="GT" value="2.5"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="set" value="0">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="set" value="100">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="100"/>
+				</triggered_effect>
+			</effect_group>
+			-->
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiationPerc" operation="set" value="@$buffStatusRadiation"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiationPerc" operation="divide" value="100"/>
+				<!-- RAPT NOTE: CHANGED DIVIDE VALUES FOR SHELTERED AND SHADED FROM 18 TO 36 TO CHANGE EFFECT FROM MODERATE DECREASE TO VERY SLOW INCREASE
+				TO MAINTAIN REALITY THAT SHELTER/SHADE IN A RADIATED AREA DOES NOT ELIMINATE EXPOSURE -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$shelteredPerc" operation="set" value="@_sheltered"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$shelteredPerc" operation="divide" value="36"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$shadedPerc" operation="set" value="@_shaded"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$shadedPerc" operation="divide" value="36"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$dysenteryCounter" operation="add" value="@$buffStatusRadiationPerc">
+					<requirement name="HasBuff" buff="buffDysenteryMain"/>
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="GTE" value="60"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$lacerationCounter" operation="add" value="@$buffStatusRadiation">
+					<requirement name="HasBuff" buff="buffLaceration"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$bleedCounter" operation="add" value="@$buffStatusRadiation">
+					<requirement name="HasBuff" buff="buffInjuryBleeding"/>
+				</triggered_effect>
+			</effect_group>
+			<!-- RAPT NOTE: HAD TO PUT SHADE AND SHELTER EFFECTS DELETED ABOVE BACK IN MAIN RADIATION EFFECTS (DOESN'T LIKE IN INC OR DEC) -->
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value="@$shelteredPerc">
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value="@$shadedPerc">
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+			</effect_group>
+			<!-- SCREEN EFFECTS -->
+			<effect_group name="ScreenRadiation">
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity="0.025" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="5"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="10"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity="0.055" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="10"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="20"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="0.1" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="15"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="25"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity="0.11" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="20"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="30"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity="0.15" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="30"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="40"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="0.15" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="25"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="45"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity="0.2" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="40"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="50"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity="0.26" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="50"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="60"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="0.2" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="45"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="60"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity="0.33" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="60"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="80"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="0.25" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="45"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="75"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity="0.4" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="80"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="90"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity="0.55" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="90"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="99"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="0.5" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="90"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="99"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity="0.75" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="95"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Blur" intensity="1" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="99"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyScreenEffect" effect_name="Radiation" intensity="1" fade="2">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="99"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<!-- RAPT: RADIATION POISONING INCREASING -->
+		<!-- NOTE: WILL SHOW AS BLINKING RED ICON WITH PERCENTAGE POISONING WHEN POISONING IS INCREASING, WILL NOT SHOW IF DECREASING NOR WITH SUIT BUFF ICON -->
+		<buff name="buffRadiation01Inc" name_key="buffRadiation01IncName" tooltip_key="buffRadiation01IncTooltip" description_key="buffRadiation01IncDesc" icon="ui_game_symbol_radiation" icon_color="255,0,0" icon_blink="true">
+			<damage_type value="radiation"/>
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<display_value value="$buffStatusRadiation"/>
+			<display_value_key value="{0:0.0}%"/>
+			<update_rate value="3"/>
+			<effect_group name="RadiationIncreasing">
+				<!-- BASE INCREASE RADIATION POISONING EFFECT -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value="randomfloat(.1,.15)">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value="@_biomeradiation">
+					<requirement name="CVarCompare" cvar="_biomeradiation" operation="GT" value="2.5"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<!-- UNDERWATER INCREASE RADIATION POISONING EFFECT -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value="randomfloat(2,7)">
+					<requirement name="CVarCompare" cvar="_underwater" operation="Equals" value="1"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<!-- WET INCREASE RADIATION POISONING EFFECT -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value="@_wetness">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<!-- LACERATION INCREASE RADIATION POISONING EFFECT -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value=".1">
+					<requirement name="HasBuff" buff="buffLaceration"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<!-- ABRASION INCREASE RADIATION POISONING EFFECT -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value=".05">
+					<requirement name="HasBuff" buff="buffInjuryAbrasion"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<!-- PROCESS CONSUMABLES (EAT/DRINK) INCREASE RADIATION POISONING EFFECT -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="add" value=".1">
+					<requirement name="HasBuff" buff="buffProcessConsumables"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+				<!-- POISONING COUNTER RESETS -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="set" value="0">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="set" value="100">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="100"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<!-- RAPT: RADIATION POISONING DECREASING -->
+		<!-- NOTE: WILL SHOW AS STATIC YELLOW ICON WITH PERCENTAGE POISONING, WILL NOT SHOW IF INCREASING, WILL SHOW IN ADDITION TO SUIT BUFF ICON IF > 0% POISINING -->
+		<buff name="buffRadiation01Dec" name_key="buffRadiation01DecName" tooltip_key="buffRadiation01DecTooltip" description_key="buffRadiation01DecDesc" icon="ui_game_symbol_radiation" icon_color="255,255,0" icon_blink="false">
+			<damage_type value="radiation"/>
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<display_value value="$buffStatusRadiation"/>
+			<display_value_key value="{0:0.0}%"/>
+			<update_rate value="3"/>
+			<effect_group name="RadiationDecreasing">
+				<!-- BASE DECREASE RADIATION POISONING EFFECT -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value="randomfloat(.015,.05)">
+					<requirement name="!InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+				</triggered_effect>
+				<!-- UNDERWATER DECREASE RADIATION POISONING EFFECT -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value="@_underwater">
+					<requirement name="!InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+				</triggered_effect>
+				<!-- WET DECREASE RADIATION POISONING EFFECT -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value="@_wetness">
+					<requirement name="!InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+				</triggered_effect>
+				<!-- POISONING COUNTER RESETS -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="set" value="0">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="set" value="100">
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="100"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<!-- HAZMAT SUIT EFFECTS -->
+		<buff name="buffRadSuitMask" hidden="true">
+			<update_rate value="3"/>
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value=".03">
+					<requirement name="HasBuff" buff="buffRadiation01"/>
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffRadSuitChest" hidden="true">
+			<update_rate value="3"/>
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value=".025">
+					<requirement name="HasBuff" buff="buffRadiation01"/>
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffRadSuitGloves" hidden="true">
+			<update_rate value="3"/>
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value=".01">
+					<requirement name="HasBuff" buff="buffRadiation01"/>
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffRadSuitLegs" hidden="true">
+			<update_rate value="3"/>
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value=".01">
+					<requirement name="HasBuff" buff="buffRadiation01"/>
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffRadSuitBoots" hidden="true">
+			<update_rate value="3"/>
+			<stack_type value="ignore"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffStatusRadiation" operation="subtract" value=".01">
+					<requirement name="HasBuff" buff="buffRadiation01"/>
+					<requirement name="InBiome" biome="8"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="GT" value="0"/>
+					<requirement name="CVarCompare" cvar="$buffStatusRadiation" operation="LT" value="100"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<!-- COMPLETE RAD SUIT BUFF -->
+		<!-- NOTE: WILL ALWAYS SHOW IN THE STATUS EFFECTS AS A WHITE STATIC ICON REGARDLESS OF INCREASING OR DECREASING RADIATION -->
+		<buff name="buffRadSuit" name_key="buffRadSuitName" description_key="buffRadSuitDesc" tooltip_key="buffRadSuitTooltip" icon="ui_game_symbol_radiation" icon_color="255,255,255
+		">
+			<stack_type value="ignore"/>
+			<effect_group>
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffRadiation01"/>
+			</effect_group>
+		</buff>
+		<!-- RAPT: NOTES FOR MAN2424'S WISHLIST
+	NOT DONE: Radiated Zombies inflicting a certain percentage to your radiation level, no matter what the biome. Same thing with acid from vultures or fat cops. Obviously, the new special zombie from A20 will give you more radiation.
+		NOTE: MIGHT BE ABLE TO ATTACH TWITCH BUFF FOR RADIATION ONSELFSPAWN TO THE ENTITY?
+	DONE: Overall cleanup with the coding. Adding and subtracting radiation at the same time feels very inefficient and clunky so I kind of want a different system where there’s a number called a radiation rate and different triggers will either add or subtract the radiation rate.
+		NOTE: SPLIT CODE INTO INCREASING AND DECREASING WHICH TRIGGER SEPARATELY WITH DIFFERENT ICONS
+	DONE: More “buffs” (like how the infection is broken into different buffs kinda thing), and a replacement “buff” for when you’re wearing the Hazmat Suit so that there aren’t two different buffs with the same radioactive symbol, but you’re still recovering from the radiation.
+		NOTE: SEE ABOVE BUT ALSO WILL SHOW A WHITE SYMBOL WHEN PROTECTED THAT STAYS IN BUFF TRAY
+	DONE: Buff blinking to work correctly. I can’t figure out how to make the buff blink when the radiation is increasing, so it’s just blinking all the time now.
+		NOTE: SEE ABOVE
+	DONE: Eating food or drinking fluids increasing radiation levels while in the Wasteland. While we’re at it, certain foods like the Shamway sandwich giving you radiation.
+		NOTE: SIMPLE ADDITION TO TRIGGER BUFF BASED ON REQUIREMENT HASBUFF PROCESS CONSUMABLES
+	DONE: It might either be OP or make the Hazmat Suit useless but it could also be adjusted to accommodate both: Rad Remover being equippable on armor to reduce radiation absorption, but not entirely.
+		NOTE: ADDED MY MOD FOR ARMOR RAD LINER
+	NOT DONE: Geiger counter sound increasing in volume, with increasing radiation. I don’t think the sound is in the game so clients will have to install the mod to have the sound. I know that the player doesn’t actually have a Geiger counter (you can DIY your own in real life) but it’s such an iconic sound.
+		NOTE: MIGHT BE ABLE TO TRIGGER STEPSNOW AND DRYFIRE SOUNDS IN PROPER DURATIONS/REPEATS TO SIMULATE A GEIGER COUNTER
+	-->
+	</append>
+	<append xpath="/buffs">
+		<!-- Bosses -->
+		<!-- Taza's -->
+		<buff name="buffBansheeQueen01" hidden="true">
+			<duration value=".25"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffBansheeQueen02"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="positionAOE" range="30" buff="buffBansheeQueen"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="selfAOE" range="30" buff="buffBansheeQueendegrade">
+					<requirement name="StatComparePercCurrentToMax" stat="health" operation="LTE" value=".5"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffBansheeQueen02" hidden="true">
+			<duration value=".25"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="buffBansheeQueen01"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="positionAOE" range="30" buff="buffBansheeQueen"/>
+			</effect_group>
+		</buff>
+		<buff name="buffBansheeQueen" name_key="Icy Veins" tooltip_key="Your blood feels frosty, your weiner tingles, and your hands shake" icon="ui_game_symbol_cold" icon_color="0,0,128" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="2"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<requirement name="EntityTagCompare" tags="player"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="1" fade="2" effect_name="Cold"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" fade="1" effect_name="Cold"/>
+				<passive_effect name="SpreadDegreesVertical" operation="perc_add" value="25">
+				</passive_effect>
+				<passive_effect name="SpreadDegreesHorizontal" operation="perc_add" value="25">
+				</passive_effect>
+			</effect_group>
+		</buff>
+		<buff name="buffBansheeQueendegrade" name_key="Don't Break It!" tooltip_key="Terrified - You rashly damage your weapons in your haste" icon="ui_game_symbol_block_repair" icon_color="235,3,0" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="15"/>
+			<effect_group>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="25">
+				</passive_effect>
+			</effect_group>
+		</buff>
+	</append>
+</config>

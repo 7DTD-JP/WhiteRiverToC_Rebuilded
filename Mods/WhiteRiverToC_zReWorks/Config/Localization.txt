@@ -1,0 +1,527 @@
+Key,File,Type,english,japanese
+AmeliasT1,WhiteRiverToC_Amelias_Gyrocopter,progression,Amelia Earhart's,アメリア・イアハート
+AmeliasT2,WhiteRiverToC_Amelias_Gyrocopter,progression,Amelia Earhart's,アメリア・イアハート
+AmeliasT5,WhiteRiverToC_Amelias_Gyrocopter,progression,Amelia Earhart's,アメリア・イアハート
+attgeneral,WhiteRiverToC_zPOWER_UP_KIT,,General,一般
+attGeneralDesc,WhiteRiverToC_zPOWER_UP_KIT,progression,"General Perk has been changed to the ""General Skills"" category. It can be leveled up regardless of the parent skill, but requires 3p per level.",一般パークは「一般スキル」カテゴリに変更しました。親スキルに関係なくレベルアップできますが、1レベルにつき3P必要です。
+attGeneralName,WhiteRiverToC_zPOWER_UP_KIT,progression,General Perks,一般パーク
+attunlocks,Unlock Tracker,,Unlock Tracker,アンロックトラッカー
+attUnlocksDesc,WhiteRiverToC_zPOWER_UP_KIT,progression,Check the items you have unlocked.,アンロックしたアイテムを確認しましょう。
+attUnlocksDesc,,,Check items what you unlocked.,アンロックしたアイテムを確認しましょう。
+attUnlocksDescRank1Desc,WhiteRiverToC_zPOWER_UP_KIT,progression,Craft will be unlocked.,クラフトがアンロックされます。
+attUnlocksDescRank1Desc,,,Unlock crafting,アイテムのアンロック
+attUnlocksName,WhiteRiverToC_zPOWER_UP_KIT,progression,Unlock Tracker,アンロックトラッカー
+attUnlocksName,,,Unlock Tracker,アンロックトラッカー
+BackpackAdvancedAgility,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Advanced: Agility""",職業用バックパック「上級: 素早さ」
+BackpackAdvancedAgilityBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Advanced: Agility""",職業用バックパック「上級: 素早さ」
+BackpackAdvancedAgilityDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+30[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+3 Agility[-]\nCan use Items: [FF0000]Agility ONLY[-]\nUnlocks: [00FF00]Agility[-]\nCraft Tier: [00FF00]+1 Agility[-],運搬: [00FF00]+30[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+3 素早さ[-]\n使用可能アイテム: [FF0000]素早さ ONLY[-]\nアンロック: [00FF00]素早さ[-]\nクラフトティア: [00FF00]+1 素早さ[-]
+BackpackAdvancedFortitude,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Advanced: Fortitude""",職業用バックパック「上級: 忍耐」
+BackpackAdvancedFortitudeBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Advanced: Fortitude""",職業用バックパック「上級: 忍耐」
+BackpackAdvancedFortitudeDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+30[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+3 Fortitude[-]\nCan use Items: [FF0000]Fortitude ONLY[-]\nUnlocks: [00FF00]Fortitude[-]\nCraft Tier: [00FF00]+1 Fortitude[-],運搬: [00FF00]+30[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+3 忍耐[-]\n使用可能アイテム: [FF0000]忍耐 ONLY[-]\nアンロック: [00FF00]忍耐[-]\nクラフトティア: [00FF00]+1 忍耐[-]
+BackpackAdvancedIntellect,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Advanced: Intellect""",職業用バックパック「上級: 知能」
+BackpackAdvancedIntellectBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Advanced: Intellect""",職業用バックパック「上級: 知能」
+BackpackAdvancedIntellectDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+30[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+3 Intellect[-]\nCan use Items: [FF0000]Intellect ONLY[-]\nUnlocks: [00FF00]Intellect[-]\nCraft Tier: [00FF00]+1 Intellect[-],運搬: [00FF00]+30[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+3 知能[-]\n使用可能アイテム: [FF0000]知能 ONLY[-]\nアンロック: [00FF00]知能[-]\nクラフトティア: [00FF00]+1 知能[-]
+BackpackAdvancedPerception,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Advanced: Perception""",職業用バックパック「上級: 知覚」
+BackpackAdvancedPerceptionBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Advanced: Perception""",職業用バックパック「上級: 知覚」
+BackpackAdvancedPerceptionDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+30[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+3 Perception[-]\nCan use Items: [FF0000]Perception ONLY[-]\nUnlocks: [00FF00]Perception[-]\nCraft Tier: [00FF00]+1 Perception[-],運搬: [00FF00]+30[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+3 知覚[-]\n使用可能アイテム: [FF0000]知覚 ONLY[-]\nアンロック: [00FF00]知覚[-]\nクラフトティア: [00FF00]+1 知覚[-]
+BackpackAdvancedStrength,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Advanced: Strength""",職業用バックパック「上級: 強さ」
+BackpackAdvancedStrengthBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Advanced: Strength""",職業用バックパック「上級: 強さ」
+BackpackAdvancedStrengthDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+30[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+3 Strength[-]\nCan use Items: [FF0000]Strength ONLY[-]\nUnlocks: [00FF00]Strength[-]\nCraft Tier: [00FF00]+1 Strength[-],運搬: [00FF00]+30[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+3 強さ[-]\n使用可能アイテム: [FF0000]強さ ONLY[-]\nアンロック: [00FF00]強さ[-]\nクラフトティア: [00FF00]+1 強さ[-]
+BackpackBasicAgility,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Basic: Agility""",職業用バックパック「初級: 素早さ」
+BackpackBasicAgilityBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Basic: Agility""",職業用バックパック「初級: 素早さ」
+BackpackBasicAgilityDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+50[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+1 Agility[-]\nCan use Items: [00FF00]All items[-]\nUnlocks: [00FF00]Agility[-]\nCraft Tier: [FF0000]None[-],運搬: [00FF00]+50[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+1 素早さ[-]\n使用可能アイテム: [00FF00]全て[-]\nアンロック: [00FF00]素早さ[-]\nクラフトティア: [FF0000]なし[-]
+BackpackBasicFortitude,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Basic: Fortitude""",職業用バックパック「初級: 忍耐」
+BackpackBasicFortitudeBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Basic: Fortitude""",職業用バックパック「初級: 忍耐」
+BackpackBasicFortitudeDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+50[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+1 Fortitude[-]\nCan use Items: [00FF00]All items[-]\nUnlocks: [00FF00]Fortitude[-]\nCraft Tier: [FF0000]None[-],運搬: [00FF00]+50[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+1 忍耐[-]\n使用可能アイテム: [00FF00]全て[-]\nアンロック: [00FF00]忍耐[-]\nクラフトティア: [FF0000]なし[-]
+BackpackBasicIntellect,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Basic: Intellect""",職業用バックパック「初級: 知能」
+BackpackBasicIntellectBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Basic: Intellect""",職業用バックパック「初級: 知能」
+BackpackBasicIntellectDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+50[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+1 Intellect[-]\nCan use Items: [00FF00]All items[-]\nUnlocks: [00FF00]Intellect[-]\nCraft Tier: [FF0000]None[-],運搬: [00FF00]+50[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+1 知能[-]\n使用可能アイテム: [00FF00]全て[-]\nアンロック: [00FF00]知能[-]\nクラフトティア: [FF0000]なし[-]
+BackpackBasicPerception,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Basic: Perception""",職業用バックパック「初級: 知覚」
+BackpackBasicPerceptionBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Basic: Perception""",職業用バックパック「初級: 知覚」
+BackpackBasicPerceptionDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+50[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+1 Perception[-]\nCan use Items: [00FF00]All items[-]\nUnlocks: [00FF00]Perception[-]\nCraft Tier: [FF0000]None[-],運搬: [00FF00]+50[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+1 知覚[-]\n使用可能アイテム: [00FF00]全て[-]\nアンロック: [00FF00]知覚[-]\nクラフトティア: [FF0000]なし[-]
+BackpackBasicStrength,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Basic: Strength""",職業用バックパック「初級: 強さ」
+BackpackBasicStrengthBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Basic: Strength""",職業用バックパック「初級: 強さ」
+BackpackBasicStrengthDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+50[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+1 Strength[-]\nCan use Items: [00FF00]All items[-]\nUnlocks: [00FF00]Strength[-]\nCraft Tier: [FF0000]None[-],運搬: [00FF00]+50[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+1 強さ[-]\n使用可能アイテム: [00FF00]全て[-]\nアンロック: [00FF00]強さ[-]\nクラフトティア: [FF0000]なし[-]
+BackpackMiddleAgility,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Middle: Agility""",職業用バックパック「中級: 素早さ」
+BackpackMiddleAgilityBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Middle: Agility""",職業用バックパック「中級: 素早さ」
+BackpackMiddleAgilityDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+40[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+2 Agility[-]\nCan use Items: [FF0000]Agility ONLY[-]\nUnlocks: [00FF00]Agility[-]\nCraft Tier: [FF0000]None[-],運搬: [00FF00]+40[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+2 素早さ[-]\n使用可能アイテム: [FF0000]素早さ ONLY[-]\nアンロック: [00FF00]素早さ[-]\nクラフトティア: [FF0000]なし[-]
+BackpackMiddleFortitude,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Middle: Fortitude""",職業用バックパック「中級: 忍耐」
+BackpackMiddleFortitudeBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Middle: Fortitude""",職業用バックパック「中級: 忍耐」
+BackpackMiddleFortitudeDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+40[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+2 Fortitude[-]\nCan use Items: [FF0000]Fortitude ONLY[-]\nUnlocks: [00FF00]Fortitude[-]\nCraft Tier: [FF0000]None[-],運搬: [00FF00]+40[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+2 忍耐[-]\n使用可能アイテム: [FF0000]忍耐 ONLY[-]\nアンロック: [00FF00]忍耐[-]\nクラフトティア: [FF0000]なし[-]
+BackpackMiddleIntellect,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Middle: Intellect""",職業用バックパック「中級: 知能」
+BackpackMiddleIntellectBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Middle: Intellect""",職業用バックパック「中級: 知能」
+BackpackMiddleIntellectDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+40[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+2 Intellect[-]\nCan use Items: [FF0000]Intellect ONLY[-]\nUnlocks: [00FF00]Intellect[-]\nCraft Tier: [FF0000]None[-],運搬: [00FF00]+40[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+2 知能[-]\n使用可能アイテム: [FF0000]知能 ONLY[-]\nアンロック: [00FF00]知能[-]\nクラフトティア: [FF0000]なし[-]
+BackpackMiddlePerception,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Middle: Perception""",職業用バックパック「中級: 知覚」
+BackpackMiddlePerceptionBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Middle: Perception""",職業用バックパック「中級: 知覚」
+BackpackMiddlePerceptionDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+40[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+2 Perception[-]\nCan use Items: [FF0000]Perception ONLY[-]\nUnlocks: [00FF00]Perception[-]\nCraft Tier: [FF0000]None[-],運搬: [00FF00]+40[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+2 知覚[-]\n使用可能アイテム: [FF0000]知覚 ONLY[-]\nアンロック: [00FF00]知覚[-]\nクラフトティア: [FF0000]なし[-]
+BackpackMiddleStrength,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Middle: Strength""",職業用バックパック「中級: 強さ」
+BackpackMiddleStrengthBlock,WhiteRiverToC_zPOWER_UP_KIT,progression,"Class backpack ""Middle: Strength""",職業用バックパック「中級: 強さ」
+BackpackMiddleStrengthDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Capacity: [00FF00]+40[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [00FF00]+2 Strength[-]\nCan use Items: [FF0000]Strength ONLY[-]\nUnlocks: [00FF00]Strength[-]\nCraft Tier: [FF0000]None[-],運搬: [00FF00]+40[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [00FF00]+2 強さ[-]\n使用可能アイテム: [FF0000]強さ ONLY[-]\nアンロック: [00FF00]強さ[-]\nクラフトティア: [FF0000]なし[-]
+buffRadiation01,WhiteRiverToC_zPOWER_UP_KIT,buffs,Hazardous Radiation,危険放射線
+buffRadiation01,WhiteRiverToC_zPOWER_UP_KIT,buffs,Hazardous Radiation,危険放射線
+buffRadiation01DecDesc,WhiteRiverToC_zPOWER_UP_KIT,buffs,Decreasing Poisoning,中毒の減少
+buffRadiation01DecDesc,WhiteRiverToC_zPOWER_UP_KIT,buffs,Decreasing Poisoning,中毒の減少
+buffRadiation01DecName,WhiteRiverToC_zPOWER_UP_KIT,buffs,Decreasing Poisoning,中毒の減少
+buffRadiation01DecName,WhiteRiverToC_zPOWER_UP_KIT,buffs,Decreasing Poisoning,中毒の減少
+buffRadiation01DecTooltip,WhiteRiverToC_zPOWER_UP_KIT,buffs,You are effectively reducing your radiation poisoning.,放射線被曝を効果的に減らすことができる。
+buffRadiation01DecTooltip,WhiteRiverToC_zPOWER_UP_KIT,buffs,You are effectively reducing your radiation poisoning.,放射線被曝を効果的に減らすことができる。
+buffRadiation01Desc,WhiteRiverToC_zPOWER_UP_KIT,buffs,"You have entered an area with radioactive contamination. Getting wet in this area will increase radiation absorption.Increased radiation will make you weaker and more susceptible to injuries. 100% radiation will give you mortal injuries.Put on the Hazmat Suit or equip Hazmat Liner Mods to reduce exposure.Exiting the Wasteland slowly decreases radiation poisoning, while clean rain or immersion in uncontaminated water will more effectively remove radioactive contaminants.",あなたは放射能汚染地域に入った。このエリアで水に濡れると、放射線の吸収率が上がります。放射線量が増えると、体が弱くなり、怪我をしやすくなります。ウェイストランドからゆっくり出ると放射能中毒が減少し、きれいな雨や汚染されていない水に浸かると、より効果的に放射能汚染物質を取り除くことができます。
+buffRadiation01Desc,WhiteRiverToC_zPOWER_UP_KIT,buffs,"You have entered an area with radioactive contamination. Getting wet in this area will increase radiation absorption.Increased radiation will make you weaker and more susceptible to injuries. 100% radiation will give you mortal injuries.Put on the Hazmat Suit or equip Hazmat Liner Mods to reduce exposure.Exiting the Wasteland slowly decreases radiation poisoning, while clean rain or immersion in uncontaminated water will more effectively remove radioactive contaminants.",あなたは放射能汚染地域に入った。このエリアで水に濡れると、放射線の吸収率が上がります。放射線量が増えると、体が弱くなり、怪我をしやすくなります。ウェイストランドからゆっくり出ると放射能中毒が減少し、きれいな雨や汚染されていない水に浸かると、より効果的に放射能汚染物質を取り除くことができます。
+buffRadiation01IncDesc,WhiteRiverToC_zPOWER_UP_KIT,buffs,Increasing Poisoning,中毒の増加
+buffRadiation01IncDesc,WhiteRiverToC_zPOWER_UP_KIT,buffs,Increasing Poisoning,中毒の増加
+buffRadiation01IncName,WhiteRiverToC_zPOWER_UP_KIT,buffs,Increasing Poisoning,中毒の増加
+buffRadiation01IncName,WhiteRiverToC_zPOWER_UP_KIT,buffs,Increasing Poisoning,中毒の増加
+buffRadiation01IncTooltip,WhiteRiverToC_zPOWER_UP_KIT,buffs,Radiation exposure is increasing your radiation poisoning.,放射線被曝は放射能中毒を増やしている。
+buffRadiation01IncTooltip,WhiteRiverToC_zPOWER_UP_KIT,buffs,Radiation exposure is increasing your radiation poisoning.,放射線被曝は放射能中毒を増やしている。
+buffRadiation01Name,WhiteRiverToC_zPOWER_UP_KIT,buffs,Hazardous Radiation,危険放射線
+buffRadiation01Name,WhiteRiverToC_zPOWER_UP_KIT,buffs,Hazardous Radiation,危険放射線
+buffRadiation01Tooltip,WhiteRiverToC_zPOWER_UP_KIT,buffs,You are exposed to high levels of radiation.,あなたは高レベルの放射線にさらされている。
+buffRadiation01Tooltip,WhiteRiverToC_zPOWER_UP_KIT,buffs,You are exposed to high levels of radiation.,あなたは高レベルの放射線にさらされている。
+buffRadSuit,WhiteRiverToC_zPOWER_UP_KIT,buffs,Radiation Protection,放射線防護
+buffRadSuit,WhiteRiverToC_zPOWER_UP_KIT,buffs,Radiation Protection,放射線防護
+buffRadSuitDesc,WhiteRiverToC_zPOWER_UP_KIT,buffs,You are protected from dangerous exposure to radiation,危険な放射線被曝から保護される
+buffRadSuitDesc,WhiteRiverToC_zPOWER_UP_KIT,buffs,You are protected from dangerous exposure to radiation,危険な放射線被曝から保護される
+buffRadSuitName,WhiteRiverToC_zPOWER_UP_KIT,buffs,Radiation Protection,放射線防護
+buffRadSuitName,WhiteRiverToC_zPOWER_UP_KIT,buffs,Radiation Protection,放射線防護
+buffRadSuitTooltip,WhiteRiverToC_zPOWER_UP_KIT,buffs,You have equiped protective gear to reduce radiation exposure and decrease radiation poisoning.,放射線被曝を減らし、放射線中毒を減らすために防護服を装備している。
+buffRadSuitTooltip,WhiteRiverToC_zPOWER_UP_KIT,buffs,You have equiped protective gear to reduce radiation exposure and decrease radiation poisoning.,放射線被曝を減らし、放射線中毒を減らすために防護服を装備している。
+carAmeliaBattery,WhiteRiverToC_Amelias_Gyrocopter,items,[7fa6ff]Amelia Earhart's[-] - Battery,[7fa6ff][アメリア・イアハート][-] - バッテリー
+carAmeliaBatteryDesc,WhiteRiverToC_Amelias_Gyrocopter,items,A lead acid battery built using highly refined Lead. A potent mixture.,高度に精製された鉛を使って作られた鉛蓄電池。強力な混合物。
+challenge_itsjustbusinessman,WhiteRiverToC_zPOWER_UP_KIT,quests,It's Just Business Man,ビジネス・マン
+challenge_itsjustbusinessman_offer,WhiteRiverToC_zPOWER_UP_KIT,quests,"Dear Stranger,Some day, and that day may never come, I will call upon you to do a service for me. But until that day, consider this justice a gift on my daughter's wedding day. ‘Don' VitoC.Challenge: Kill some zombie Businessmen",親愛なる見知らぬ人へ、いつの日か、いや、その日は来ないかもしれないが、私はあなたに私のために奉仕することを求めるだろう。しかし、その日まで、この正義は娘の結婚式の日の贈り物だと思ってくれ。ドン'ヴィトC.チャレンジ：ゾンビビジネスマンを倒す
+challenge_itsjustbusinessman_subtitle,WhiteRiverToC_zPOWER_UP_KIT,quests,Whack some 'Associates',アソシエイツ」を叩く
+challenge_partyallthetime,WhiteRiverToC_zPOWER_UP_KIT,quests,Party All the Time,パーティー・オール・ザ・タイム
+challenge_partyallthetime_offer,WhiteRiverToC_zPOWER_UP_KIT,quests,"Girl, I can't understand it, why you want to hurt me?After all the things I've done for you? I buy you champagne and roses, put diamonds on your finger.. Diamonds. On your fingers. Still you hang out all night.. What am I to do? Crazy ‘Like a Fox' EddieChallenge: Kill some zombie Party Girls",お嬢さん、理解できないんだ。どうして私を傷つけたいんだい？シャンパンとバラを買い ダイヤを指に...ダイヤ...指に。それでも一晩中...どうすればいいんだ？クレイジー'ライク・ア・フォックス'エディチャレンジ：ゾンビパーティーガールをやっつけろ
+challenge_partyallthetime_subtitle,WhiteRiverToC_zPOWER_UP_KIT,quests,She Just Wants To,彼女はただ望んでいる
+challenge_zombieHazmat,WhiteRiverToC_zPOWER_UP_KIT,quests,Hazardous Materials Handling - Challenge,危険物処理 - チャレンジ
+challenge_zombieHazmat_offer,WhiteRiverToC_zPOWER_UP_KIT,quests,Defeat the vicious Hazmat team and obtain protective equipment.,凶悪な危険物処理班を倒し、保護具を入手しましょう。
+challenge_zombieHazmat_subtitle,WhiteRiverToC_zPOWER_UP_KIT,quests,Take down the Hazmat team.,危険物処理班を倒す
+craftingAmeliasDesc,WhiteRiverToC_Amelias_Gyrocopter,progression,"White River Civic Tools, craft skills of [7fa6ff] Amelia Earhart [-].",ホワイト・リバー市民ツール、[7fa6ff]アメリア・イアハート[-]のクラフトスキルです。
+craftingAmeliasName,WhiteRiverToC_Amelias_Gyrocopter,progression,[7fa6ff]WRC[-] - Amelia Earhart's,[7fa6ff]WRC[-] - アメリア・イアハート
+craftingTazasDesc,WhiteRiverToC_Tazas_Axe,progression,"White River Civic Tools, [2eb200] Legendary Taza [-] craft skills.",ホワイト・リバー市民ツール、[2eb200]伝説のタザ[-]のクラフトスキルです。
+craftingTazasName,WhiteRiverToC_Tazas_Axe,progression,[2eb200]WRC[-] - Legendary Taza's,[2eb200]WRC[-] - 伝説のタザ
+craftingVengeanceDesc,WhiteRiverToC_Spirit_of_Vengence,progression,"White River Civic Tools, craft skills of [7fa6ff] Amelia Earhart [-].",ホワイト・リバー市民ツール、[7fa6ff]復讐魂ヘルビースト[-]のクラフトスキルです。
+craftingVengeanceName,WhiteRiverToC_Spirit_of_Vengence,progression,[7fa6ff]WRC[-] - Spirit of Vengeance hell beast,[7fa6ff]WRC[-] - 復讐魂ヘルビースト
+dialog_FuriousRamsayBlackShieldTrader_statement_start,WhiteRiverToC_Tazas_Axe,dialogs,Welcome!,ようこそ！
+drinkJarBoiledWaterBundle,WhiteRiverToC_zPOWER_UP_KIT,items,Hot water pack,お湯パック
+drinkJarBoiledWaterBundleDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Create hot water using a bucket with water in an empty bottle.,空き瓶に水入りバケツを使用してお湯を作成します。
+drinkJarGrandpasLearningElixir,WhiteRiverToC_zPOWER_UP_KIT,items,Grandpa's Learnin' Elixir,おじいちゃんの万能薬
+drinkJarRiverWaterBundle,WhiteRiverToC_zPOWER_UP_KIT,items,Mud pack,泥水パック
+drinkJarRiverWaterBundleDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Create muddy water using a bucket with water in an empty bottle.,空き瓶に水入りバケツを使用して泥水を作成します。
+drinkYuccaJuiceSmoothieDesc,WhiteRiverToC_zPOWER_UP_KIT,items,Unlocks Yucca Juice Smoothie.,ユッカジューススムージーのロックを解除する。
+EntityLootContainer_WRCTazas,WhiteRiverToC_zPOWER_UP_KIT,entityclasses,Taza's Reward,戦利品「タザ」
+EntityLootContainerzombieMaleHazmat,WhiteRiverToC_zPOWER_UP_KIT,items,Hazmat team drop-offs,危険物処理班の落とし物
+FuriousRamsayBlackShieldTrader,WhiteRiverToC_Tazas_Axe,blocks,[DECEA]WRC[-] Trader,[DECEA]WRC[-]トレーダー
+FuriousRamsayBlackShieldTraderDesc,WhiteRiverToC_Tazas_Axe,blocks,[DECEA]WRC[-] Trader,任意の場所にWRCトレーダーを派遣することができます。
+FuriousRamsayFarmerTrader,WhiteRiverToC_Amelias_Gyrocopter,blocks,White River [7fa6ff]Amelia Earhart's[-] Trader,[7fa6ff]アメリア[-]トレーダー
+FuriousRamsayFarmerTraderDesc,WhiteRiverToC_Amelias_Gyrocopter,blocks,White River [7fa6ff]Amelia Earhart's[-] Trader,任意の場所にWRCトレーダーを派遣することができます。
+FuriousRamsayHandymanTrader,WhiteRiverToC_Spirit_of_Vengence,blocks,White River [7fa6ff]Vengeance[-] Trader,[7fa6ff]復讐魂[-]トレーダー
+FuriousRamsayHandymanTraderDesc,WhiteRiverToC_Spirit_of_Vengence,blocks,White River [7fa6ff]Vengeance[-] Trader,任意の場所にWRCトレーダーを派遣することができます。
+FuriousRamsayNPCBlackShieldTrader1,WhiteRiverToC_Tazas_Axe,entityclasses,[DECEA]WRC[-] Trader,[DECEA]WRC[-]トレーダー
+FuriousRamsayNPCBlackShieldTrader1,WhiteRiverToC_Tazas_Axe,entityclasses,[DECEA]WRC[-] Trader,[DECEA]WRC[-]トレーダー
+FuriousRamsayNPCFarmerKatieTrader,WhiteRiverToC_Amelias_Gyrocopter,entityclasses,White River [7fa6ff]Amelia Earhart's[-] Trader,[7fa6ff]アメリア[-]トレーダー
+FuriousRamsayNPCHandymanLukeTrader,WhiteRiverToC_Spirit_of_Vengence,entityclasses,White River [7fa6ff]Vengeance[-] Trader,[7fa6ff]復讐魂[-]トレーダー
+gunBowT0TazasPrimitiveBow,WhiteRiverToC_zPOWER_UP_KIT,items,Taza's Bow,タサの弓
+h7sb_backpackDesc,WhiteRiverToC_zPOWER_UP_KIT,,Capacity: [00FF00]+60[-]\nGeneral Skills: [00FF00]Available[-]\nCombat Skills: [FF0000]N/A[-]\nCan use Items: [FF0000]All items[-]\nUnlocks: [FF0000]N/A[-]\nCraft Tier: [FF0000]N/A[-],運搬: [00FF00]+60[-]\n一般スキル: [00FF00]使用可[-]\n戦闘特殊技能: [FF0000]使用不可[-]\n使用可能アイテム: [00FF00]すべて[-]\nアンロック: [FF0000]スキル本のみ[-]\nクラフトティア: [FF0000]なし[-]
+h7sb_bumbag,WhiteRiverToC_zPOWER_UP_KIT,items,"Class backpack ""Unemployed""",職業用バックパック「すっぴん」
+h7sb_bumbagBlock,WhiteRiverToC_zPOWER_UP_KIT,items,"Class backpack ""Unemployed""",職業用バックパック「すっぴん」
+journalTipattGeneral,WhiteRiverToC_zPOWER_UP_KIT,items,"SummaryAdjust so that general perks other than combat skills can be assigned regardless of the level of the parent skill. \nSpec: Adjust perks other than combat skills to be set under ""general skills"" so that points can be allocated regardless of the level of the parent skill. Set the points for level up to a uniform 3p.",[DECEA3]概要[-]:\n戦闘技能以外の一般パークを独立させ、親スキルのレベルに関係なく割り振れるように調整します。\n\n[DECEA3]仕様[-]:\n・「一般スキル」を新規追加。\n・レベルアップのポイントを一律3Pとする。
+journalTipattGeneral_title,WhiteRiverToC_zPOWER_UP_KIT,items,[DECEA3]WRC[-] - Adjustments to General Park,[DECEA3]WRC[-] - 一般パークに対する調整
+journalTipbackPack,WhiteRiverToC_zPOWER_UP_KIT,items,"The current skills are rearranged in a Class style, with five skill groups plus ""Unemployed,"" for a total of six occupations, each of which is chosen by the player. Changes to the current five skills: General perks, excluding combat special skills, have been consolidated into a separate category and can be upgraded in a timely manner, regardless of the level of the parent skill. Skill levels are now capped at 3, and skills are unlocked by equipping the appropriate backpack, rather than by skill points. Higher skill level backpacks can be crafted with materials from timely available duke notes and current backpacks. The advantages and disadvantages of choosing specific skills can enhance the Combat Special Skills Perk. Unlocks crafting of related items. Craft tier 1 at highest skill level. (Quality 6 can be created.) Action skills are opened and related items can be enhanced in a timely manner. After level 2, only relevant weapons will be available. Backpack capacity is limited. Advantages and disadvantages of choosing the unemployed ""Unemployed"" can be used with any weapon. There is no backpack capacity limitation. There is no benefit of unlocking crafted items. (Same specifications as before) Combat special skill perk cannot be opened. About changing jobs: By dismantling the backpack, the unemployed ""Suppin"" backpack will be returned, and you can change jobs by re-crafting and equipping it.",[DECEA3]概要[-]:\n現行のスキルを職業風にアレンジします。5つのスキル群に加え、「すっぴん(無職)」の計6職業に分け、プレイヤーは各々の職業を選んでプレイします。\n\n[DECEA3]仕様[-]:\n・現行スキルのレベルは最高3とし、ポイント振りの代わりに、対象のバックパックを装備をすることでスキルが開放される\n。各スキルレベルのバックパックは、トレーダークエストティア完了ごとに配布される、[DECEA3]市民カード[-]を素材にしてクラフトできる。\n・職業バックパックは戦闘特殊技能、関連アイテムのクラフトがアンロックされ、最高スキルレベルでクラフトティアが+1される(品質6が作成可能)。しかし、レベル２以降は関連する武器のみ利用可能になり、バックパックの容量制限の影響がある。\n・すっぴん(無職)は、運搬キャパシティが+60であり、武器利用制限がない。しかし、クラフトアイテムのアンロックの恩恵がなく(従来通りスキルマガジンによるアンロック仕様)、戦闘特殊技能パークを開放できない。
+journalTipbackPack_title,WhiteRiverToC_zPOWER_UP_KIT,items,[DECEA3]WRC[-] - Backpack Equipment,[DECEA3]WRC[-] - バックパック装備について
+journalTipchallengeQuest,WhiteRiverToC_zPOWER_UP_KIT,items,"OverviewReprint the challenge quests that existed in previous versions. Spec.: The start of the quest will be set closer together. Raise the overall difficulty level. Visit [DECEA3] White River Citizen Trader [-], who is wandering around the area.",[DECEA3]概要[-]:\n以前のバージョンで存在したチャレンジクエストを復刻させます。\n\n[DECEA3]仕様[-]:\n・クエスト開始はより近くに設定する。\n・難易度を全体的に底上げする。\n・各地で放浪している、[DECEA3]ホワイト・リバー市民トレーダー[-]で購入するようにした。
+journalTipchallengeQuest_title,WhiteRiverToC_zPOWER_UP_KIT,items,[DECEA3]WRC[-] - Challenge Quest reprint,[DECEA3]WRC[-] - チャレンジクエストの復刻
+journalTipcraftingSkills,WhiteRiverToC_zPOWER_UP_KIT,items,"Additional adjustments will be made to craft skills. \n[DECEA3]Spec.[-]:\n unlocking and leveling up by reading books will remain unchanged. (Currently, they remain unchanged.) In a separate job skill to be added, unlocking of items related to the combat special skill will be added. The highest level, 3, would be reached with an additional crafting tier of 1. (Quality 6 can be crafted.) Base items such as stone axes, pipes, etc. will be craftable with any skill.",[DECEA3]概要[-]:\nクラフトスキルに対して追加調整を行います。\n\n[DECEA3]仕様[-]:\n・本の読了によるアンロック、レベルアップは据え置き(現行のまま)\n・別途追加する職業スキルにおいて、戦闘特殊技能に関連するアイテムのアンロックを加える。\n・最高レベルの3に到達することで、さらにクラフトティアを+1とする(品質6をクラフト可)。\n・石斧、パイプ系等のベースアイテムについては、どのスキルでもクラフト可能とする。
+journalTipcraftingSkills_title,WhiteRiverToC_zPOWER_UP_KIT,items,[DECEA3]WRC[-] - Craft skill adjustments,[DECEA3]WRC[-] - クラフトスキルの調整
+journalTipdrinkJarEmpty,WhiteRiverToC_zPOWER_UP_KIT,items,"Adjustments will be made to the unnatural tampering of water. \nSpecs: reprint empty bottles and set stack count at 10. Removed the increase in the heat value of the rainwater collector. Only ""muddy water"" can be collected by rainwater collectors. Set the number of stacks of muddy water to 10. The use of hot water and muddy water to empty bottles will be reintroduced. Muddy water or hot water can be crafted from water buckets and empty bottles. The crafting of the empty bottle itself will not be reinstated. Enable the crafting of muddy or hot water from snowballs.",[DECEA3]概要[-]:\n水の不自然な改悪に対する調整を行います。\n\n[DECEA3]仕様[-]:\n・空き瓶を復刻し、スタック数を10とする。\n・雨水収集機のヒート値上昇を削除。\n・雨水収集機で収集できるのは”泥水”とする。\n・泥水のスタック数を10とする。\n・お湯と泥水使用後の空き瓶化を復刻させる。\n・水入りバケツと空き瓶で、泥水またはお湯をクラフトできるようにする。・空き瓶自体のクラフトは復刻させない。\n・雪玉から泥水またはお湯をクラフトできるようにする。
+journalTipdrinkJarEmpty_title,WhiteRiverToC_zPOWER_UP_KIT,items,[DECEA3]WRC[-] - Adjustment of water acquisition,[DECEA3]WRC[-] - 水の取得に関する調整
+journalTiplootableZombie,WhiteRiverToC_zPOWER_UP_KIT,items,"Adjust the balance between recovery from zombies and the probability of yellow bags appearing and their contents. \nSpec: Extend the remaining time of yellow bags to increase motivation to participate in the horde. Make it possible to loot from zombies. Set yellow bags' lifetime to 60 minutes, set the lifetime of fallen zombies to 10 seconds, and adjust loot.",[DECEA3]概要[-]:\nゾンビからの回収と、黄色バックの出現確率、中身についてバランス調整をします。\n\n[DECEA3]仕様[-]:\n・黄色バックの残置時間を延長してホード参加へのモチベーションを向上させる。\n・ゾンビから略奪可能とする。\n・黄色バックの残置時間を60分に設定。\n・倒したゾンビの残置時間を10秒に設定。
+journalTiplootableZombie_title,WhiteRiverToC_zPOWER_UP_KIT,items,[DECEA3]WRC[-] - Looting from defeated zombies,[DECEA3]WRC[-] - 倒したゾンビからの略奪
+journalTipskillMagazine,WhiteRiverToC_zPOWER_UP_KIT,items,"Adjust against the Skills Magazine. Visit [DECEA3] White River Citizen Trader [-], who is roaming around the area.",[DECEA3]概要[-]:\nスキルマガジンに対して調整します。\n\n[DECEA3]仕様[-]:\n・スキルマガジンは既存トレーダーでの販売を取りやめる。\n・新規で追加する、[DECEA3]ホワイト・リバー市民トレーダー[-]で販売することとする。
+journalTipskillMagazine_title,WhiteRiverToC_zPOWER_UP_KIT,items,[DECEA3]WRC[-] - Adjustments to skill magazines,[DECEA3]WRC[-] - スキルマガジンに対する調整
+journalTiptraderGeneral,WhiteRiverToC_zPOWER_UP_KIT,items,The trader will be open 24 hours a day to improve convenience and to accommodate beginners. \n\n[DECEA3]Spec.[-]:\n \nOpen 24/7. \nAllow traders to reset quests at their discretion.,[DECEA3]概要[-]:\nトレーダーを24時間営業とし、利便性の向上と、初心者への配慮を行います。\n\n[DECEA3]仕様[-]:\n・24時間営業とした。\n・クエストリセットを任意に行えるようにした。
+journalTiptraderGeneral_title,WhiteRiverToC_zPOWER_UP_KIT,items,[DECEA3]WRC[-] - Adjustments for traders,[DECEA3]WRC[-] -  トレーダーに対する調整
+journalTipwastelandRadiation,WhiteRiverToC_zPOWER_UP_KIT,items,Contaminates wastelands and requires protective clothing to combat. \n[DECEA3]Spec.[-]:\n Contamination debuff is added within the wastelands. Protected by hazmat suit. Full protection by wearing a full body suit. Added dedicated quest for obtaining Hazmat suit. Abombed Hazmat Team (Challenge) now spawns in any wasteland.,[DECEA3]概要[-]:\n荒れ地を汚染化し、対策には防護服を必要とします。\n\n[DECEA3]仕様[-]:\n・荒れ地内では汚染デバフが付加される。\n・ハズマットスーツにより保護される(全身着用で完全保護)。\n・ハズマットスーツ入手のための専用クエストの追加。\n・被爆した危険物処理班 (チャレンジ)を任意の荒れ地でスポーンするようにした。
+journalTipwastelandRadiation_title,WhiteRiverToC_zPOWER_UP_KIT,items,[DECEA3]WRC[-] - Pollution of wastelands,[DECEA3]WRC[-] - 荒れ地の汚染化
+lblCategoryQuests,WhiteRiverToC_zPOWER_UP_KIT,ui_display,Quests,クエスト
+lblEyewear,WhiteRiverToC_zPOWER_UP_KIT,items,Accessoire,メガネ
+lblFace,WhiteRiverToC_zPOWER_UP_KIT,items,Back,顔
+,,,,
+,,,,
+,,,,
+lblWRC_Backpacks,WhiteRiverToC_zPOWER_UP_KIT,ui_display,Skill Backpack,スキルバックパック
+lblWRC_Cards,WhiteRiverToC_zPOWER_UP_KIT,ui_display,WRC Cards,WRCカード
+lblWRC_Coins,WhiteRiverToC_zPOWER_UP_KIT,ui_display,WRC Coins,WRCコイン
+lblWRC_Crates,WhiteRiverToC_zPOWER_UP_KIT,ui_display,WRC Crates,WRCクレート
+lblWRC_Quests,WhiteRiverToC_zPOWER_UP_KIT,ui_display,WRC Quests,WRCクエスト
+lblWRC_Tools,WhiteRiverToC_zPOWER_UP_KIT,ui_display,WRC Tools,WRCツール
+lblWRC_Traders,WhiteRiverToC_zPOWER_UP_KIT,ui_display,WRC Traders,WRCトレーダー
+loadingTipattGeneral,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,"General Perk has been changed to the ""General Skills"" category. It can be leveled up regardless of the parent skill, but requires 3p per level.",一般パークは「一般スキル」カテゴリに変更しました。親スキルに関係なくレベルアップできますが、1レベルにつき3P必要です。
+loadingTipattGeneral_title,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,General Perks,[DECEA3]WRC[-] - 一般パークに対する調整
+loadingTipbackPack,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,"Each combat skill is upgraded by equipping a special backpack. There are three types of backpacks, each from beginner to advanced. \nCraft: [DECEA3]WRC Station[-].",戦闘技能のスキルはそれぞれ専用のバックパックを装備することによって、レベルアップするようにしました。バックパックは初級から上級までそれぞれ3種類あります。\nクラフト: [DECEA3]WRCステーション[-]
+loadingTipbackPack_title,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,[DECEA3]WRC[-] - Adjustments to skills,[DECEA3]WRC[-] - スキルに対する調整
+loadingTipchallengeQuest,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,"We are reprinting a challenge quest that existed in previous versions. Visit [DECEA3] White River Citizen Trader [-], who is wandering in various locations.",以前のバージョンで存在したチャレンジクエストを復刻させます。各地で放浪している、[DECEA3]ホワイト・リバー市民トレーダー[-]を訪ねてください。
+loadingTipchallengeQuest_title,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,[DECEA3]WRC[-] - Challenge Quest reprint,[DECEA3]WRC[-] - チャレンジクエストの復刻
+loadingTipcraftingSkills,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,"Additional adjustments for craft skills. Craft skills will remain unchanged in terms of leveling up by reading books. In Class skills, in addition to unlocking related items, reaching the highest level of 3 will result in an additional craft tier of 1.",クラフトスキルに対して追加調整します。クラフトスキルは本の読了によるレベルアップは据え置き。職業スキルにおいて、関連アイテムのアンロックに加え、最高レベルの3に到達することで、さらにクラフトティアを+1とします。
+loadingTipcraftingSkills_title,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,[DECEA3]WRC[-] - Craft skill adjustments,[DECEA3]WRC[-] - クラフトスキルの調整
+loadingTipdrinkJarEmpty,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,Adjustments are made for unnatural modification of water to return empty bin.,空き瓶を復刻させ、水の不自然な改悪に対する調整を行います。
+loadingTipdrinkJarEmpty_title,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,[DECEA3]WRC[-] - Adjustment of water acquisition,[DECEA3]WRC[-] - 水の取得に関する調整
+loadingTiplootableZombie,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,Adjust the balance between recovery from zombies and the probability of yellow bags appearing and their contents. Extend the remaining time of the yellow bag to improve motivation to participate in the horde.,ゾンビからの回収と、黄色バックの出現確率、中身についてバランス調整をします。黄色バックの残置時間を延長してホード参加へのモチベーションを向上させます。
+loadingTiplootableZombie_title,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,[DECEA3]WRC[-] - Looting from defeated zombies,[DECEA3]WRC[-] - 倒したゾンビからの略奪
+loadingTipskillMagazine,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,"Adjust against the Skills Magazine. Visit [DECEA3] White River Citizen Trader [-], who is roaming around the area.",スキルマガジンに対して調整します。各地で放浪している、[DECEA3]ホワイト・リバー市民トレーダー[-]を訪ねてください。
+loadingTipskillMagazine_title,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,[DECEA3]WRC[-] - Adjustments to skill magazines,[DECEA3]WRC[-] - スキルマガジンに対する調整
+loadingTiptraderGeneral,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,"We will allow traders to operate 24 hours a day and to reset quests at will, improving convenience and taking care of beginners.",トレーダーを24時間営業、クエストリセットを任意に行えるようにし、利便性の向上と、初心者への配慮を行います。
+loadingTiptraderGeneral_title,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,[DECEA3]WRC[-] - Adjustments for traders,[DECEA3]WRC[-] - トレーダーに対する調整
+loadingTipwastelandRadiation,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,It contaminates wastelands and requires protective clothing to combat.,荒れ地を汚染化し、対策には防護服を必要とします。
+loadingTipwastelandRadiation_title,WhiteRiverToC_zPOWER_UP_KIT,loadingscreen,[DECEA3]WRC[-] - Pollution of wastelands,[DECEA3]WRC[-] - 荒れ地の汚染化
+lootTooltipNew,WhiteRiverToC_zPOWER_UP_KIT,,{0} Search {1} (Untouched),{0} {1}を調べる [DECEA3](確認未)[-]
+lootTooltipTouched,WhiteRiverToC_zPOWER_UP_KIT,,{0} Search {1},{0} {1}を調べる (確認済)
+medicalVengeanceFirstAidKit,WhiteRiverToC_Spirit_of_Vengence,items,[7fa6ff]Vengeance[-] First Aid Kit,[7fa6ff]復讐魂[-] - 救急箱
+medicalVengeanceFirstAidKitDesc,WhiteRiverToC_Spirit_of_Vengence,items,A First Aid Kit unlike anything you've seen before. A slow-acting heal over time for an insane amount of health.,今までに見たことのない救急キット。時間をかけてゆっくりと回復し、非常識な量のヘルスを回復する。
+meleeToolShovelT0TazasStoneShovel,WhiteRiverToC_zPOWER_UP_KIT,items,Taza's Stone Excavator,タサの石ショベル
+meleeWpnSledgeT0TazasStoneSledgehammer,WhiteRiverToC_zPOWER_UP_KIT,items,Taza's Stone Sledgehammer,タサの石スレッジハンマー
+meleeWpnSpearT0TazasStoneSpear,WhiteRiverToC_zPOWER_UP_KIT,items,Taza's stone spear,タサの石槍
+MwhiteRiver,WhiteRiverToC_zPOWER_UP_KIT,materials,WR Citizen P,WR市民P
+npc_whiteRiver_Trader1,WhiteRiverToC_zPOWER_UP_KIT,npc,White River [2eb200] Taza [-] Trader,[2eb200] タザ [-]トレーダー
+qc_itsjustbusinessman,WhiteRiverToC_zPOWER_UP_KIT,,It's Just Business Man,ビジネス・マン
+qc_partyallthetime,WhiteRiverToC_zPOWER_UP_KIT,,Party All the Time,パーティー・オール・ザ・タイム
+qc_Tazas,WhiteRiverToC_Tazas_Axe,items,[2eb200]Taza[-] - Challenge,[2eb200]タザ[-] - チャレンジ
+qc_TazasDesc,WhiteRiverToC_Tazas_Axe,items,[2eb200]Taza[-] - Challenge,[2eb200]タザ[-] - チャレンジ
+qc_zombieHazmat,WhiteRiverToC_zPOWER_UP_KIT,,Hazardous Materials Handling - Challenge,危険物処理 - チャレンジ
+qt_Tazas,WhiteRiverToC_Tazas_Axe,items,[2eb200]Taza[-] - Treasure,[2eb200]タザ[-] - トレジャー
+qt_TazasDesc,WhiteRiverToC_Tazas_Axe,items,[2eb200]Taza[-] - Treasure,[2eb200]タザ[-] - トレジャー
+quest_buried_supplies_Defend_Amelias_completion,WhiteRiverToC_Tazas_Axe,item,Quest Reward: WRC[2eb200]Citizen[-] Random Crate,クエスト報酬: WRC[2eb200]一般市民[-]ランダムクレート
+quest_buried_supplies_Defend_Amelias_response,WhiteRiverToC_Amelias_Gyrocopter,quest,[2eb200]Taza's Axe[-] ([DECEA3]{poi.distance} {poi.direction}[-]),[7fa6ff][アメリア・イアハート][-] ([DECEA3]{poi.distance} {poi.direction}[-])
+quest_Defend_Vengeance_completion,WhiteRiverToC_Tazas_Axe,item,Quest Reward: WRC[2eb200]Citizen[-] Random Crate,クエスト報酬: WRC[2eb200]一般市民[-]ランダムクレート
+quest_defend_Vengeance_response,WhiteRiverToC_Spirit_of_Vengence,quest,[7fa6ff]Vengeance[-] ([DECEA3]{poi.distance} {poi.direction}[-]),[7fa6ff][復讐魂][-] ([DECEA3]{poi.distance} {poi.direction}[-])
+quest_fetch_defend_Tazas_response,WhiteRiverToC_Tazas_Axe,quest,[2eb200]Taza's Axe[-] ([DECEA3]{poi.distance} {poi.direction}[-]),[2eb200]伝説のタザ[-] ([DECEA3]{poi.distance} {poi.direction}[-])
+quest_spirit_vengeance_description,WhiteRiverToC_Spirit_of_Vengence,Quest,Help Johnny Blaze defeat an evil demon and obtain [7fa6ff]the spirit of vengeance's hell beast[-].,ジャガーノートを倒し、[7fa6ff]ヘルビースト[-]を入手する。\n[DECEA3]注意[-]: ボスゾンビの討伐は任意です。
+quest_spirit_vengeance_name,WhiteRiverToC_Spirit_of_Vengence,Quest,[7fa6ff]Amelia Earhart's[-] Hell Beast,[7fa6ff][アメリア・イアハート][-] - ヘルビースト
+quest_spirit_vengeance_offer,WhiteRiverToC_Spirit_of_Vengence,Quest,"The trader's friend Johnny Blaze needs some community help to defeat a juggernaut demon. Help Mr. Blaze defeat the evil demon, and in return, obtain the spirit of vengeance's hell beast for your eternal enjoyment. The trader suggests it may be a good idea to bring a friend with some extra first aid kits, and lots of ammo.",トレーダーの友人ジョニー・ブレイズは、ジャガーノートの悪魔を倒すために地域の助けを必要としている。ミスター・ブレイズがジャガーノートを倒すのを手伝い、その見返りとして、永遠の楽しみのために復讐の魂のヘルビーストを手に入れよう。トレーダーは、応急処置キットと弾薬をたくさん持っている友人を連れてくることを勧める。
+quest_spirit_vengeance_statement,WhiteRiverToC_Spirit_of_Vengence,Quest,Kill the evil demon to obtain a [7fa6ff]Hell Beast[-],ジャガーノートを倒し、[7fa6ff]ヘルビースト[-]を入手する。
+quest_tier1_fetch_defend_Tazas,WhiteRiverToC_Tazas_Axe,quest,[2eb200]Taza's[-],[2eb200]伝説のタザ[-]
+quest_tier2_fetch_defend_Tazas,WhiteRiverToC_Tazas_Axe,quest,[2eb200]Taza's[-],[2eb200]伝説のタザ[-]
+quest_tier3_fetch_defend_Tazas,WhiteRiverToC_Tazas_Axe,quest,[2eb200]Taza's[-],[2eb200]伝説のタザ[-]
+quest_tier4_fetch_defend_Tazas,WhiteRiverToC_Tazas_Axe,quest,[2eb200]Taza's[-],[2eb200]伝説のタザ[-]
+quest_tier5_fetch_defend_Tazas,WhiteRiverToC_Tazas_Axe,quest,[2eb200]Taza's[-],[2eb200]伝説のタザ[-]
+quest_toc_amelia1_description,WhiteRiverToC_Amelias_Gyrocopter,Quest,Go to the place where Amelia Earhart is buried.\n [DECEA3]Note[-]: Defeating the boss zombie is optional.,アメリア・イアハートが埋葬されている場所へいく。\n[DECEA3]注意[-]: ボスゾンビの討伐は任意です。
+quest_toc_amelia1_name,WhiteRiverToC_Amelias_Gyrocopter,Quest,The map to [7fa6ff]Amelia's coffin[-],[7fa6ff][アメリア・イアハート][-]の棺
+quest_toc_amelia1_offer,WhiteRiverToC_Amelias_Gyrocopter,Quest,"The trader previously mentioned to you that another survivor sold them a map that supposedly has the location where Amelia Earhart was buried. At the time, you had scoffed at this suggestion as the common belief is her plane went down over water. But then you had recalled that there was one theory that suggested she may have landed on an island. The trader mentioned to you that they would sell you the map for 5,000 Dukes. Collect 5,000 Dukes and return to the trader.","その貿易商は以前、別の生存者がアメリア・イアハートが埋葬されたとされる場所を記した地図を売ったとあなたに話した。そのときあなたは、アメリア・イアハートの飛行機は海上に落ちたというのが通説であるとして、この提案を一笑に付した。しかし、アメリア・イアハートが島に着陸したという説があることを思い出した。トレーダーはあなたに、5,000デュークで地図を売ると言った。5,000デュークを集め、トレーダーに戻る。"
+quest_toc_amelia2_statement,WhiteRiverToC_Amelias_Gyrocopter,Quest,Find Amelia Earhart's coffin to discover the truth of her final days.,アメリア・イアハートの棺を探し出し、彼女の最期の真実を探る。
+quest_toc_amelia2_subtitle,WhiteRiverToC_Amelias_Gyrocopter,Quest,Discover the truth of Amelia's final days,アメリアの真実を探る
+quest_toc_taza_completion,WhiteRiverToC_Tazas_Axe,item,Quest Reward: WRC[2eb200]Citizen[-] Random Crate,クエスト報酬: WRC[2eb200]一般市民[-]ランダムクレート
+quest_toc_taza_name,WhiteRiverToC_Tazas_Axe,quest,[2eb200]Taza's[-],[2eb200]伝説のタザ[-]
+quest_toc_taza_offer,WhiteRiverToC_Tazas_Axe,quest,"In the wake of the event, rumors circulated about a fabled axe created by a Master craftswoman named [2eb200]Taza[-]. The citizens of White River banded together to locate this craftswoman only to arrive at just the right moment to save the her life. ",この出来事をきっかけに、[2eb200]タザ[-]という名の名工が作った伝説の斧の噂が広まった。ホワイト・リバー市民は一致団結してこの職人を探し出し、間一髪のところで彼女の命を救った。
+quest_tools_of_citizenship_description,WhiteRiverToC__REQUIRED,quest,Protect White River traders and declare their participation in the White River Settlements.,ホワイト・リバートレーダーを保護し、ホワイトリバー入植地への参加を宣言する。
+quest_tools_of_citizenship_group,WhiteRiverToC__REQUIRED,quest,"White River - Tools of Citizenship, Become a Citizen",ホワイトリバー - 市民となる
+quest_tools_of_citizenship_name,WhiteRiverToC__REQUIRED,quest,Declare your citizenship to White River,[DECEA3]WRC[-] - ホワイト・リバー市民権への宣言
+quest_tools_of_citizenship_offer,WhiteRiverToC__REQUIRED,quest,White River citizens are always ready for an attack from zombies. Complete trader defense quests requested by White River traders to qualify as a trader citizen.,ホワイト・リバー市民は常にゾンビからの襲来に備えています。ホワイト・リバー・トレーダーから依頼されるトレーダー防衛クエストを達成し、トレーダー市民の資格を得ましょう。
+quest_tools_of_citizenship_statement,WhiteRiverToC__REQUIRED,quest,Defending the Citizens of White River,ホワイト・リバー市民を防衛する
+quest_tools_of_citizenship_subtitle,WhiteRiverToC__REQUIRED,quest,Declare your citizenship to White River,ホワイト・リバー市民権への宣言
+quest_WhiteRiverCitizen_description,WhiteRiverToC_zPOWER_UP_KIT,quest,Each trader is constantly on the lookout for zombie attacks. Please defend yourself in case of an attack in a timely manner.,各トレーダーは常にゾンビの襲来におびえています。襲来があった際は、適時防衛してください。
+quest_WhiteRiverCitizen_description_title,WhiteRiverToC_zPOWER_UP_KIT,quest,[DECEA3]WRC[-] - Zombie attack,[DECEA3]WRC[-] - ゾンビの襲来
+quest_whiteRiverCitizen_hint,WhiteRiverToC_zPOWER_UP_KIT,quest,[2eb200] Defend the traders from the zombie attack. [-],[2eb200]ゾンビの襲来からトレーダーを防衛してください。[-]
+quest_WhiteRiverCitizen1,WhiteRiverToC_zPOWER_UP_KIT,,White River Citizenship Certificate,ホワイトリバー市民の証
+quest_whiteRiverCitizen2_name,WhiteRiverToC__REQUIRED,quest,[DECEA3]WRC[-] - Tier 1 WR Trader Defense,[DECEA3]WRC[-] - ティア1 WRトレーダー防衛
+quest_whiteRiverCitizen2Tip,WhiteRiverToC_zPOWER_UP_KIT,quests,"Thank you for your time. You have now completed your basic quest. We have just sent you [DECEA3] ""WRC Citizen Card"" [-] and [DECEA3] ""WRC Citizen Station"" [-]. The [DECEA3] ""WRC Citizen Card"" [-] is required to craft the Occupation Backpack, so please craft it after careful consideration. The [DECEA3] ""WRC Citizen Station"" [-] is not required for survival, but allows you to exchange WRC-related items for points that can be obtained at each WRC-related event. It is recommended that you set up your own station after you have decided on your own location.",お疲れ様でした。これで基本クエストは完了です。たった今、[DECEA3]「WRC市民カード」[-]と[DECEA3]「WRC市民ステーション」[-]をお送りました。\n\n[DECEA3]「WRC市民カード」[-]は職業バックパックをクラフトするのに必要ですので、十分検討したうえでクラフトなさってください。\n\n[DECEA3]「WRC市民ステーション」[-]はサバイバルに必須ではありませんが、WRC関連のイベントごとに入手できる関連アイテムをポイントに換えて、WRC関連アイテムと交換できるものです。自身の拠点が決まってから設置されるとよいでしょう。\n\nサバイバルになれたら、各地を放浪している[DECEA3]ホワイト・リバー市民トレーダー[-]を訪ねてみましょう。彼らはホワイト・リバー伝説のツールについて何か知っているかもしれません。\n\n[DECEA3]エンドコンテンツは準備中です。是非開発のDiscordグループのメンバーになり、最新情報を入手して下さい。[-]
+quest_whiteRiverCitizen2Tip_title,WhiteRiverToC_zPOWER_UP_KIT,quests,[DECEA3]WRC[-] - Basic Quest Completion,[DECEA3]WRC[-] - ゲームの進め方
+quest_whiteRiverCitizen3_name,WhiteRiverToC__REQUIRED,quest,[DECEA3]WRC[-] - Tier 2 WR Trader Defense,[DECEA3]WRC[-] - ティア2 WRトレーダー防衛
+quest_whiteRiverCitizen4_name,WhiteRiverToC__REQUIRED,quest,[DECEA3]WRC[-] - Tier 3 WR Trader Defense,[DECEA3]WRC[-] - ティア3 WRトレーダー防衛
+quest_whiteRiverCitizen5_name,WhiteRiverToC__REQUIRED,quest,[DECEA3]WRC[-] - Tier 4 WR Trader Defense,[DECEA3]WRC[-] - ティア4 WRトレーダー防衛
+quest_whiteRiverCitizen6_name,WhiteRiverToC__REQUIRED,quest,[DECEA3]WRC[-] - Tier 5 WR Trader Defense,[DECEA3]WRC[-] - ティア5 WRトレーダー防衛
+questblock_toc_amelia_coffin,WhiteRiverToC_Amelias_Gyrocopter,blocks,Amelia's coffin,アメリアの棺
+questblock_toc_randomcrate_desc,WhiteRiverToC__REQUIRED,quest,The sealed crates contain random items from the White River Settlement.,封印された木箱の中には、ホワイトリバー集落のアイテムがランダムに入っている。
+questdialog_tools_of_citizenship,WhiteRiverToC__REQUIRED,quest,May I become a citizen?,私はホワイト・リバー市民になる資格はありますか？
+questitem_coin_taza,WhiteRiverToC_Tazas_Axe,item,Tools of Citizenship - Taza's Axe,[2eb200]伝説のタザ[-] - 市民コイン
+questitem_toc_amelia1_desc,WhiteRiverToC_Amelias_Gyrocopter,items,This note contains a rumor that the local trader has a map to Amelia Earhart’s grave. Follow the clues to uncover the truth of what happened to Amelia and learn how to help complete her life's secret work.,このメモには、地元の商人がアメリア・イアハートの墓への地図を持っているという噂が書かれている。手がかりをたどってアメリアに何が起こったのかの真実を明らかにし、彼女の人生の秘密の仕事を完成させる手助けをする方法を学ぶ。
+questitem_toc_amelia1_name,WhiteRiverToC_Amelias_Gyrocopter,items,[7fa6ff]Amelia Earhart's[-] - Gyrocopter,[7fa6ff][アメリア・イアハート][-] - ジャイロコプター
+questitem_toc_citizencard_description,WhiteRiverToC__REQUIRED,item,White River Citizen Card. Proof of membership in the settlement.\n\n\[2eb200]Important[-]: This item is craft item of WRC class back pack.,ホワイトリバー集落の一員であることを証明する。\n\n[2eb200]重要[-]: WRC職業バックパックの主要クラフトアイテムです。クエストティアアップ時にも支給されます。
+questitem_toc_citizencard_name,WhiteRiverToC__REQUIRED,item,+White River Citizen Card,[2eb200]一般市民[-]カード
+questitem_toc_elitecard_description,WhiteRiverToC__REQUIRED,item,White River Elite Citizen Card. Proof of elite membership in the settlement.\n\n\[2eb200]Important[-]: This item is craft item of WRC class back pack.,ホワイトリバー集落のエリート市民であることを証明する。\n\n[2eb200]重要[-]: WRC職業バックパックの主要クラフトアイテムです。クエストティアアップ時にも支給されます。
+questitem_toc_elitecard_name,WhiteRiverToC__REQUIRED,item,+White River Elite Citizen Card,[5f40c4]エリート市民[-]カード
+questitem_toc_veterancard_description,WhiteRiverToC__REQUIRED,item,White River Veteran Card. Proof of being a veteran citizen.\n\n\[2eb200]Important[-]: This item is craft item of WRC class back pack.,ホワイトリバー集落のベテラン市民であることを証明する。\n\n[2eb200]重要[-]: WRC職業バックパックの主要クラフトアイテムです。クエストティアアップ時にも支給されます。
+questitem_toc_veterancard_name,WhiteRiverToC__REQUIRED,item,+White River Veteran Citizen Card,[7fa6ff]ベテラン市民[-]カード
+questitem_vetcoin_amelia,WhiteRiverToC_Amelias_Gyrocopter,items,Veteran Tools of Citizenship - Amelia's Gyrocopter,[7fa6ff]アメリア・イアハート[-] - ベテラン市民コイン
+questitem_vetcoin_taza,WhiteRiverToC_Tazas_Axe,item,Veteran Tools of Citizenship - Taza's Axe,[2eb200]伝説のタザ[-] - ベテラン市民コイン
+questitem_vetcoin_Vengeance,WhiteRiverToC_Spirit_of_Vengence,items,[7fa6ff]Vengeance[-] - Veteran Citizen Coin,[7fa6ff][復讐魂][-] - ベテラン市民コイン
+questreward_spirit_vengeance_subtitle,WhiteRiverToC_Spirit_of_Vengence,Quest,Kill the evil demon to obtain a [7fa6ff]Hell Beast[-]\n[DECEA3]Note[-]: Defeating the boss zombie is optional.,ジャガーノートを倒し、[7fa6ff]ヘルビースト[-]を入手する。
+reqASTazasl01,WhiteRiverToC_zPOWER_UP_KIT,progression,TBA,TBA
+resourceRefinedLead,WhiteRiverToC_Amelias_Gyrocopter,items,[7fa6ff]Amelia Earhart's[-] - Refined Lead,[7fa6ff][アメリア・イアハート][-] - 精製鉛
+resourceRefinedLeadDesc,WhiteRiverToC_Amelias_Gyrocopter,items,An ingredient in creating a refined lead acid battery for Amelia Earhart's gyrocopter.,アメリア・イアハートのジャイロコプター用の精製鉛蓄電池の原料。
+skillASTazasName,WhiteRiverToC_zPOWER_UP_KIT,progression,[2eb200]WRC[-] - [AS]Taza's tools,[2eb200]WRC[-] - [AS]タザ族のツール
+skillBookGroupLongDesc,WhiteRiverToC_zPOWER_UP_KIT,progression,[DECEA3] Legendary Taza's[-],[2eb200] 伝説のタザ[-]
+skillTazasStoneAxeMaster,WhiteRiverToC_zPOWER_UP_KIT,progression,[DECEA3] Legendary Taza's[-],[2eb200] 伝説のタザ[-]
+skillTazasStoneAxeMasterDesc,WhiteRiverToC_zPOWER_UP_KIT,progression,[DECEA3] Legendary Taza's[-],[2eb200] 伝説のタザ[-]
+skillTazasStoneAxeMasterName,WhiteRiverToC_zPOWER_UP_KIT,progression,[DECEA3] Legendary Taza's[-],[2eb200] 伝説のタザ[-]
+skillunlocksAmmosName,,,Ammo,Ammo
+skillunlocksApparelsName,,,Apparel,Apparel
+skillunlocksArmorsName,,,Armor,Armor
+skillunlocksFoodsName,,,Food,Food
+skillunlocksModsName,,,Mod,Mod
+skillunlocksResourcesName,,,Resource,Resource
+smallAmeliaEngine,WhiteRiverToC_Amelias_Gyrocopter,items,[7fa6ff]Amelia Earhart's[-] - Engine,[7fa6ff][アメリア・イアハート][-] - エンジン
+smallAmeliaEngineDesc,WhiteRiverToC_Amelias_Gyrocopter,items,An ingredient in creating Amelia Earhart's gyrocopter.,アメリア・イアハートのジャイロコプターを作るための材料。
+tier1_Amelias,WhiteRiverToC_Amelias_Gyrocopter,items,[7fa6ff]Amelia Earhart's[-] - Main Quest,[7fa6ff][アメリア・イアハート][-] - メインクエスト
+tier1_Amelias_description,WhiteRiverToC_Amelias_Gyrocopter,items,[7fa6ff]Amelia Earhart's[-] - Main Quest,[7fa6ff][アメリア・イアハート][-] - メインクエスト
+tier1_Tazas,WhiteRiverToC_Tazas_Axe,items,[2eb200]Taza's Axe[-] - Main quest,[2eb200]伝説のタザ[-] - メインクエスト
+tier1_Tazas_description,WhiteRiverToC_Tazas_Axe,items,[2eb200]Taza's Axe[-] - Main quest,[2eb200]伝説のタザ[-] - メインクエスト
+tier1_Vengeance,WhiteRiverToC_Spirit_of_Vengence,items,[7fa6ff][Vengeance][-] - Main Quest,[7fa6ff][復讐魂][-] - メインクエスト
+tier1_Vengeance_description,WhiteRiverToC_Spirit_of_Vengence,items,[7fa6ff][Vengeance][-] - Main Quest,[7fa6ff][復讐魂][-] - メインクエスト
+tutorialTipQuest01,WhiteRiverToC_zPOWER_UP_KIT,,"This mod was created with the main goal of respecting the original White River Tool of Citizenship as much as possible, while balancing it and making it a game that can be enjoyed for a long time. all changes made by the mod are listed in the ""Journal"" and we recommend that you read it at your earliest convenience. First, please equip [2eb200]the supplied backpack[-] and open the item slots.",このMODは、[DECEA3]ホワイトリバー市民ツール[-]のオリジナルをできる限り尊重しつつ、バランス調整を行い、長く楽しめるゲーム作りを主眼に作成しています。MODによる変更箇所は「ジャーナル」に全て記載していますので、早い時期に読むことをおすすめします。まずは[2eb200]支給されたバックパックを装備[-]してアイテムスロットの開放を行って下さい。
+tutorialTipQuest01_title,WhiteRiverToC_zPOWER_UP_KIT,,Welcome to White RIver Tool of Citizenship :Re-works,[DECEA3]WRC[-] - ようこそ「WRC_TOC :Re-works」へ
+unit_whiteRiver,WhiteRiverToC_zPOWER_UP_KIT,items,White River Citizen Point,ホワイト・リバー市民ポイント
+,,,,
+,,,,
+,,,,
+VaultBox,WhiteRiverToC_zPOWER_UP_KIT,,Next season transfer box,次シーズン引継ぎボックス
+VaultBoxDesc,WhiteRiverToC_zPOWER_UP_KIT,,Some vanilla items obtained in the current season can be carried over to the next season. (Non-vanilla items carried over are not guaranteed.),今シーズンで入手したバニラアイテムの一部を次シーズンに引き継ぐことができます。(バニラアイテム以外の持越しは保証対象外です。)
+vehicleAmeliaGyrocopter,WhiteRiverToC_Amelias_Gyrocopter,vehicles,[7fa6ff]Amelia Earhart's[-] - Gyrocopter,[7fa6ff][アメリア・イアハート][-] - ジャイロコプター
+vehicleAmeliaGyroCopterAccessories,WhiteRiverToC_Amelias_Gyrocopter,items,[7fa6ff]Amelia Earhart's[-] - Gyrocopter Accessories,[7fa6ff][アメリア・イアハート][-] - ジャイロコプター・アクセサリー
+vehicleAmeliaGyroCopterAccessoriesDesc,WhiteRiverToC_Amelias_Gyrocopter,items,An ingredient in building Amelia Earhart's gyrocopter.,アメリア・イアハートのジャイロコプター製造の材料。
+vehicleAmeliaGyroCopterChassis,WhiteRiverToC_Amelias_Gyrocopter,items,[7fa6ff]Amelia Earhart's[-] - Gyrocopter Chassis,[7fa6ff][アメリア・イアハート][-] - ジャイロコプター・シャシー
+vehicleAmeliaGyroCopterChassisDesc,WhiteRiverToC_Amelias_Gyrocopter,items,An ingredient in building Amelia Earhart's gyrocopter.,アメリア・イアハートのジャイロコプター製造の材料。
+vehicleAmeliaGyrocopterPlaceable,WhiteRiverToC_Amelias_Gyrocopter,vehicles,[7fa6ff]Amelia Earhart's[-] - Gyrocopter,[7fa6ff][アメリア・イアハート][-] - ジャイロコプター
+vehicleSpiritHellBeastToC,WhiteRiverToC_Spirit_of_Vengence,vehicles,[7fa6ff]Vengeance[-] Motorcycle,[7fa6ff]復讐魂[-] - ヘルビースト
+vehicleSpiritHellBeastToC_description,WhiteRiverToC_Spirit_of_Vengence,vehicles,A hell beast motorcycle you were rewarded for freeing Johnny Blaze from the spirit of vengeance.,ジョニー・ブレイズを復讐の魂から解き放った報酬
+vehicleSpiritHellBeastToCPlaceable,WhiteRiverToC_Spirit_of_Vengence,vehicles,[7fa6ff]Vengeance[-] Motorcycle,[7fa6ff]復讐魂[-] - ヘルビースト
+vehicleSpiritHellBeastToCPlaceable_description,WhiteRiverToC_Spirit_of_Vengence,vehicles,A hell beast motorcycle you were rewarded for freeing Johnny Blaze from the spirit of vengeance.,ジョニー・ブレイズを復讐の魂から解き放った報酬
+VengeanceT2,WhiteRiverToC_Spirit_of_Vengence,progression,Vengeance,復讐魂
+VengeanceT5,WhiteRiverToC_Spirit_of_Vengence,progression,Vengeance,復讐魂
+vetquest_toc_taza_statement,WhiteRiverToC_Tazas_Axe,quest,Contribute more significantly to the community and receive higher taza tribe loot.,コミュニティにより大きく貢献し、より上位のタザ族の戦利品を受け取る。
+vetquestreward_toc_taza_description,WhiteRiverToC_Tazas_Axe,quest,Defend against zombie attacks. Defeat boss zombies and obtain loot from the Taza tribe. \n[DECEA3]Note[-]: Defeating the boss zombie is optional.,ゾンビの襲来から防衛する。ボスゾンビを倒し、タザ族の戦利品を手に入れる。\n[DECEA3]注意[-]: ボスゾンビの討伐は任意です。
+vetquestreward_toc_taza_subtitle,WhiteRiverToC_Tazas_Axe,quest,Collect your Veteran Reward of the fabled Taza's Axe,タザ族の戦利品を手に入れる。
+whiteRiver_Trader,WhiteRiverToC_zPOWER_UP_KIT,entityclasses,White River [2eb200] Taza [-] Trader,[2eb200] タザ [-]トレーダー
+WhiteRiver_Trader1,WhiteRiverToC_zPOWER_UP_KIT,entityclasses,White River [2eb200] Taza [-] Trader,[2eb200] タザ [-]トレーダー
+whiteRiver_Trader1,WhiteRiverToC_zPOWER_UP_KIT,npc,White River [2eb200] Taza [-] Trader,[2eb200] タザ [-]トレーダー
+WhiteRiverToCEliteRandomCrate,WhiteRiverToC_zPOWER_UP_KIT,blocks,Random White River Citizen related items. \nCitizen Points: [DECEA3]1[-],[5f40c4]エリート市民[-]ランダムクレート
+WhiteRiverToCEliteRandomCrate_Box,WhiteRiverToC_zPOWER_UP_KIT,blocks,Random White River Citizen related items. \nCitizen Points: [DECEA3]1[-],[5f40c4]エリート市民[-]ランダムクレート
+WhiteRiverToCGeneralRandomCrate,WhiteRiverToC_zPOWER_UP_KIT,blocks,White River [2eb200] Citizen [-] Random Crate,[2eb200]一般市民[-]ランダムクレート
+WhiteRiverToCGeneralRandomCrate_Box,WhiteRiverToC_zPOWER_UP_KIT,blocks,White River [2eb200] Citizen [-] Random Crate,[2eb200]一般市民[-]ランダムクレート
+WhiteRiverToCVeteranRandomCrate,WhiteRiverToC_zPOWER_UP_KIT,blocks,White River [7fa6ff] Veteran Citizen [-] Random Crate,[7fa6ff]ベテラン市民[-]ランダムクレート
+WhiteRiverToCVeteranRandomCrate_Box,WhiteRiverToC_zPOWER_UP_KIT,blocks,White River [7fa6ff] Veteran Citizen [-] Random Crate,[7fa6ff]ベテラン市民[-]ランダムクレート
+whiteRiverXUI,WhiteRiverToC_zPOWER_UP_KIT,XUI,Insert Coin,コイン投入
+whiteRiverXUI2,WhiteRiverToC_zPOWER_UP_KIT,XUI,Item Delivery,商品受取
+workstation_WRC_Station,WhiteRiverToC_zPOWER_UP_KIT,uidisplay,White River Citizen's Station,ホワイト・リバー市民ステーション
+WRC_CoinGroup,WhiteRiverToC_zPOWER_UP_KIT,items,"These coins are used to fund your activities as a White River Citizen. You can use them to improve related craft skills or store them as points in the [DECEA3]WRC Station[-]. \n\nHow to earn: [DECEA3]WRC Challenge Quests, mining, etc.[-].",ホワイト・リバー市民として活動するに原資となるコインです。そのまま使用して、関連クラフトスキルを上げたり、[DECEA3]WRCステーション[-]にポイントとして貯めておくこともできます。\n\n獲得方法: [DECEA3]WRCチャレンジクエスト、採掘等[-]
+WRC_Station,WhiteRiverToC_zPOWER_UP_KIT,blocks,White River Citizen's Station,ホワイト・リバー市民ステーション
+WRC_StationDesc,WhiteRiverToC_zPOWER_UP_KIT,blocks,White River Citizen's Station,ホワイト・リバー市民ステーション
+zombieBansheeQueen,WhiteRiverToC_zPOWER_UP_KIT,entityclasses,Zombie boss [2eb200] Taza [-].,ゾンビボス[2eb200] タザ [-]
+zombieMaleHazmatChallenge,WhiteRiverToC_zPOWER_UP_KIT,,Radiated Hazmat,被爆した危険物処理班 (チャレンジ)
+zombieToCWendigo,WhiteRiverToC_Amelias_Gyrocopter,entityclasses,White-haired Wendigo,[7fa6ff]白髪のウェンディゴ[-]
+armorIronSet,WhiteRiverToC_zPOWER_UP_KIT,items,Iron Armor Set,鉄製アーマーセット
+armorLeatherSet,WhiteRiverToC_zPOWER_UP_KIT,items,Leather Armor Set,レザーアーマーセット
+armorMilitarySet,WhiteRiverToC_zPOWER_UP_KIT,items,Military Armor Set,軍用アーマーセット
+armorSteelSet,WhiteRiverToC_zPOWER_UP_KIT,items,Steel Armor Set,鋼鉄製アーマーセット
+blockPoweredDoors,WhiteRiverToC_zPOWER_UP_KIT,blocks,Powered Doors,パワードドア
+bookTazasStoneAxeMaster1,WhiteRiverToC_zPOWER_UP_KIT,progression,Tasa stone axe craft kit (T1),タサの石斧クラフトキット (T1)
+bookTazasStoneAxeMaster2,WhiteRiverToC_zPOWER_UP_KIT,progression,Tasa stone axe craft kit (T2),タサの石斧クラフトキット (T2)
+bookTazasStoneAxeMaster3,WhiteRiverToC_zPOWER_UP_KIT,progression,Tasa stone axe craft kit (T3),タサの石斧クラフトキット (T3)
+bookTazasStoneAxeMaster4,WhiteRiverToC_zPOWER_UP_KIT,progression,Tasa stone axe craft kit (T4),タサの石斧クラフトキット (T4)
+bookTazasStoneAxeMaster5,WhiteRiverToC_zPOWER_UP_KIT,progression,Tasa stone axe craft kit (T5),タサの石斧クラフトキット (T5)
+bookTazasStoneAxeMaster6,WhiteRiverToC_zPOWER_UP_KIT,progression,Tasa stone axe craft kit (T6),タサの石斧クラフトキット (T6)
+h7sb_backpackRemove,WhiteRiverToC_zPOWER_UP_KIT,,This item has been removed by the H7SB Backpacks Mod. It is still there to avoid errors but has no effect!,この項目はH7SB Backpacks Modによって削除されました。エラーを避けるために残っていますが、効果はありません！
+item_toc_amelia_schem_desc,WhiteRiverToC_Amelias_Gyrocopter,items,A hand-drawn schematic describing the creation of a gyrocopter using a super-charged engine and a refined lead acid battery.,スーパーチャージド・エンジンと改良型鉛蓄電池を使ったジャイロコプターの製作を説明する手書きの概略図。
+item_toc_amelia_schem_name,WhiteRiverToC_Amelias_Gyrocopter,items,Amelia Earhart's Gyrocopter Schematic,アメリア・イアハートのジャイロコプター回路図
+lblWRC_Resources,WhiteRiverToC_zPOWER_UP_KIT,ui_display,TBA,TBA
+meleeToolIronSet,WhiteRiverToC_zPOWER_UP_KIT,,Iron Tools Set,鉄製ツールセット
+meleeToolSteelSet,WhiteRiverToC_zPOWER_UP_KIT,,Steel Tools Set,鋼鉄製ツールセット
+microwaveTipJT,WhiteRiverToC_zPOWER_UP_KIT,,The microwave can be placed and used to heat canned food recipes. Canned food recipes offer slightly more benefits to them than if you eat them in singles so save those cans when you can. Bowls can be found in loot and are used with the canned foods.,電子レンジを使えば、缶詰を温めることができる。缶詰のレシピは、単品で食べるよりも少しメリットがあるので、缶詰はできる限り取っておこう。ボウルは戦利品にあり、缶詰と一緒に使う。
+microwaveTipJT_title,WhiteRiverToC_zPOWER_UP_KIT,,Microwave,電子レンジ
+modClothingCargoStoragePocket,WhiteRiverToC_zPOWER_UP_KIT,,Large Pocket,大型ポケット
+modClothingCargoStoragePocketDesc,WhiteRiverToC_zPOWER_UP_KIT,,This pocket mod unlocks 5 additional inventory slots.,このポケットMODは5つの追加インベントリスロットをアンロックする。
+modClothingStoragePocket,WhiteRiverToC_zPOWER_UP_KIT,,Small Pocket,スモールポケット
+modClothingStoragePocketDesc,WhiteRiverToC_zPOWER_UP_KIT,,This pocket mod unlocks 2.5 additional inventory slots.,このポケット改造により、インベントリスロットが2.5個追加される。
+modDyeOrange,WhiteRiverToC_zPOWER_UP_KIT,,Dye: Orange,染料：オレンジ
+noteDuke01,WhiteRiverToC_zPOWER_UP_KIT,,Note from The Duke of Navezgane,[2eb200]重要[-] - デュークナベズゲインからのメモ
+noteDuke01Desc,WhiteRiverToC_zPOWER_UP_KIT,,"Just a friendly reminder that you pay on time, every time or there will be consequences. Next time we won't be so nice. Thanks for the gear, but you still owe us. See you soon. -The Duke",[2eb200]※本アイテムは重要クラフトアイテムです[-]親切心から忠告しておくが、支払いは毎回期限内に行うんだ。そうでないとどうなっても知らんぞ。次はこんなに優しくはしないからな。装備をありがとよ。でもまだお前は俺たちに貸しがあるんだぜ。また会おう。 -デューク
+perkASTazasPrimitiveBowDesc,WhiteRiverToC_zPOWER_UP_KIT,progression,TBA,TBA
+perkASTazasStoneAxeDesc,WhiteRiverToC_zPOWER_UP_KIT,progression,TBA,TBA
+perkASTazasStoneAxeDesc,WhiteRiverToC_zPOWER_UP_KIT,progression,TBA,TBA
+perkASTazasStoneSledgehammerDesc,WhiteRiverToC_zPOWER_UP_KIT,progression,TBA,TBA
+perkASTazasStoneSpearDesc,WhiteRiverToC_zPOWER_UP_KIT,progression,TBA,TBA
+quest_Defend_completion,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense,ティア1 防衛
+quest_Defend_description,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense,ティア1 防衛
+quest_Defend_response,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense,ティア1 防衛
+quest_Defend_statement,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense,ティア1 防衛
+quest_Defend_subtitle,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense,ティア1 防衛
+quest_DefendTier_offer,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense,ティア1 防衛
+quest_fetch_Defend_boss_completion,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense Boss,ティア1 防衛+ボス
+quest_fetch_Defend_boss_description,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense Boss,ティア1 防衛+ボス
+quest_fetch_Defend_boss_response,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense Boss,ティア1 防衛+ボス
+quest_fetch_Defend_boss_statement,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense Boss,ティア1 防衛+ボス
+quest_fetch_Defend_boss_subtitle,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense Boss,ティア1 防衛+ボス
+quest_spirit_vengeance_group,WhiteRiverToC_Spirit_of_Vengence,Quest,Spirit of Vengeance hell beast,復讐魂ヘルビースト
+quest_spirit_vengeance_subtitle,WhiteRiverToC_Spirit_of_Vengence,Quest,Kill an evil demon,ジャガーノートを倒す
+quest_spiritstart_description,WhiteRiverToC_Spirit_of_Vengence,Quest,Help Johnny Blaze defeat an evil demon and obtain the spirit of vengeance's hell beast.,ジョニー・ブレイズを助けてジャガーノートを倒し、復讐の魂のヘルビーストを手に入れよう。
+quest_spiritstart_group,WhiteRiverToC_Spirit_of_Vengence,Quest,Spirit of Vengeance Hell Beast,復讐魂ヘルビースト
+quest_spiritstart_name,WhiteRiverToC_Spirit_of_Vengence,Quest,Elite Quest to obtain the Spirit of Vengeance Hell Beast,エリートクエストで「復讐魂ヘルビースト」を手に入れよう
+quest_spiritstart_statement,WhiteRiverToC_Spirit_of_Vengence,Quest,Kill the evil demon,ジャガーノートを倒す
+quest_spiritstart_subtitle,WhiteRiverToC_Spirit_of_Vengence,Quest,Kill an evil demon,ジャガーノートを倒す
+quest_tier1_fetch_Defend_boss,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense Boss,ティア1 防衛+ボス
+quest_tier2_fetch_Defend_boss_offer,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense Boss,ティア1 防衛+ボス
+quest_toc_1000z_description,WhiteRiverToC__REQUIRED,quest,Prove your elite status with the White River settlement by exterminating 1000 zombies.,1000体のゾンビを退治して、ホワイトリバー集落のエリートであることを証明しよう。
+quest_toc_1000z_group,WhiteRiverToC__REQUIRED,quest,"White River - Tools of Citizenship, become an elite citizen",ホワイトリバー - シチズンシップのツール、エリート市民になろう
+quest_toc_1000z_name,WhiteRiverToC__REQUIRED,quest,Prove your worth as an elite citizen,エリート市民としての価値を証明する
+quest_toc_1000z_offer,WhiteRiverToC__REQUIRED,quest,"White River settlements has few elite citizens cards left. They are being given only to those with outstanding qualifications. Continue your efforts to help to make the settlement safer through exterminating 1000 zombies, and you can earn one of these legendary elite cards. The elite citizen card provides you opportunity to pursue only the best quality tools and equipment with the settlement.",ホワイトリバーの入植地には、エリート市民カードがほとんど残っていない。このカードは優れた資格を持つ者にのみ与えられる。1000体のゾンビを駆除して集落の安全性を高める努力を続ければ、伝説のエリートカードを手に入れることができる。エリート市民カードは、集落で最高品質のツールや装備だけを追求する機会を提供します。
+quest_toc_1000z_statement,WhiteRiverToC__REQUIRED,quest,Stand above the rest as an elite citizen by laying to rest 1000 zombies.,1000体のゾンビを眠らせることで、エリート市民の仲間入りを果たそう。
+quest_toc_1000z_subtitle,WhiteRiverToC__REQUIRED,quest,Kill 1000 zombies to become an elite citizen,1000体のゾンビを倒してエリート市民になる
+quest_toc_1000zreward_subtitle,WhiteRiverToC__REQUIRED,quest,Obtain your elite citizenship card,エリート市民権カードの取得
+quest_toc_100z_description,WhiteRiverToC__REQUIRED,quest,Prove your worth to the White River settlement by helping to clear the land of 100 zombies.,100体のゾンビを一掃して、ホワイトリバー集落での自分の価値を証明しよう。
+quest_toc_100z_group,WhiteRiverToC__REQUIRED,quest,"White River - Tools of Citizenship, become a veteran citizen",ホワイトリバー - 市民権のツール、ベテラン市民になろう
+quest_toc_100z_name,WhiteRiverToC__REQUIRED,quest,Prove your worth as a veteran citizen,ベテラン市民としての価値を証明する
+quest_toc_100z_offer,WhiteRiverToC__REQUIRED,quest,"White River settlements has some veteran citizens cards left, to those with an extra qualification. Help to make the settlement safer through ridding the area of 100 zombies, and you can earn one of these highly sought-after veterans cards. This opens the door to allow you to pursue higher quality tools and equipment with the settlement.",ホワイトリバーの入植地には、余分な資格を持っている人に、いくつかのベテラン市民カードが残っています。100体のゾンビを駆除して集落の安全性を高めれば、人気の高いベテラン市民カードを手に入れることができる。このカードを手に入れることで、より質の高い道具や設備を手に入れることができます。
+quest_toc_100z_statement,WhiteRiverToC__REQUIRED,quest,Prove that you are of great worth to the community by killing 100 zombies.,ゾンビを100体倒すことで、自分がコミュニティにとって大きな価値があることを証明しよう。
+quest_toc_100z_subtitle,WhiteRiverToC__REQUIRED,quest,Kill 100 zombies and prove your worth as a veteran citizen,100体のゾンビを倒し、ベテラン市民としての価値を証明せよ
+quest_toc_10z_completion,WhiteRiverToC__REQUIRED,quest,"Holy smokes, you survived and have proved your worth and entry into the White River community. Here is your White River citizen card and choice of some spare items we have laying around.",なんてこった、君は生き延び、自分の価値を証明し、ホワイトリバーのコミュニティーに入ったんだ。これがあなたのホワイト・リバー市民カードです。
+quest_toc_10z_description,WhiteRiverToC__REQUIRED,quest,Help lay to rest 10 old settlers and prove your worth,10人の入植者を安らかに眠らせ、自分の価値を証明しよう
+quest_toc_10z_name,WhiteRiverToC__REQUIRED,quest,Put 10 fallen citizens to rest,倒れた10人の市民を安らかに眠らせる
+quest_toc_10z_offer,WhiteRiverToC__REQUIRED,quest,"If it were your reanimated corpse, wouldn't you want a mercy kill? Become a White River citizen by helping lay to rest 10 of our old residents. This will grant you a +White River citizen card which can be used as an ingredient to craft quest-starting items. Choose carefully, as your citizen card is held from you while you work to complete your quest, and it is returned to you on successful completion.",もし自分の死体だったら、慈悲を与えてほしいと思わないだろうか？ホワイトリバーに住む10人の老人を安らかに眠らせることで、ホワイトリバー市民になることができます。これにより、クエスト開始アイテムの材料となるホワイトリバー市民カードが手に入る。市民カードは、クエストを完了させる間、あなたからは離され、完了するとあなたに返却されるので、慎重に選んでください。
+quest_toc_10z_statement,WhiteRiverToC__REQUIRED,quest,Prove your worth by putting to rest 10 fallen citizens.,倒れた10人の市民を安らかに眠らせることで、自分の価値を証明するのだ。
+quest_toc_10z_subtitle,WhiteRiverToC__REQUIRED,quest,Put 10 fallen citizens to rest,倒れた10人の市民を安らかに眠らせる
+quest_toc_amelia_group,WhiteRiverToC_Amelias_Gyrocopter,Quest,"White River - Tools of Citizenship, quest for Amelia Earhart's gyrocopter",ホワイト・リバー - 市民の道具、アメリア・イアハートのジャイロコプターの探求
+quest_toc_amelia1_statement,WhiteRiverToC_Amelias_Gyrocopter,Quest,Purchase the map to discover the truth of Amelia Earhart's coffin location.,地図を購入して、アメリア・イアハートの棺のありかの真実を探る。
+quest_toc_amelia1_subtitle,WhiteRiverToC_Amelias_Gyrocopter,Quest,"Collect 5,000 Dukes","5,000 デュークスを収集"
+quest_toc_amelia2_description,WhiteRiverToC_Amelias_Gyrocopter,Quest,Dig up the location on the map to locate Amelia Earhart's coffin.,地図上の場所を掘り起こし、アメリア・イアハートの棺を見つける。
+quest_toc_amelia2_name,WhiteRiverToC_Amelias_Gyrocopter,Quest,Quest to discover Amelia Earhart's past,アメリア・イアハートの過去を探るクエスト
+quest_toc_amelia2_offer,WhiteRiverToC_Amelias_Gyrocopter,Quest,"As you examine it, you see that next to the X on the map is the written word 'Amelia'. In the bottom corner, there is scrawled a small note:'In case I don't make it, please find her and finish her dream.- Fred N.'",それを見ると、地図上のXの横に「Amelia」と書かれている。下の隅には、小さなメモが書き込まれている。『万が一私が間に合わなかった場合、彼女を見つけて夢を終わらせてください。
+quest_toc_amelia3_description,WhiteRiverToC_Amelias_Gyrocopter,Quest,"You suddenly remember Fred's note that suggested you should build a defensible position to protect yourself from the monster.(Activate rally point, then build.)",あなたはふと、怪物から身を守るために防御可能な陣地を築くべきだというフレッドのメモを思い出す。
+quest_toc_amelia3_description_title,WhiteRiverToC_Amelias_Gyrocopter,Quest,You get a weird feeling..,変な感じがする。
+quest_toc_amelia3_name,WhiteRiverToC_Amelias_Gyrocopter,Quest,Build a defensible structure.,防御可能な構造を作る。
+quest_toc_amelia3_offer,WhiteRiverToC_Amelias_Gyrocopter,Quest,"You find a desiccated corpse in the coffin, wearing what appears to be a flight jacket with the name Earhart written on it. In the pocket of the flight jacket is a journal. There are some pages missing, seemingly ripped out. The last remaining page reads:I know I won’t make it back. That thing, the howler, has done for me. I feel myself changing every night, as the sun sets a bit sooner and the dark gets a bit colder. My mind is going. I look at Fred, and I imagine what his meat and blood taste like. I’ll eat a bullet sooner than eat my copilot. I’ll do it before I lose the last of my wits. Whoever finds this, please take my schematics to someone who can make use of them. If Fred doesn’t make it, all hope is lost.He’ll never know how much I love him.’Tucked in the pages of the journal is another map with a tear-stained, sloppily-jotted note on the back:Wendigo took my bag when it tried to take me. The schematics were in it. I know where it lives. I have to try to get them back. Amelia is dead, I have nothing left to live for, save those precious papers. In case I don’t survive, I made this map to its lair. You’ll need walls to hold it at bay. You can’t hope to kill it face-to-face. I know we were both married to other people, but she and I were closer than any married couple I know. We skimmed the clouds together. She was my heaven. I’ll always be her copilot.Follow the map to the Wendigo's lair.",棺の中で、イアハートという名前が書かれたフライトジャケットのようなものを着た、乾燥した死体を発見します。フライトジャケットのポケットには日記が入っています。一部ページが欠けており、切り取られたと思われます。最後に残ったページにはこう書かれています。もう戻れないことはわかっています。あの遠吠えが私にしてくれたのです。日が沈むのが少し早くなり、暗闇が少し寒くなるにつれて、私は毎晩自分が変化しているのを感じます。私の心は進んでいます。私はフレッドを見て、彼の肉と血がどんな味かを想像します。副操縦士を食べるより早く銃弾を食べるだろう。最後の知恵を失う前にやります。これを見つけた人は、私の回路図を活用できる人のところへ持って行ってください。 「フレッドがうまくいかなかったら、すべての希望は失われる。私がどれだけ彼を愛しているか、彼は決して知ることはないだろう。」日記のページに挟まれているのは、裏面に涙で汚れた、だらしなく書き綴られたメモが書かれた別の地図である：ウェンディゴ私のバッグが私を連れて行こうとしたとき、私のバッグを取り上げました。中には回路図が入っていました。それがどこに住んでいるのか知っています。それらを取り戻すために努力しなければなりません。アメリアは死んでしまいました。私には、貴重な書類を除いて、生きるものは何も残っていないのです。生き残れなかった場合に備えて、この地図をそのねぐらに向けて作成しました。それを防ぐためには壁が必要です。面と向かって倒すことは望めない。私たちがお互いに他の人と結婚していたことは知っていますが、彼女と私は私が知っているどの夫婦よりも親密でした。私たちは一緒に雲をすくいました。彼女は私の天国でした。私はいつも彼女の副操縦士です。地図に従ってウェンディゴの隠れ家まで行きます。
+quest_toc_amelia3_statement,WhiteRiverToC_Amelias_Gyrocopter,Quest,Locate and Kill the monster. Recover Amelia's Lost Blueprints.,モンスターを見つけ、倒す。アメリアの失われた設計図を取り戻す。
+quest_toc_amelia3_subtitle,WhiteRiverToC_Amelias_Gyrocopter,Quest,Find the monster that stole Amelia's plans,アメリアの設計図を盗んだモンスターを探せ
+quest_toc_amelia4_description,WhiteRiverToC_Amelias_Gyrocopter,Quest,You find a pouch on the Wendigo that contains the blueprints to Amelia Earhart's gyrocopter.,アメリア・イアハートのジャイロコプターの設計図が入っているポーチをウェンディゴで見つける。
+quest_toc_amelia4_name,WhiteRiverToC_Amelias_Gyrocopter,Quest,Amelia Earhart's Gyrocopter Schematics,アメリア・イアハートのジャイロコプターの回路図
+quest_toc_amelia4_offer,WhiteRiverToC_Amelias_Gyrocopter,Quest,"Now that you've bested the Wendigo, you find a pouch attached to its body filled with schematics. You remember the last page from Amelia's journal. She wished that her name live on through the creation of her ingenious flying machine.Read the schematics to learn how to craft Amelia's gyrocopter.",ウェンディゴを倒したあなたは、その体に回路図が入ったポーチがついているのを見つけた。アメリアの日記の最後のページを思い出すだろう。設計図を読んで、アメリアのジャイロコプターの作り方を学ぼう。
+quest_toc_amelia4_statement,WhiteRiverToC_Amelias_Gyrocopter,Quest,Read the schematics to learn how to craft Amelia's gyrocopter.,回路図を読んで、アメリアのジャイロコプターの作り方を学ぼう。
+quest_toc_amelia4_subtitle,WhiteRiverToC_Amelias_Gyrocopter,Quest,You learn the secret,あなたは秘密を知る
+quest_toc_randomelite_description,WhiteRiverToC__REQUIRED,quest,Obtain a random elite quest from 4 veteran cards. You'll obtain 1 veteran card back when you accept your elite quest.,ベテランカード4枚からランダムでエリートクエストを受ける。エリートクエストを受けると、ベテランカード1枚が戻ってくる。
+quest_toc_randomelite_group,WhiteRiverToC__REQUIRED,quest,"White River - Tools of Citizenship, Random elite quest",ホワイトリバー - 市民の道具、ランダムエリートクエスト
+quest_toc_randomelite_name,WhiteRiverToC__REQUIRED,quest,Random elite quest from 4 veteran citizen cards,ベテラン市民カード4枚からのランダムエリートクエスト
+quest_toc_randomelite_offer,WhiteRiverToC__REQUIRED,quest,"You've proven your worth as a veteran citizen four times over. Now gamble on your fame by taking on a random elite quest. If you succeed, you'll receive an elite citizen card as a reward.",あなたはベテラン市民としての価値を4度にわたって証明してきた。さあ、ランダムなエリートクエストに挑戦して名声を賭けよう。成功すれば、報酬としてエリート市民カードがもらえます。
+quest_toc_randomelite_statement,WhiteRiverToC__REQUIRED,quest,Complete a random elite quest and become an elite citizen.,ランダムなエリートクエストを完了し、エリート市民になる。
+quest_toc_randomelite_subtitle,WhiteRiverToC__REQUIRED,quest,"Now that you've killed 400 zombies, obtain an Random elite quest from a crate at the Trader",400体のゾンビを倒し、トレーダーの木箱からランダムエリートクエストを受ける。
+quest_toc_taza_description,WhiteRiverToC_Tazas_Axe,quest,Gather 400 small stone + craft 20 stone axes to receive one of the fabled Taza's axes.,小さな石を400個集めて石の斧を20個作り、伝説のタザの斧の1つを手に入れる。
+quest_toc_taza_group,WhiteRiverToC_Tazas_Axe,quest,"White River - Tools of Citizenship, Quest for Taza's Axe",ホワイト・リバー - 市民権の道具、ターザの斧の探求
+quest_toc_taza_statement,WhiteRiverToC_Tazas_Axe,quest,Help your community and receive a fabled Taza's axe,地域に貢献し、伝説のターザの斧をもらおう
+quest_toc_taza_subtitle,WhiteRiverToC_Tazas_Axe,quest,Gather supplies and craft some axes to receive the fabled Taza's axe,物資を集めて斧を作り、伝説のタザの斧を手に入れる。
+questblock_toc_randomcrate_name,WhiteRiverToC__REQUIRED,quest,+Sealed Random Elite Quest Crate,封印されたランダム・エリート・クエスト・クレート
+questdialog_toc_1000z,WhiteRiverToC__REQUIRED,quest,"1,000 zombies? No problem..","1,000体のゾンビ？問題ありません。"
+questdialog_toc_100z,WhiteRiverToC__REQUIRED,quest,Can I manage to kill 100 zombies?,ゾンビを100体倒せるかな？
+questdialog_toc_10z,WhiteRiverToC__REQUIRED,quest,Become WhiteRiver Citizen by Killing 10 Zombies,ゾンビを10体倒してホワイトリバー市民になる
+questdialog_toc_amelia1,WhiteRiverToC_Amelias_Gyrocopter,Quest,"Collect 5,000 Dukes, then return to the trader to purchase the map to Amelia Earhart's location.","デュークを5,000枚集めてトレーダーに戻り、アメリア・イアハートの居場所の地図を購入する。"
+questdialog_toc_amelia2,WhiteRiverToC_Amelias_Gyrocopter,Quest,"Follow the map, dig up Amelia's coffin, discover the truth",地図をたどり、アメリアの棺を掘り起こし、真実を突き止める。
+questdialog_toc_amelia3,WhiteRiverToC_Amelias_Gyrocopter,Quest,Obtain Amelia's lost blueprints by killing the white haired monster.,白髪のモンスターを倒して、アメリアの失われた設計図を入手せよ。
+questdialog_toc_amelia4,WhiteRiverToC_Amelias_Gyrocopter,Quest,"Open the pouch, read the schematics, and learn to craft Amelia Earhart's gyrocopter.",袋を開け、回路図を読み、アメリア・イアハートのジャイロコプターを作ることを学ぶ。
+questdialog_toc_randomelite,WhiteRiverToC__REQUIRED,quest,Gamble on your community citizenry to complete an elite quest.,エリートクエストをクリアするために、地域住民のギャンブルに参加しよう。
+questdialog_toc_taza,WhiteRiverToC_Tazas_Axe,quest,Obtain a Taza's axe by gathering 400 small stone & crafting 20 stone axes,小石を400個集めてターザの斧を入手する。
+questitem_coin_tazaDesc,WhiteRiverToC_Tazas_Axe,item,"A symbolic coin to indicate that you have turned in your White River Tools of Citizenship, citizen card to start the Taza's axe quest.",タザ関連アイテムのクラフトスキルを上げるために使用できます。[DECEA3]WRCステーション[-]に寄付市民ポイント獲得にも使用できます。
+questitem_spirit_vengeance_description,WhiteRiverToC_Spirit_of_Vengence,items,"Help Johnny Blaze kill an extremely tough demon to obtain a hell beast vehicle.You get the distinct feeling you should bring lots of first aid kits, ammo, and maybe a friend.",ジョニー・ブレイズを助けて手ごわい悪魔を退治し、ヘルビーストの乗り物を手に入れよう。
+questitem_spirit_vengeance_name,WhiteRiverToC_Spirit_of_Vengence,items,+Spirit of Vengeance Hell Beast Elite Quest,復讐魂ヘルビーストエリートクエスト
+questitem_toc_amelia_journal_desc,WhiteRiverToC_Amelias_Gyrocopter,items,"This is the long-lost journal of Amelia Earhart. Contained within these pages are stories of her final days, and rough sketches of some type of flying contraption.",これは、長い間行方不明になっていたアメリア・イアハートの日記である。このページには、彼女の最期の日々の話や、ある種の飛行装置のラフスケッチが記されている。
+questitem_toc_amelia_journal_name,WhiteRiverToC_Amelias_Gyrocopter,items,Amelia Earhart's journal,アメリア・イアハートの日記
+questitem_toc_amelia1map_desc,WhiteRiverToC_Amelias_Gyrocopter,items,"This map is purported to reveal the secret location where Amelia Earhart's body is buried. It shows the local region with which you are familiar, with a long squiggly line leading into uncharted territory.",この地図は、アメリア・イアハートの遺体が埋葬されている秘密の場所を明らかにするとされている。あなたがよく知っている地元の地域が描かれ、未知の領域へと続く長い四角い線が描かれている。
+questitem_toc_amelia1map_name,WhiteRiverToC_Amelias_Gyrocopter,items,+Map to Amelia Earhart's Coffin,アメリア・イアハートの棺への地図
+questitem_toc_amelia4_desc,WhiteRiverToC_Amelias_Gyrocopter,items,"This set of schematics teaches you how to craft Amelia Earhart's namesake, the improved gyrocopter.",この回路図セットは、アメリア・イアハートの名前の由来となった改良型ジャイロコプターの製作方法を教えてくれます。
+questitem_toc_amelia4_name,WhiteRiverToC_Amelias_Gyrocopter,items,+Amelia Earhart's Gyrocopter Schematics,アメリア・イアハートのジャイロコプターの回路図
+questitem_toc_declaration_description,WhiteRiverToC__REQUIRED,item,White River Tools of Citizenship.Declaration of citizenship.Used to begin the quest to obtain your own citizen's card from killing 10 zombies.,ホワイトリバー 市民権の道具.Declaration of citizenship.Used to begin the quest to obtain your own citizen's card from killing 10 zombies.
+questitem_toc_declaration_name,WhiteRiverToC__REQUIRED,item,+Declaration of Citizenship,市民権宣言
+questitem_toc_elitequest_description,WhiteRiverToC__REQUIRED,item,"A veteran quest to prove your extreme worth to the community by killing 1000 zombies. In exchange, you'll receive a White River settlement elite citizen card which unlocks more quests to pursue.",1000体のゾンビを倒し、コミュニティに対する自分の価値を証明するベテランクエスト。その代わり、ホワイトリバー集落のエリート市民カードがもらえ、さらに多くのクエストがアンロックされる。
+questitem_toc_elitequest_name,WhiteRiverToC__REQUIRED,item,+White River Elite 1000 Zombie Challenge,ホワイトリバー・エリート1000ゾンビ・チャレンジ
+questitem_toc_randomelite_desc,WhiteRiverToC__REQUIRED,quest,"A quest starter that gives you a sealed crate with a random elite quest in it, in exchange for four veteran citizen cards. However, when you start your elite quest, you will receive one veteran card back.",ベテラン市民カード4枚と引き換えに、ランダムなエリートクエストが入った封印された木箱をくれるクエストスターター。ただし、エリートクエストを開始すると、ベテラン市民カードが1枚戻ってくる。
+questitem_toc_randomelite_name,WhiteRiverToC__REQUIRED,quest,+White River Random Elite Crate,ホワイト・リバー・ランダム・エリート・クレート
+questitem_toc_taza_description,WhiteRiverToC_Tazas_Axe,item,A quest to obtain prove your worth to the community by collecting 400 small stone and providing 20 stone axes. Receive a Taza's axe from the community as a thank you for your efforts.,小石を400個集め、石の斧を20個提供することで、自分の価値をコミュニティに証明するクエスト。コミュニティからお礼としてターザの斧を受け取る。
+questitem_toc_taza_name,WhiteRiverToC_Tazas_Axe,item,+Taza's Axe Quest,ターザの斧クエスト
+questitem_toc_veteranquest_description,WhiteRiverToC__REQUIRED,item,"A quest to prove your worth to the community by killing 100 zombies. In exchange, you'll receive a White River settlement veterans citizen card, which unlocks more quests for you to pursue.",ゾンビを100体倒し、自分の価値をコミュニティに証明するクエスト。それと引き換えに、ホワイトリバー集落の退役軍人の市民カードを受け取ることができ、さらに多くのクエストがアンロックされる。
+questitem_toc_veteranquest_name,WhiteRiverToC__REQUIRED,item,+White River Veteran 100 Zombie Challenge,ホワイト・リバー・ベテラン100ゾンビ・チャレンジ
+questitem_vetcoin_ameliaDesc,WhiteRiverToC_Amelias_Gyrocopter,items,It can be used to increase crafting skills for Amelia related items. You can also be used to earn citizen points to donate to [DECEA3]WRC Station[-].,アメリア関連アイテムのクラフトスキルを上げるために使用できます。[DECEA3]WRCステーション[-]に寄付市民ポイント獲得にも使用できます。
+questitem_vetcoin_tazaDesc,WhiteRiverToC_Tazas_Axe,item,A symbolic coin to indicate that you have turned in your White River Tools of Citizenship veteran's Citizen card to start the Taza's axe quest.,タザ関連アイテムのクラフトスキルを上げるために使用できます。[DECEA3]WRCステーション[-]に寄付市民ポイント獲得にも使用できます。
+questitem_vetcoin_VengeanceDesc,WhiteRiverToC_Spirit_of_Vengence,items,Can be used to increase crafting skills for revenge soul related items. Can also be used to earn citizen points donated to [DECEA3]WRC Station[-].,復讐魂関連アイテムのクラフトスキルを上げるために使用できます。[DECEA3]WRCステーション[-]に寄付市民ポイント獲得にも使用できます。
+questreward_spirit_vengeance_description,WhiteRiverToC_Spirit_of_Vengence,Quest,Return to the trader to obtain the Spirit of Vengeance's Hell Beast.,商人に戻り、復讐の魂のヘルビーストを手に入れる。
+questreward_spirit_vengeance_group,WhiteRiverToC_Spirit_of_Vengence,Quest,Spirit of Vengeance Hell Beast,復讐魂ヘルビースト
+questreward_spirit_vengeance_name,WhiteRiverToC_Spirit_of_Vengence,Quest,Elite Reward of a Hell Beast,ヘルビーストのエリート報酬
+questreward_spirit_vengeance_offer,WhiteRiverToC_Spirit_of_Vengence,Quest,It's said that the West was built on legends. And that legends are a way of understanding things greater than ourselves. Forces that shape our lives and events that defy explanation. Individuals whose lives soar to the heavens or fall to the earth. This is how legends are born. Return to the trader to collect your hell beast.,西洋は伝説の上に築かれたと言われている。伝説とは、自分たちよりも偉大なものを理解する方法なのだ。私たちの人生を形作る力や、説明のつかない出来事。天まで昇るような、あるいは地に落ちるような人生を送った個人。こうして伝説は生まれるのだ。トレーダーに戻り、ヘルビーストを受け取れ。
+questreward_spirit_vengeance_statement,WhiteRiverToC_Spirit_of_Vengence,Quest,Kill the evil demon,ジャガーノートを倒す
+questreward_toc_amelia1_description,WhiteRiverToC_Amelias_Gyrocopter,Quest,Return to the trader to obtain the map to lead you to the location Amelia Earhart is buried.,トレーダーに戻り、アメリア・イアハートが埋葬されている場所への案内地図を入手する。
+questreward_toc_amelia1_name,WhiteRiverToC_Amelias_Gyrocopter,Quest,Obtain The map titled 'Amelia Earhart',アメリア・イアハート」と題された地図の入手
+questreward_toc_amelia1_offer,WhiteRiverToC_Amelias_Gyrocopter,Quest,"Now that you've collected your 5,000 Dukes, return to the trader with your writ to obtain the map titled Amelia Earhart.","さて、5,000デュークを集めたら、ライターを持ってトレーダーに戻り、アメリア・イアハートというタイトルの地図を手に入れよう。"
+questreward_toc_amelia1_statement,WhiteRiverToC_Amelias_Gyrocopter,Quest,Purchase the map to discover the truth of Amelia Earhart's coffin location.,地図を購入して、アメリア・イアハートの棺のありかの真実を探る。
+questreward_toc_amelia1_subtitle,WhiteRiverToC_Amelias_Gyrocopter,Quest,Return to the trader,トレーダーに戻る
+questreward_toc_taza_description,WhiteRiverToC_Tazas_Axe,quest,Return to the trader to obtain of the fabled Taza's axes.,商人に戻り、伝説のタザの斧を手に入れる。
+questreward_toc_taza_name,WhiteRiverToC_Tazas_Axe,quest,Reward of fabled Taza's Axe,フェイバリット・タザの斧の報酬
+questreward_toc_taza_offer,WhiteRiverToC_Tazas_Axe,quest,"Now that you have collected and crafted the needed items, return the trader to collect your reward.",必要なアイテムを集めてクラフトしたら、トレーダーに戻り報酬を受け取る。
+questreward_toc_taza_statement,WhiteRiverToC_Tazas_Axe,quest,Help your community and receive a fabled Taza's axe,地域に貢献し、伝説のターザの斧をもらおう
+questreward_toc_taza_subtitle,WhiteRiverToC_Tazas_Axe,quest,Collect your reward of the fabled Taza's axe,伝説のターザの斧の報酬を受け取る
+questrewarddialog_toc_amelia1,WhiteRiverToC_Amelias_Gyrocopter,Quest,Return to the trader to obtain the map to Amelia Earhart's coffin location.,トレーダーに戻り、アメリア・イアハートの棺の場所への地図を入手する。
+questrewarddialog_toc_taza,WhiteRiverToC_Tazas_Axe,quest,Obtain a Taza's Axe by gathering 400 small stone & crafting 20 stone axes,小石を400個集めてTaza's Axeを入手する。
+questwrit_spirit_vengeance_description,WhiteRiverToC_Spirit_of_Vengence,items,Evidence that you've bested the evil demon and deserve to be rewarded with a hell beast vehicle.,ジャガーノートに打ち勝った証拠であり、ヘルビーストの乗り物で報いを受けるに値する。
+questwrit_spirit_vengeance_name,WhiteRiverToC_Spirit_of_Vengence,items,+Elite Writ of Spirit of Vengeance,復讐の精神のエリート著作
+questwrit_toc_taza_description,WhiteRiverToC_Tazas_Axe,item,Evidence of your contribution to your community and for completion of the Taza's axe quest.,地域社会に貢献した証拠であり、ターザの斧のクエストを完了した証拠でもある。
+questwrit_toc_taza_name,WhiteRiverToC_Tazas_Axe,item,+Writ Of Taza,ターザの遺言
+sinkKitJT,WhiteRiverToC_zPOWER_UP_KIT,,Sink Repair Kit,シンク修理キット
+sinkKitJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,This sink repair kit is used with a hammer to take a broken sink and make it a working one that you can use to fill jars.,このシンク修理キットは、ハンマーと一緒に使うことで、壊れたシンクを瓶に詰めるのに使えるようにする。
+skillASAgility,WhiteRiverToC_zPOWER_UP_KIT,,Action skills (under development),アクションスキル(開発中)
+skillASFortitude,WhiteRiverToC_zPOWER_UP_KIT,,Action skills (under development),アクションスキル(開発中)
+skillASIntellect,WhiteRiverToC_zPOWER_UP_KIT,,Action skills (under development),アクションスキル(開発中)
+skillASPerception,WhiteRiverToC_zPOWER_UP_KIT,,Action skills (under development),アクションスキル(開発中)
+skillASStrength,WhiteRiverToC_zPOWER_UP_KIT,,Action skills (under development),アクションスキル(開発中)
+skillunlocksAmmos,WhiteRiverToC_zPOWER_UP_KIT,,ammunition,弾薬
+skillunlocksApparels,WhiteRiverToC_zPOWER_UP_KIT,,apparel (clothing),アパレル
+skillunlocksArmors,WhiteRiverToC_zPOWER_UP_KIT,,armor,アーマー
+skillunlocksResources,WhiteRiverToC_zPOWER_UP_KIT,,raw materials,素材
+stoveKitJT,WhiteRiverToC_zPOWER_UP_KIT,,Stove Repair Kit,ストーブ修理キット
+stoveKitJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,This stove repair kit is used with a hammer to take a broken stove or grill and make it a working one that you can use.,このストーブ修理キットは、ハンマーと一緒に使うことで、壊れたストーブやグリルを使えるようにする。
+tier1_Defend,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense,ティア1 防衛
+tier1_fetch_Defend_boss,WhiteRiverToC_zPOWER_UP_KIT,quests,Tier 1 Defense Boss,ティア1 防衛+ボス
+vetquest_toc_taza_description,WhiteRiverToC_Tazas_Axe,quest,Collect 4000 small stone + 200 plant fibers + 20 stone axes to obtain a high-quality Taza's axe.,小石4000個、植物繊維200個、石斧20個を集めて、高品質のタザの斧を手に入れよう。
+vetquest_toc_taza_group,WhiteRiverToC_Tazas_Axe,quest,"White River - tools of citizenship, veteran quest for Taza's axe",ホワイト・リバー - 市民権の道具、ターザの斧を求めるベテランたち
+vetquest_toc_taza_name,WhiteRiverToC_Tazas_Axe,quest,Veteran Quest to obtain fabled Tazas Axe,伝説のタザスの斧を手に入れるベテラン・クエスト
+vetquest_toc_taza_offer,WhiteRiverToC_Tazas_Axe,quest,"Recently, whispers on the wind have been saying there is a stash of Taza axes crafted by Taza the Master craftswoman herself. The trader will provide one of these to any who demonstrates exceptional donations to their local community. Collect 4000 small stone + 200 plant fibers + 20 stone axes and craft a +veteran writ Of Taza to redeem for your axe. You also will receive a weapon and ammo as well as a small gift to help you take on any who would stand in your way.",最近、風のささやきで、名工ターザが自ら作ったターザの斧の隠し場所があるという。この商人は、地元コミュニティへの卓越した寄付を示した者に、これを1つ提供する。小石を4000個、植物繊維を200本、石の斧を20個集めて、タザのベテラン作家を作り、斧と交換してください。また、武器と弾薬のほか、邪魔者を倒すのに役立つ小さな贈り物ももらえる。
+vetquest_toc_taza_subtitle,WhiteRiverToC_Tazas_Axe,quest,Gather the supplies and craft some axes to receive a higher-tier Taza's axe,物資を集めて斧を作り、上級のTaza's axeを手に入れる。
+vetquestdialog_toc_taza,WhiteRiverToC_Tazas_Axe,quest,Obtain a Taza's Axe by gathering 4000 small stone,小石を4000個集めてTaza's Axeを入手する。
+vetquestitem_toc_taza_description,WhiteRiverToC_Tazas_Axe,item,"A veteran quest to obtain a better quality Taza's axe by collecting 4000 small stone, 200 plant fibers, and crafting 20 stone axes to donate to the community.",小石を4000個、植物の繊維を200本集めて石斧を20個作り、コミュニティに寄付することで、より質の高いターザの斧を入手できるベテランクエスト。
+vetquestitem_toc_taza_name,WhiteRiverToC_Tazas_Axe,item,+Taza's Axe Veteran Quest,ターザの斧 ベテラン・クエスト
+vetquestreward_toc_taza_name,WhiteRiverToC_Tazas_Axe,quest,Veteran Reward of fabled Taza's Axe,フェイバリット・タザの斧のベテラン報酬
+vetquestreward_toc_taza_offer,WhiteRiverToC_Tazas_Axe,quest,"Bless your charitable heart! Now that you have collected the needed items, return the trader to collect your reward.",あなたの慈愛に満ちた心に祝福を！必要なアイテムを集めたら、トレーダーを返して報酬を受け取ろう。
+vetquestreward_toc_taza_statement,WhiteRiverToC_Tazas_Axe,quest,Help your community more substantially and receive a higher-tier Taza's axe,コミュニティにより大きく貢献し、より上位のターザの斧を受け取る。
+vetquestrewarddialog_toc_taza,WhiteRiverToC_Tazas_Axe,quest,Obtain my higher-tier Taza's axe by returning to the trader,トレーダーに戻り、上級のターザの斧を入手。
+vetquestwrit_toc_taza_description,WhiteRiverToC_Tazas_Axe,item,Evidence of your substantial contribution to your community and for completion of the veteran Taza's axe quest.,コミュニティへの多大な貢献と、ベテランのターザの斧クエストの完了を証明するもの。
+vetquestwrit_toc_taza_name,WhiteRiverToC_Tazas_Axe,item,+Veteran Writ Of Taza,ターザのベテランライター
+waterCoolerKitJT,WhiteRiverToC_zPOWER_UP_KIT,,Water Cooler Repair Kit,ウォータークーラー修理キット
+waterCoolerKitJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,This sink repair kit is used with a hammer to take a broken sink and make it a working one that you can use to fill jars.,このシンク修理キットは、ハンマーと一緒に使うことで、壊れたシンクを瓶に詰めるのに使えるようにする。
+woodStoveKitJT,WhiteRiverToC_zPOWER_UP_KIT,,Wood Stove Repair Kit,薪ストーブ修理キット
+woodStoveKitJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,This stove repair kit is used with a hammer to take a broken stove or grill and make it a working one that you can use.,このストーブ修理キットは、ハンマーと一緒に使うことで、壊れたストーブやグリルを使えるようにする。
+workingCabinetOldSinkJT,WhiteRiverToC_zPOWER_UP_KIT,,Working Old Sink,動く古い流し台
+workingCabinetOldSinkJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,A working sink can be used to fill jars and buckets.,瓶やバケツに水を入れるには、作業用のシンクを使うことができる。
+workingCharcoalGrillClosedJT,WhiteRiverToC_zPOWER_UP_KIT,,,
+workingCharcoalGrillClosedJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,,
+workingGasGrillClosedJT,WhiteRiverToC_zPOWER_UP_KIT,,,
+workingGasGrillClosedJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,,
+workingGraniteSinkJT,WhiteRiverToC_zPOWER_UP_KIT,,Working Granite Sink,御影石シンク
+workingGraniteSinkJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,A working sink can be used to fill jars and buckets.,瓶やバケツに水を入れるには、作業用のシンクを使うことができる。
+workingMicrowaveJT,WhiteRiverToC_zPOWER_UP_KIT,,Microwave (Powered),電子レンジ（電源付き）
+workingMicrowaveJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,This microwave is powered already and can be used to heat up bowls of canned food to gain the maximum benefits from them.,この電子レンジはすでに電源が入っており、缶詰のボウルを温めて最大の効果を得ることができる。
+workingPedestalSinkJT,WhiteRiverToC_zPOWER_UP_KIT,,Working Pedestal Sink,作業用台座シンク
+workingPedestalSinkJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,A working sink can be used to fill jars and buckets.,瓶やバケツに水を入れるには、作業用のシンクを使うことができる。
+workingStoveModernJT,WhiteRiverToC_zPOWER_UP_KIT,,,
+workingStoveModernJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,,
+workingStoveOldJT,WhiteRiverToC_zPOWER_UP_KIT,,,
+workingStoveOldJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,,
+workingUtilitySinkJT,WhiteRiverToC_zPOWER_UP_KIT,,Working Utility Sink,実用シンク
+workingUtilitySinkJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,A working sink can be used to fill jars and buckets.,瓶やバケツに水を入れるには、作業用のシンクを使うことができる。
+workingWallOvenJT,WhiteRiverToC_zPOWER_UP_KIT,,,
+workingWallOvenJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,,
+workingWaterCoolerFullJT,WhiteRiverToC_zPOWER_UP_KIT,,Working Water Cooler,ウォータークーラー
+workingWaterCoolerFullJTDesc,WhiteRiverToC_zPOWER_UP_KIT,,A working cooler can be used to fill jars.,作業用のクーラーを瓶に詰めるのに使うこともできる。
+writitem_toc_amelia1_desc,WhiteRiverToC_Amelias_Gyrocopter,items,This writ is evidence that you have paid your dues to obtain the map titled 'Amelia Earhart'.,この書面は、あなたが「アメリア・イアハート」と題された地図を入手するために会費を支払ったことを証明するものです。
+writitem_toc_amelia1_name,WhiteRiverToC_Amelias_Gyrocopter,items,+Writ of Amelia's Map,アメリアの地図
+クラフトスキルに対して追加調整します。\n\n[DECEA3]仕様[-]:\n本の読了によるアンロック、レベルアップは据え置き。(現行のままです)別途追加する職業スキルにおいて、戦闘特殊技能に関連するアイテムのアンロックを加える。最高レベルの3に到達することで、さらにクラフトティアを+1とする。(品質6をクラフト可)石斧、パイプ系等のベースアイテムについては、どのスキルでもクラフト可能とする。,WhiteRiverToC_zPOWER_UP_KIT,,mod (i.e. a modem),MOD
+xuifwhiteRiverCitizen,WhiteRiverToC_zPOWER_UP_KIT,xui,[2eb200]General P[-].,[2eb200]一般市民P[-]
+xuifwhiteRiverElite,WhiteRiverToC_zPOWER_UP_KIT,xui,[5f40c4]Elite [-].,[5f40c4]エリートP[-]
+xuifwhiteRiverVeteran,WhiteRiverToC_zPOWER_UP_KIT,xui,[7fa6ff]Veteran P[-].,[7fa6ff]ベテランP[-]
+unit_whiteRiverCitizen,WhiteRiverToC_zPOWER_UP_KIT,items,[2eb200]General P[-].,[2eb200]一般市民P[-]
+unit_whiteRiverElite,WhiteRiverToC_zPOWER_UP_KIT,items,[5f40c4]Elite [-].,[5f40c4]エリートP[-]
+unit_whiteRiverVeteran,WhiteRiverToC_zPOWER_UP_KIT,items,[7fa6ff]Veteran P[-].,[7fa6ff]ベテランP[-]
+lblwhiteRiverCitizen,WhiteRiverToC_zPOWER_UP_KIT,materials,[2eb200]General P[-].,[2eb200]一般市民P[-]
+lblwhiteRiverElite,WhiteRiverToC_zPOWER_UP_KIT,materials,[5f40c4]Elite [-].,[5f40c4]エリートP[-]
+lblwhiteRiverVeteran,WhiteRiverToC_zPOWER_UP_KIT,materials,[7fa6ff]Veteran P[-].,[7fa6ff]ベテランP[-]

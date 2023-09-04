@@ -1,0 +1,15 @@
+<config>
+	<!-- Core -->
+	<remove xpath="/doc/tips/tip"/>
+	<append xpath="/doc/tips">
+		<tip key="loadingTipbackPack"/>
+		<tip key="loadingTipdrinkJarEmpty"/>
+		<tip key="loadingTiplootableZombie"/>
+		<tip key="loadingTipwastelandRadiation"/>
+		<tip key="loadingTipskillMagazine"/>
+		<tip key="loadingTipcraftingSkills"/>
+		<tip key="loadingTipattGeneral"/>
+		<tip key="loadingTipchallengeQuest"/>
+		<tip key="loadingTiptraderGeneral"/>
+	</append>
+</config>

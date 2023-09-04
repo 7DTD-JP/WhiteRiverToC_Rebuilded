@@ -1,0 +1,6 @@
+<config>
+	<append xpath="worldgeneration/biomes/biome/subbiome/decorations">
+		<!-- Workstation spawn -->
+		<!-- <decoration type="block" blockname="WRC_Station" prob=".0001"/> -->
+	</append>
+</config>

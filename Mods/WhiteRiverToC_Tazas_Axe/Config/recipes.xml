@@ -22,5 +22,5 @@
 			<ingredient name="resourcePaper" count="1"/>
 			<ingredient name="questitem_vetcoin_taza" count="1"/>
 		</recipe>
-	</append>
+	</append>	
 </config>

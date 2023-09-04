@@ -1,0 +1,79 @@
+<config>
+	<!-- Core -->
+	<remove xpath="/gameevents/action_sequence[@name='game_first_spawn']"/>
+	<append xpath="/gameevents">
+		<action_sequence name="game_first_spawn">
+			<property name="allow_user_trigger" value="false"/>
+			<property name="action_type" value="Game"/>
+			<action class="Delay">
+				<property name="time" value="4.5"/>
+			</action>
+			<action class="AddJournalTip">
+				<property name="tip_name" value="tutorialTipQuest01"/>
+				<property name="show_window" value="true"/>
+				<property name="phase" value="1"/>
+			</action>
+			<action class="AddJournalTip">
+				<property name="tip_name" value="journalTipwastelandRadiation"/>
+				<property name="show_window" value="false"/>
+				<property name="phase" value="2"/>
+			</action>
+			<action class="AddJournalTip">
+				<property name="tip_name" value="journalTipbackPack"/>
+				<property name="show_window" value="false"/>
+				<property name="phase" value="3"/>
+			</action>
+			<action class="AddJournalTip">
+				<property name="tip_name" value="journalTipdrinkJarEmpty"/>
+				<property name="show_window" value="false"/>
+				<property name="phase" value="4"/>
+			</action>
+			<action class="AddJournalTip">
+				<property name="tip_name" value="journalTiplootableZombie"/>
+				<property name="show_window" value="false"/>
+				<property name="phase" value="5"/>
+			</action>
+			<action class="AddJournalTip">
+				<property name="tip_name" value="journalTipskillMagazine"/>
+				<property name="show_window" value="false"/>
+				<property name="phase" value="6"/>
+			</action>
+			<action class="AddJournalTip">
+				<property name="tip_name" value="journalTipcraftingSkills"/>
+				<property name="show_window" value="false"/>
+				<property name="phase" value="7"/>
+			</action>
+			<action class="AddJournalTip">
+				<property name="tip_name" value="journalTipattGeneral"/>
+				<property name="show_window" value="false"/>
+				<property name="phase" value="8"/>
+			</action>
+			<action class="AddJournalTip">
+				<property name="tip_name" value="journalTipchallengeQuest"/>
+				<property name="show_window" value="false"/>
+				<property name="phase" value="9"/>
+			</action>
+			<action class="AddJournalTip">
+				<property name="tip_name" value="journalTiptraderGeneral"/>
+				<property name="show_window" value="false"/>
+				<property name="phase" value="10"/>
+			</action>
+			<action class="Delay">
+				<property name="time" value="3"/>
+				<property name="phase" value="11"/>
+			</action>
+			<!-- DEBUG USE -->
+			<!--
+			<action class="AddQuest">
+				<property name="quest" value="quest_BasicSurvival1"/>
+				<property name="phase" value="12"/>
+			</action>
+			-->
+			<action class="AddQuest">
+				<property name="quest" value="quest_whiteRiverCitizen1"/>
+				<property name="phase" value="3"/>
+			</action>
+			<!-- END -->
+		</action_sequence>
+	</append>
+</config>

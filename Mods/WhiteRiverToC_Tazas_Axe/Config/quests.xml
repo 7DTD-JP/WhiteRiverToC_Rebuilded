@@ -1,7 +1,7 @@
 <config>
 <!-- Reviewed by 7DAYSTODIE_JP. We just revised to remove some warnings/errors but did not look carefully. Join Discord to report bugs, supports and requests. Discord: https://discord.gg/Va9CMv59Ej -->
 	<append xpath="/quests">
-		<quest id="+Quest For Taza's Axe Start">
+		<quest id="Quest_For_Tazas_Axe_Start">
 			<property name="name_key" value="quest_toc_taza_name"/>
 			<property name="subtitle_key" value="quest_toc_taza_subtitle"/>
 			<property name="description_key" value="quest_toc_taza_description"/>
@@ -14,10 +14,10 @@
 			<property name="response_key" value="questdialog_toc_taza"/>
 			<property name="group_name_key" value="quest_toc_taza_group"/>
 			<property name="shareable" value="false"/>
-			<reward type="Quest" id="+Quest For Taza's Axe"/>
+			<reward type="Quest" id="Quest_For_Tazas_Axe"/>
 			<reward type="Item" id="questitem_coin_taza" count="1"/>
 		</quest>
-		<quest id="+Quest For Taza's Axe">
+		<quest id="Quest_For_Tazas_Axe">
 			<property name="name_key" value="quest_toc_taza_name"/>
 			<property name="subtitle_key" value="quest_toc_taza_subtitle"/>
 			<property name="description_key" value="quest_toc_taza_description"/>
@@ -36,7 +36,7 @@
 			<objective type="Craft" id="questwrit_toc_taza_name" value="1" phase="2"/>
 			<reward type="Exp" value="1500"/>
 		</quest>
-		<quest id="+Reward of Taza's Axe">
+		<quest id="Reward_of_Tazas_Axe">
 			<property name="name_key" value="questreward_toc_taza_name"/>
 			<property name="subtitle_key" value="questreward_toc_taza_subtitle"/>
 			<property name="description_key" value="questreward_toc_taza_description"/>
@@ -71,7 +71,7 @@
 			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
 			<reward type="LootItem" id="groupToCQuestT2Food" ischosen="true" value="2"/>
 		</quest>
-		<quest id="+Vet. Quest For Taza's Axe Start">
+		<quest id="Vet_Quest_For_Tazas_Axe_Start">
 			<property name="name_key" value="vetquest_toc_taza_name"/>
 			<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>
 			<property name="description_key" value="vetquest_toc_taza_description"/>
@@ -84,10 +84,10 @@
 			<property name="response_key" value="vetquestdialog_toc_taza"/>
 			<property name="group_name_key" value="vetquest_toc_taza_group"/>
 			<property name="shareable" value="false"/>
-			<reward type="Quest" id="+Vet. Quest For Taza's Axe"/>
+			<reward type="Quest" id="Vet_Quest_For_Tazas_Axe"/>
 			<reward type="Item" id="questitem_vetcoin_taza" count="1"/>
 		</quest>
-		<quest id="+Vet. Quest For Taza's Axe">
+		<quest id="Vet_Quest_For_Tazas_Axe">
 			<property name="name_key" value="vetquest_toc_taza_name"/>
 			<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>
 			<property name="description_key" value="vetquest_toc_taza_description"/>
@@ -107,7 +107,7 @@
 			<objective type="Craft" id="vetquestwrit_toc_taza_name" value="1" phase="2"/>
 			<reward type="Exp" value="500"/>
 		</quest>
-		<quest id="+Veteran Reward of Taza's Axe">
+		<quest id="Veteran_Reward_of_Tazas_Axe">
 			<property name="name_key" value="vetquest_toc_taza_name"/>
 			<property name="subtitle_key" value="vetquest_toc_taza_subtitle"/>
 			<property name="description_key" value="vetquest_toc_taza_description"/>

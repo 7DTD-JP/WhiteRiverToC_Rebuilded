@@ -1,0 +1,512 @@
+<config>
+	<!-- REQUIRED -->
+	<!-- OK 082723 -->
+	<remove xpath="/blocks/block[@name='questblock_toc_randomcrate_name']"/>
+	<remove xpath="/blocks/block[@name='Random_Elite_Citizen_Crate']"/>
+	<!-- Amelias -->
+	<!-- OK 082723 -->
+	<remove xpath="/blocks/block[@name='cntCar03SedanDamage1Master']/drop[@name='smallAmeliaEngine']"/>
+	<remove xpath="/blocks/block[@name='cntBusSchool']/drop[@name='smallAmeliaEngine']"/>
+	<remove xpath="/blocks/block[@name='decoCarMotorFlat']/drop[@name='smallAmeliaEngine']"/>
+	<!-- Coins -->
+	<!-- OK 082723 -->
+	<insertAfter xpath="/blocks/block[@name='terrOreIron']/drop[@name='resourceGoldNugget']">
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_coin_taza" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_taza" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_amelia" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_Vengeance" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='terrOreLead']/drop[@name='resourceGoldNugget']">
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_coin_taza" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_taza" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_amelia" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_Vengeance" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='terrOreCoal']/drop[@name='resourceGoldNugget']">
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_coin_taza" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_taza" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_amelia" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_Vengeance" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='terrOrePotassiumNitrate']/drop[@name='resourceGoldNugget']">
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_coin_taza" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_taza" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_amelia" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_Vengeance" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='terrOreOilDeposit']/drop[@name='resourceGoldNugget']">
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_coin_taza" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_taza" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_amelia" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_Vengeance" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntCasketModernRandomHelper']/drop[@name='resourceGoldNugget']">
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_coin_taza" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_taza" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_amelia" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_Vengeance" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntCasketModernOffsetRandomHelper']/drop[@name='resourceGoldNugget']">
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_coin_taza" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_taza" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_amelia" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_Vengeance" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntCoffinWildWestRandomHelper']/drop[@name='resourceGoldNugget']">
+		<drop event="Harvest" name="resourceRawDiamond" prob=".005" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_coin_taza" prob=".01" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_taza" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_amelia" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+		<drop event="Harvest" name="questitem_vetcoin_Vengeance" prob=".007" count="1" tag="artOfMiningLuckyStrikeHarvest"/>
+	</insertAfter>
+	<!-- REQUIRED -->
+	<!-- NG 082523 -->
+	<insertAfter xpath="/blocks/block[@name='cntShippingCrateConstructionSupplies']">
+		<block name="WhiteRiverToCGeneralRandomCrate">
+			<property name="DescriptionKey" value="questblock_toc_randomcrate_desc"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="Extends" value="cntShippingCrateHero"/>
+			<property name="DowngradeBlock" value="WhiteRiverToCGeneralRandomCrate_Box"/>
+			<property name="FilterTags" value="floot"/>
+			<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+			<property name="Group" value="WRC_Crates"/>
+		</block>
+		<block name="WhiteRiverToCVeteranRandomCrate">
+			<property name="DescriptionKey" value="questblock_toc_randomcrate_desc"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="7fa6ff"/>
+			<property name="Extends" value="cntShippingCrateHero"/>
+			<property name="DowngradeBlock" value="WhiteRiverToCVeteranRandomCrate_Box"/>
+			<property name="FilterTags" value="floot"/>
+			<!-- <property name="Material" value="MwhiteRiverVeteran"/> -->
+			<property name="Group" value="WRC_Crates"/>
+		</block>
+		<block name="WhiteRiverToCEliteRandomCrate">
+			<property name="DescriptionKey" value="questblock_toc_randomcrate_desc"/>
+			<property name="CustomIcon" value="cntShippingCrateHero"/>
+			<property name="CustomIconTint" value="5f40c4"/>
+			<property name="Extends" value="cntShippingCrateHero"/>
+			<property name="DowngradeBlock" value="WhiteRiverToCEliteRandomCrate_Box"/>
+			<property name="FilterTags" value="floot"/>
+			<!-- <property name="Material" value="MwhiteRiverElite"/> -->
+			<property name="Group" value="WRC_Crates"/>
+		</block>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='cntLootCrateMoPowerElectronics']">
+		<block name="WhiteRiverToCGeneralRandomCrate_Box">
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="Extends" value="cntGarageStorage"/>
+			<property name="LootList" value="WhiteRiverToCGeneralRandom"/>
+			<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+		</block>
+		<block name="WhiteRiverToCVeteranRandomCrate_Box">
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="7fa6ff"/>
+			<property name="Extends" value="cntGarageStorage"/>
+			<property name="LootList" value="WhiteRiverToCVeteranRandom"/>
+			<!-- <property name="Material" value="MwhiteRiverVeteran"/> -->
+		</block>
+		<block name="WhiteRiverToCEliteRandomCrate_Box">
+			<property name="CustomIcon" value="cntCardboardBox"/>
+			<property name="CustomIconTint" value="5f40c4"/>
+			<property name="Extends" value="cntGarageStorage"/>
+			<property name="LootList" value="WhiteRiverToCGeneralRandom"/>
+			<!-- <property name="Material" value="MwhiteRiverElite"/> -->
+		</block>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='forge']">
+		<block name="WRC_Station">
+			<property name="Material" value="Mstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/graveStone01Prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CustomIcon" value="graveStone01"/>
+			<property name="CustomIconTint" value="231, 76, 60 "/>
+			<property name="TintColor" value="231, 76, 60 "/>
+			<drop event="Harvest" name="resourceRockSmall" count="10" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B441"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="SortOrder1" value="B650"/>
+			<property name="SortOrder2" value="0000"/>
+			<property class="Workstation">
+				<property name="CraftingAreaRecipes" value="WRC_Station"/>
+				<property name="Modules" value="output,material_input"/>
+				<property name="InputMaterials" value="whiteRiverCitizen,whiteRiverVeteran,whiteRiverElite"/>
+			</property>
+			<property name="DescriptionKey" value="WRC_StationDesc"/>
+			<property name="WorkstationIcon" value="ui_game_symbol_forge"/>
+			<property name="WorkstationJournalTip" value="WRC_StationTip"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="MultiBlockDim" value="2,2,1"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="Path" value="solid"/>
+			<property name="Weight" value="0"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="TraderStageTemplate" value="midTier0"/>
+			<property name="MaxDamage" value="800"/>
+			<property name="HeatMapStrength" value="6"/>
+			<property name="HeatMapTime" value="5000"/>
+			<property name="HeatMapFrequency" value="1000"/>
+			<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+			<property name="ActiveRadiusEffects" value="buffWRC_Station(5)"/>
+			<property name="OpenSound" value="forge_open"/>
+			<property name="CloseSound" value="forge_close"/>
+			<property name="CraftSound" value="forge_smelt_click"/>
+			<property name="CraftCompleteSound" value="forge_item_complete"/>
+			<property class="RepairItems">
+				<property name="resourceCobblestones" value="50"/>
+			</property>
+			<drop event="Harvest" name="resourceRockSmall" count="40" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceClayLump" count="20" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="5" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+			<!-- Sorting -->
+			<property name="SortOrder1" value="B281"/>
+			<property name="SortOrder2" value="0200"/>
+			<property name="Group" value="Building,TCScience,advBuilding"/>
+			<property name="Tags" value="workstationSkill,twitch_workstation"/>
+			<property name="FilterTags" value="MC_playerBlocks,SC_decor"/>
+		</block>
+	</insertAfter>
+	<!-- Backpacks -->
+	<!-- OK 082523 -->
+	<append xpath="/blocks">
+		<block name="h7sb_bumbagBlock">
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Path" value="solid"/>
+			<property name="MaxDamage" value="20"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="@:Entities/LootContainers/pursePrefab.prefab"/>
+			<property name="ModelOffset" value="0,0,0"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="ImposterDontBlock" value="true"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="1"/>
+			</property>
+			<property name="Stacknumber" value="1"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Class" value="Loot"/>
+			<property name="LootList" value="h7sb_xsBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="1"/>
+		</block>
+		<block name="h7sb_largeBackpackBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="h7sb_largeBackpack" count="1"/>
+		</block>
+		<block name="BackpackBasicPerceptionBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackBasicPerceptionBlock" count="1"/>
+		</block>
+		<block name="BackpackMiddlePerceptionBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackMiddlePerceptionBlock" count="1"/>
+		</block>
+		<block name="BackpackAdvancedPerceptionBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackAdvancedPerceptionBlock" count="1"/>
+		</block>
+		<block name="BackpackBasicStrengthBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackBasicStrengthBlock" count="1"/>
+		</block>
+		<block name="BackpackMiddleStrengthBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackMiddleStrengthBlock" count="1"/>
+		</block>
+		<block name="BackpackAdvancedStrengthBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackAdvancedStrengthBlock" count="1"/>
+		</block>
+		<block name="BackpackBasicFortitudeBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackBasicFortitudeBlock" count="1"/>
+		</block>
+		<block name="BackpackMiddleFortitudeBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackMiddleFortitudeBlock" count="1"/>
+		</block>
+		<block name="BackpackAdvancedFortitudeBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackAdvancedFortitudeBlock" count="1"/>
+		</block>
+		<block name="BackpackBasicAgilityBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackBasicAgilityBlock" count="1"/>
+		</block>
+		<block name="BackpackMiddleAgilityBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackMiddleAgilityBlock" count="1"/>
+		</block>
+		<block name="BackpackAdvancedAgilityBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackAdvancedAgilityBlock" count="1"/>
+		</block>
+		<block name="BackpackBasicIntellectBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackBasicIntellectBlock" count="1"/>
+		</block>
+		<block name="BackpackMiddleIntellectBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackMiddleIntellectBlock" count="1"/>
+		</block>
+		<block name="BackpackAdvancedIntellectBlock">
+			<property name="Extends" value="h7sb_bumbagBlock" param="Place"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Tags" value="backpacks"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Model" value="@:Entities/LootContainers/weapon_bags_largePrefab.prefab"/>
+			<property class="RepairItems">
+				<property name="resourceCloth" value="5"/>
+			</property>
+			<property name="ModelOffset" value="0,0,0.19"/>
+			<property name="Place" value="TowardsPlacer"/>
+			<property name="LootList" value="h7sb_largeBackpack"/>
+			<drop event="Destroy" name="h7sb_bumbag" count="0"/>
+			<drop event="Destroy" name="BackpackAdvancedIntellectBlock" count="1"/>
+		</block>
+	</append>
+	<!-- <append xpath="/blocks">
+		<block name="graveStone01_basic">
+			<property name="Material" value="Mstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/graveStone01Prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CustomIcon" value="graveStone01"/>
+			<property name="CustomIconTint" value="231, 76, 60 "/>
+			<property name="TintColor" value="231, 76, 60 "/>
+			<drop event="Harvest" name="resourceRockSmall" count="10" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B441"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		<block name="graveStone01_middle">
+			<property name="Material" value="Mstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/graveStone01Prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CustomIcon" value="graveStone01"/>
+			<property name="CustomIconTint" value="52, 152, 219 "/>
+			<property name="TintColor" value="52, 152, 219 "/>
+			<drop event="Harvest" name="resourceRockSmall" count="10" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B441"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+		<block name="graveStone01_advanced">
+			<property name="Material" value="Mstone"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/graveStone01Prefab"/>
+			<property name="WaterFlow" value="permitted"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="CustomIcon" value="graveStone01"/>
+			<property name="CustomIconTint" value="155, 89, 182 "/>
+			<property name="TintColor" value="155, 89, 182 "/>
+			<drop event="Harvest" name="resourceRockSmall" count="10" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="terrDestroyedStone" count="1" prob="0.5" stick_chance="1"/>
+			<property name="SortOrder1" value="B441"/>
+			<property name="SortOrder2" value="0000"/>
+			<property name="FilterTags" value="MC_outdoor,SC_decor"/>
+		</block>
+	</append> -->
+</config>

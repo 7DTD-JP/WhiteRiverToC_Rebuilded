@@ -1,0 +1,2131 @@
+<config>
+	<setattribute xpath="/quests" name="quests_per_tier">1</setattribute>
+	<!-- DEBUG USE -->
+	<!-- Core -->
+	<remove xpath="/quests/quest_list[@id='trader_quests']/quest[@id='tier1_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_quests']/quest[@id='tier2_buried_supplies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_quests']/quest[@id='tier3_buried_supplies']"/>
+	<!-- REQUIRED -->
+	<!-- OK 082523 -->
+	<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen2']"/>
+	<remove xpath="/quests/quest[@id='quest_whiteRiverCitizen3']"/>
+	<remove xpath="/quests/quest[@id='Kill_100_Zombies']"/>
+	<remove xpath="/quests/quest[@id='Kill_1000_Zombies']"/>
+	<remove xpath="/quests/quest[@id='Obtain_a_Random_Elite_Quest']"/>
+	<remove xpath="/quests/quest_list[@id='trader_quests']/quest[@id='quest_whiteRiverCitizen3']"/>
+	<remove xpath="/quests/quest_list[@id='trader_quests']/quest[@id='Kill_100_Zombies']"/>
+	<remove xpath="/quests/quest_list[@id='trader_quests']/quest[@id='Kill_1000_Zombies']"/>
+	<!-- Taza's -->
+	<!-- OK 082523 -->
+	<remove xpath="/quests/quest[@id='Quest_For_Tazas_Axe_Start']"/>
+	<remove xpath="/quests/quest[@id='Quest_For_Tazas_Axe']"/>
+	<remove xpath="/quests/quest[@id='Reward_of_Tazas_Axe']"/>
+	<remove xpath="/quests/quest[@id='Vet_Quest_For_Tazas_Axe_Start']"/>
+	<remove xpath="/quests/quest[@id='Vet_Quest_For_Tazas_Axe']"/>
+	<remove xpath="/quests/quest[@id='Veteran_Reward_of_Tazas_Axe']"/>
+	<!-- Amelias -->
+	<!-- OK 082523 -->
+	<remove xpath="/quests/quest[@id='Quest_For_Amelia_Earharts_Gyrocopter_Start']"/>
+	<remove xpath="/quests/quest[@id='Quest_For_Amelia_Earharts_Gyrocopter']"/>
+	<remove xpath="/quests/quest[@id='Reward_of_Amelias_Map']"/>
+	<remove xpath="/quests/quest[@id='Quest_to_find_Amelia_Earharts_Coffin']"/>
+	<remove xpath="/quests/quest[@id='Quest_For_Amelias_Lost_Plans']"/>
+	<remove xpath="/quests/quest[@id='Completion_of_Amelia_Step_4']"/>
+	<remove xpath="/quests/quest[@id='Reward_of_Amelia_Earharts_Schematics']"/>
+	<!-- Vengeance -->
+	<!-- OK 082523 -->
+	<remove xpath="/quests/quest[@id='Elite_Quest_Hell_Beast_Starter']"/>
+	<remove xpath="/quests/quest[@id='Elite_Quest_For_Spirit_of_Vengeance_Hell_Beast']"/>
+	<remove xpath="/quests/quest[@id='Elite_Reward_of_Spirit_of_Vengeance_Hell_Beast']"/>
+	<!-- <remove xpath="/quests/quest[contains(@id,'Reward of Deschain')]/reward[@id='questitem_spirit_vengeance_name']"/> -->
+	<!-- Added new items -->
+	<!-- Wasteland Radiation -->
+	<!-- NG 082523 -->
+	<!-- <append xpath="quests">
+		<quest id="challenge_zombieHazmat">
+			<property name="name_key" value="challenge_zombieHazmat"/>
+			<property name="subtitle_key" value="challenge_zombieHazmat_subtitle"/>
+			<property name="description_key" value="challenge_zombieHazmat_offer"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer_key" value="challenge_zombieHazmat_offer"/>
+			<property name="difficulty" value="hard"/>
+			<objective type="RandomGoto" value="50-100" phase="1">
+				<property name="completion_distance" value="50"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+			</objective>
+			<action type="SpawnEnemy" id="zombieMaleHazmatChallenge" value="1" phase="3"/>
+			<action type="SpawnEnemy" id="zombieMaleHazmatRadiated" value="1" phase="3">
+				<property name="delay" value="10"/>
+			</action>
+			<action type="SpawnEnemy" id="zombieMaleHazmatRadiated" value="1" phase="3">
+				<property name="delay" value="20"/>
+			</action>
+			<action type="SpawnEnemy" id="zombieMaleHazmatRadiated" value="1" phase="3">
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnEnemy" id="zombieMaleHazmatRadiated" value="1" phase="3">
+				<property name="delay" value="40"/>
+			</action>
+			<action type="SpawnEnemy" id="zombieMaleHazmatRadiated" value="1" phase="3">
+				<property name="delay" value="50"/>
+			</action>
+			<objective type="EntityKill" id="zombieMaleHazmatChallenge" value="1" phase="3"/>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="Item" id="apparelHazmatBoots" value="1"/>
+			<reward type="Item" id="apparelHazmatPants" value="1"/>
+			<reward type="Item" id="apparelHazmatJacket" value="1"/>
+			<reward type="Item" id="apparelHazmatGloves" value="1"/>
+			<reward type="Item" id="apparelHazmatMask" value="1"/>
+			<reward type="SkillPoints" value="1"/>
+		</quest>
+	</append> -->
+	<!-- REQUIRED -->
+	<!-- Next trader -->
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/property[@name='quest_hints']">
+		<property name="reward_choices_count" value="5"/>
+		<property name="completiontype" value="TurnIn"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
+		<reward type="Quest" id="quest_whiteRiverCitizen2" stage="aftercomplete"/>
+		<reward type="LootItem" id="groupTOC_citizencard" ischosen="true" value="1"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier2_nexttrader']/property[@name='quest_type']">
+		<property name="reward_choices_count" value="5"/>
+		<property name="completiontype" value="TurnIn"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='tier2_nexttrader']/reward[@type='Exp']">
+		<reward type="Quest" id="quest_whiteRiverCitizen3" stage="aftercomplete"/>
+		<reward type="LootItem" id="groupTOC_citizencard" ischosen="true" value="1"/>
+	</insertAfter>
+	<insertBefore xpath="/quests/quest[@id='tier3_nexttrader']/variable[@name='difficulty']">
+		<property name="reward_choices_count" value="5"/>
+		<property name="completiontype" value="TurnIn"/>
+	</insertBefore>
+	<insertAfter xpath="/quests/quest[@id='tier3_nexttrader']/reward[@type='Exp']">
+		<reward type="Quest" id="quest_whiteRiverCitizen4" stage="aftercomplete"/>
+		<reward type="LootItem" id="groupTOC_veterancard" ischosen="true" value="1"/>
+	</insertAfter>
+	<insertBefore xpath="/quests/quest[@id='tier4_nexttrader']/variable[@name='difficulty']">
+		<property name="reward_choices_count" value="5"/>
+		<property name="completiontype" value="TurnIn"/>
+	</insertBefore>
+	<insertAfter xpath="/quests/quest[@id='tier4_nexttrader']/reward[@type='Exp']">
+		<reward type="Quest" id="quest_whiteRiverCitizen5" stage="aftercomplete"/>
+		<reward type="LootItem" id="groupTOC_veterancard" ischosen="true" value="1"/>
+	</insertAfter>
+	<insertBefore xpath="/quests/quest[@id='tier4_nexttrader']/variable[@name='difficulty']">
+		<property name="reward_choices_count" value="5"/>
+		<property name="completiontype" value="TurnIn"/>
+	</insertBefore>
+	<insertAfter xpath="/quests/quest[@id='tier5_nexttrader']/reward[@type='Exp']">
+		<reward type="Quest" id="quest_whiteRiverCitizen6" stage="aftercomplete"/>
+		<reward type="LootItem" id="groupTOC_elitecard" ischosen="true" value="1"/>
+	</insertAfter>
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']">
+		<quest id="quest_whiteRiverCitizen2">
+			<property name="name_key" value="quest_whiteRiverCitizen2_name"/>
+			<property name="subtitle_key" value="quest_whiteRiverCitizen_subtitle"/>
+			<property name="description_key" value="quest_whiteRiverCitizen_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="quest_whiteRiverCitizen_offer"/>
+			<property name="statement_key" value="quest_whiteRiverCitizen_statement"/>
+			<property name="response_key" value="quest_whiteRiverCitizen_response"/>
+			<property name="completiontype" value="TurnIn"/>
+			<!--<property name="group_name_key" value="quest_whiteRiverCitizen_group"/>-->
+			<property name="shareable" value="false"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="quest_hints" value="quest_whiteRiverCitizen_hint"/>
+			<action type="ShowTip" value="quest_WhiteRiverCitizen_description">
+				<property name="delay" value="3"/>
+			</action>
+			<objective type="Time" value="60" phase="1"/>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="0"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="5"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="10"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="20"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="25"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="35"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="40"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="50"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="55"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="60"/>
+			</action>
+			<objective type="POIStayWithin">
+				<property name="phase" value="1"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<objective type="EntityKill" value="10" phase="1"/>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+				<property name="use_closest" value="true"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="LootItem" id="groupWRC_Station" ischosen="true" value="1"/>
+			<reward type="ShowTip" value="quest_whiteRiverCitizen2Tip" stage="aftercomplete"/>
+		</quest>
+		<quest id="quest_whiteRiverCitizen3">
+			<property name="name_key" value="quest_whiteRiverCitizen3_name"/>
+			<property name="subtitle_key" value="quest_whiteRiverCitizen_subtitle"/>
+			<property name="description_key" value="quest_whiteRiverCitizen_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="quest_whiteRiverCitizen_offer"/>
+			<property name="statement_key" value="quest_whiteRiverCitizen_statement"/>
+			<property name="response_key" value="quest_whiteRiverCitizen_response"/>
+			<property name="completiontype" value="TurnIn"/>
+			<!--<property name="group_name_key" value="quest_whiteRiverCitizen_group"/>-->
+			<property name="shareable" value="false"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="quest_hints" value="quest_whiteRiverCitizen_hint"/>
+			<action type="ShowTip" value="quest_WhiteRiverCitizen_description">
+				<property name="delay" value="3"/>
+			</action>
+			<objective type="Time" value="60" phase="1"/>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="0"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="5"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="10"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="20"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="25"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="35"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="40"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="50"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="55"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="60"/>
+			</action>
+			<objective type="POIStayWithin">
+				<property name="phase" value="1"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<objective type="EntityKill" value="10" phase="1"/>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="LootItem" id="groupQuestTOCT2" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestTOCT2" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestTOCT2" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestTOCT2" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestTOCT2" ischosen="true" value="2"/>
+		</quest>
+		<quest id="quest_whiteRiverCitizen4">
+			<property name="name_key" value="quest_whiteRiverCitizen4_name"/>
+			<property name="subtitle_key" value="quest_whiteRiverCitizen_subtitle"/>
+			<property name="description_key" value="quest_whiteRiverCitizen_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="quest_whiteRiverCitizen_offer"/>
+			<property name="statement_key" value="quest_whiteRiverCitizen_statement"/>
+			<property name="response_key" value="quest_whiteRiverCitizen_response"/>
+			<property name="completiontype" value="TurnIn"/>
+			<!--<property name="group_name_key" value="quest_whiteRiverCitizen_group"/>-->
+			<property name="shareable" value="false"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="quest_hints" value="quest_whiteRiverCitizen_hint"/>
+			<action type="ShowTip" value="quest_WhiteRiverCitizen_description">
+				<property name="delay" value="3"/>
+			</action>
+			<objective type="Time" value="90" phase="1"/>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="0"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="5"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="10"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="20"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="25"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="35"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="40"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="50"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="55"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="60"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="65"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="70"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="75"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="80"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="85"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="90"/>
+			</action>
+			<objective type="POIStayWithin">
+				<property name="phase" value="1"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<objective type="EntityKill" value="10" phase="1"/>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="LootItem" id="groupQuestTOCT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestTOCT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestTOCT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestTOCT3" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestTOCT3" ischosen="true" value="3"/>
+		</quest>
+		<quest id="quest_whiteRiverCitizen5">
+			<property name="name_key" value="quest_whiteRiverCitizen5_name"/>
+			<property name="subtitle_key" value="quest_whiteRiverCitizen_subtitle"/>
+			<property name="description_key" value="quest_whiteRiverCitizen_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="quest_whiteRiverCitizen_offer"/>
+			<property name="statement_key" value="quest_whiteRiverCitizen_statement"/>
+			<property name="response_key" value="quest_whiteRiverCitizen_response"/>
+			<property name="completiontype" value="TurnIn"/>
+			<!--<property name="group_name_key" value="quest_whiteRiverCitizen_group"/>-->
+			<property name="shareable" value="false"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="quest_hints" value="quest_whiteRiverCitizen_hint"/>
+			<action type="ShowTip" value="quest_WhiteRiverCitizen_description">
+				<property name="delay" value="3"/>
+			</action>
+			<objective type="Time" value="90" phase="1"/>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="0"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="5"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="10"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="20"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="25"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="35"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="40"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="50"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="55"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="60"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="65"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="70"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="75"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="80"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="85"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="5-8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="90"/>
+			</action>
+			<objective type="POIStayWithin">
+				<property name="phase" value="1"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<objective type="EntityKill" value="10" phase="1"/>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="LootItem" id="groupQuestTOCT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestTOCT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestTOCT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestTOCT4" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestTOCT4" ischosen="true" value="4"/>
+		</quest>
+		<quest id="quest_whiteRiverCitizen6">
+			<property name="name_key" value="quest_whiteRiverCitizen6_name"/>
+			<property name="subtitle_key" value="quest_whiteRiverCitizen_subtitle"/>
+			<property name="description_key" value="quest_whiteRiverCitizen_description"/>
+			<property name="icon" value="ui_game_symbol_map_trader"/>
+			<property name="repeatable" value="false"/>
+			<property name="category_key" value="quest"/>
+			<property name="difficulty" value="easy"/>
+			<property name="offer_key" value="quest_whiteRiverCitizen_offer"/>
+			<property name="statement_key" value="quest_whiteRiverCitizen_statement"/>
+			<property name="response_key" value="quest_whiteRiverCitizen_response"/>
+			<property name="completiontype" value="TurnIn"/>
+			<!--<property name="group_name_key" value="quest_whiteRiverCitizen_group"/>-->
+			<property name="shareable" value="false"/>
+			<property name="quest_hints" value="quest_whiteRiverCitizen_hint"/>
+			<action type="ShowTip" value="quest_WhiteRiverCitizen_description">
+				<property name="delay" value="3"/>
+			</action>
+			<objective type="Time" value="120" phase="1"/>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="0"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="5"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="10"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="20"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="25"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="35"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="40"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="50"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="55"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="60"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="65"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="70"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="75"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="80"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="85"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="90"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="95"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="100"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="105"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="110"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="115"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="8" param1="finish_spawn_count"/>
+				<property name="phase" value="1"/>
+				<property name="delay" value="120"/>
+			</action>
+			<objective type="POIStayWithin">
+				<property name="phase" value="1"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<objective type="EntityKill" value="10" phase="1"/>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="500"/>
+			<reward type="LootItem" id="groupQuestTOCT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestTOCT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestTOCT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestTOCT5" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestTOCT5" ischosen="true" value="5"/>
+		</quest>
+	</insertAfter>
+	<!-- Challenges  -->
+	<append xpath="quests">
+		<quest id="challenge_Tazas">
+			<property name="name_key" value="challenge_Tazas" param1="name"/>
+			<property name="subtitle_key" value="challenge_Tazas_subtitle"/>
+			<property name="description_key" value="challenge_Tazas_offer"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="challenge_Tazas_offer" param1="offer"/>
+			<property name="difficulty" value="easy"/>
+			<property name="difficulty_tier" value="1" param1="difficulty"/>
+			<property name="statement_key" value="challenge_Tazas_statement"/>
+			<property name="response_key" value="challenge_Tazas_response"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="challenge_Tazas_completion"/>
+			<property name="extra_tags" value="" param1="extra_tags" />
+			<property name="shareable" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<objective type="RandomGotoNPC" phase="1">
+				<property name="completion_distance" value="25"/>
+				<property name="distance" value="50-100"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+			</objective>
+			<objective type="Time" value="60" phase="3"/>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="ScoutGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="10"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="20"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="40"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="animalZombieDog"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="50"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="animalZombieVulture"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="60"/>
+			</action>
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<objective type="EntityKill" value="10" phase="3"/>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="350"/>
+			<reward type="Item" id="casinoCoin" value="350"/>
+			<reward type="Item" id="WhiteRiverToCGeneralRandomCrate" value="1"/>
+			<reward type="LootItem" id="groupQuestMedical" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestResources" ischosen="true" value="2"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestMedical,groupQuestSchematics,groupQuestMods" ischosen="true" value="1"/>
+		</quest>
+		<!-- Amelias -->
+		<quest id="challenge_Amelias">
+			<property name="name_key" value="challenge_Amelias" param1="name"/>
+			<property name="subtitle_key" value="challenge_Amelias_subtitle"/>
+			<property name="description_key" value="challenge_Amelias_offer"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer_key" value="challenge_Amelias_offer" param1="offer"/>
+			<property name="difficulty" value="medium"/>
+			<objective type="RandomGotoNPC" phase="1">
+				<property name="completion_distance" value="25"/>
+				<property name="distance" value="50-100"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+			</objective>
+			<objective type="Time" value="60" phase="3"/>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="ScoutGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="10"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="20"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="40"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="animalZombieDog"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="50"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="animalZombieVulture"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="60"/>
+			</action>
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<objective type="EntityKill" value="10" phase="3"/>
+			<reward type="Exp" value="350"/>
+			<reward type="Item" id="casinoCoin" value="350"/>
+			<reward type="Item" id="WhiteRiverToCGeneralRandomCrate" value="1"/>
+		</quest>
+		<!-- Vengence -->
+		<quest id="challenge_Vengence">
+			<property name="name_key" value="challenge_Vengence" param1="name"/>
+			<property name="subtitle_key" value="challenge_Vengence_subtitle"/>
+			<property name="description_key" value="challenge_Vengence_offer"/>
+			<property name="icon" value="ui_game_symbol_zombie"/>
+			<property name="repeatable" value="true"/>
+			<property name="shareable" value="false"/>
+			<property name="category_key" value="challenge"/>
+			<property name="offer_key" value="challenge_Vengence_offer" param1="offer"/>
+			<property name="difficulty" value="medium"/>
+			<objective type="RandomGotoNPC" phase="1">
+				<property name="completion_distance" value="25"/>
+				<property name="distance" value="50-100"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+			</objective>
+			<objective type="Time" value="60" phase="3"/>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="ScoutGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="10"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="20"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="40"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="animalZombieDog"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="50"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="animalZombieVulture"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="60"/>
+			</action>
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<objective type="EntityKill" value="10" phase="3"/>
+			<reward type="Exp" value="350"/>
+			<reward type="Item" id="casinoCoin" value="350"/>
+			<reward type="Item" id="WhiteRiverToCGeneralRandomCrate" value="1"/>
+		</quest>
+		<quest id="treasure_Tazas">
+			<property name="name_key" value="treasure_Tazas" param1="name"/>
+			<property name="subtitle_key" value="treasure_Tazas" param1="name"/>
+			<property name="description_key" value="treasure_Tazas_offer" param1="offer"/>
+			<property name="icon" value="ui_game_symbol_map"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="quest"/>
+			<property name="offer_key" value="treasure_Tazas_offer" param1="offer"/>
+			<property name="difficulty" value="medium"/>
+			<property name="difficulty_tier" value="1" param1="difficulty"/>
+			<property name="statement_key" value="treasure_Tazas_statement"/>
+			<property name="response_key" value="treasure_Tazas_response"/>
+			<property name="shareable" value="true"/>
+			<objective type="TreasureChest">
+				<property name="block" value="WhiteRiverToCEliteRandomCrate"/>
+				<property name="alt_block" value="WhiteRiverToCEliteRandomCrate_Box"/>
+				<property name="distance" value="100-1000"/>
+				<property name="default_radius" value="25"/>
+				<property name="nav_object" value="treasure"/>
+				<property name="direct_nav_object" value="treasure_direct"/>
+				<property name="blocks_per_reduction" value="0"/>
+				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
+				<property name="explosion_event" value="quest_treasure_explosion_horde"/>
+			</objective>
+		</quest>
+		<!-- Amelias -->
+		<quest id="treasure_Amelias">
+			<property name="name_key" value="treasure_Amelias" param1="name"/>
+			<property name="subtitle_key" value="treasure_Amelias" param1="name"/>
+			<property name="description_key" value="treasure_Amelias_offer" param1="offer"/>
+			<property name="icon" value="ui_game_symbol_map"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="treasure"/>
+			<property name="offer_key" value="treasure_Amelias_offer" param1="offer"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<objective type="TreasureChest">
+				<property name="block" value="WhiteRiverToCEliteRandomCrate"/>
+				<property name="alt_block" value="WhiteRiverToCEliteRandomCrate_Box"/>
+				<property name="distance" value="100-1000"/>
+				<property name="default_radius" value="25"/>
+				<property name="nav_object" value="treasure"/>
+				<property name="direct_nav_object" value="treasure_direct"/>
+				<property name="blocks_per_reduction" value="0"/>
+				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
+				<property name="explosion_event" value="quest_treasure_explosion_horde"/>
+			</objective>
+		</quest>
+		<!-- Vengence -->
+		<quest id="treasure_Vengence">
+			<property name="name_key" value="treasure_Vengence" param1="name"/>
+			<property name="subtitle_key" value="treasure_Vengence" param1="name"/>
+			<property name="description_key" value="treasure_Vengence_offer" param1="offer"/>
+			<property name="icon" value="ui_game_symbol_map"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="treasure"/>
+			<property name="offer_key" value="treasure_Vengence_offer" param1="offer"/>
+			<property name="difficulty" value="medium"/>
+			<property name="shareable" value="false"/>
+			<objective type="TreasureChest">
+				<property name="block" value="WhiteRiverToCEliteRandomCrate"/>
+				<property name="alt_block" value="WhiteRiverToCEliteRandomCrate_Box"/>
+				<property name="distance" value="100-1000"/>
+				<property name="default_radius" value="25"/>
+				<property name="nav_object" value="treasure"/>
+				<property name="direct_nav_object" value="treasure_direct"/>
+				<property name="blocks_per_reduction" value="0"/>
+				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
+				<property name="explosion_event" value="quest_treasure_explosion_horde"/>
+			</objective>
+		</quest>
+	</append>
+	<insertAfter xpath="/quests/quest[@id='tier6_test_turnin']">
+		<!-- Taza's -->
+		<!-- NG 082523 -->
+		<quest id="tier1_fetch_defend_Tazas">
+			<property name="name_key" value="quest_tier1_fetch_defend_Tazas" param1="name"/>
+			<property name="subtitle_key" value="vetquestreward_toc_taza_subtitle"/>
+			<property name="description_key" value="vetquestreward_toc_taza_description"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="difficulty_tier" value="1" param1="difficulty"/>
+			<property name="offer_key" value="quest_toc_taza_offer" param1="offer"/>
+			<property name="statement_key" value="vetquest_toc_taza_statement"/>
+			<property name="response_key" value="quest_fetch_defend_Tazas_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_fetch_defend_Tazas_completion"/>
+			<objective type="RandomGotoNPC" phase="1">
+				<property name="completion_distance" value="20"/>
+				<property name="distance" value="50-100"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RallyPoint">
+				<!-- <property name="start_mode" value="Create"/> -->
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+			</objective>
+			<objective type="FetchFromContainer">
+				<property name="phase" value="3"/>
+				<property name="quest_item_ID" value="1"/>
+				<property name="item_count" value="1"/>
+				<property name="default_container" value="cntFetchQuestSatchel"/>
+				<property name="nav_object" value="fetch_container"/>
+			</objective>
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="5"/>
+			</objective>
+			<action type="SpawnEnemy" id="zombieSMGArlenePLUS" value="1" phase="4"/>
+			<objective type="Time" value="180" phase="4"/>
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="5"/>
+			</objective>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="60"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="75"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="90"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="105"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="120"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="135"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="150"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="165"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="180"/>
+			</action>
+			<action type="UnlockPOI">
+				<property name="phase" value="5"/>
+			</action>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="2500"/>
+			<reward type="Item" id="casinoCoin" value="330"/>
+			<reward type="Item" id="WhiteRiverToCVeteranRandomCrate" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestResources" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestResources,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<quest id="tier2_fetch_defend_Tazas">
+			<property name="name_key" value="quest_tier2_fetch_defend_Tazas" param1="name"/>
+			<property name="subtitle_key" value="vetquestreward_toc_taza_subtitle"/>
+			<property name="description_key" value="vetquestreward_toc_taza_description"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="difficulty_tier" value="2" param1="difficulty"/>
+			<property name="offer_key" value="quest_toc_taza_offer" param1="offer"/>
+			<property name="statement_key" value="vetquest_toc_taza_statement"/>
+			<property name="response_key" value="quest_fetch_defend_Tazas_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_fetch_defend_Tazas_completion"/>
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RallyPoint">
+				<!-- <property name="start_mode" value="Create"/> -->
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+			</objective>
+			<objective type="FetchFromContainer">
+				<property name="phase" value="3"/>
+				<property name="quest_item_ID" value="1"/>
+				<property name="item_count" value="1"/>
+				<property name="default_container" value="cntFetchQuestSatchel"/>
+				<property name="nav_object" value="fetch_container"/>
+			</objective>
+			<action type="SpawnEnemy" id="zombieSMGArlenePLUS" value="1" phase="4"/>
+			<objective type="Time" value="180" phase="4"/>
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="5"/>
+			</objective>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="60"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="75"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="90"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="105"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="120"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="135"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="150"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="165"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="180"/>
+			</action>
+			<action type="UnlockPOI">
+				<property name="phase" value="5"/>
+			</action>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+		</quest>
+		<quest id="tier3_fetch_defend_Tazas">
+			<property name="name_key" value="quest_tier3_fetch_defend_Tazas" param1="name"/>
+			<property name="subtitle_key" value="vetquestreward_toc_taza_subtitle"/>
+			<property name="description_key" value="vetquestreward_toc_taza_description"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="difficulty_tier" value="3" param1="difficulty"/>
+			<property name="offer_key" value="quest_toc_taza_offer" param1="offer"/>
+			<property name="statement_key" value="vetquest_toc_taza_statement"/>
+			<property name="response_key" value="quest_fetch_defend_Tazas_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_fetch_defend_Tazas_completion"/>
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RallyPoint">
+				<!-- <property name="start_mode" value="Create"/> -->
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+			</objective>
+			<objective type="FetchFromContainer">
+				<property name="phase" value="3"/>
+				<property name="quest_item_ID" value="1"/>
+				<property name="item_count" value="1"/>
+				<property name="default_container" value="cntFetchQuestSatchel"/>
+				<property name="nav_object" value="fetch_container"/>
+			</objective>
+			<action type="SpawnEnemy" id="zombieSMGArlenePLUS" value="1" phase="4"/>
+			<objective type="Time" value="180" phase="4"/>
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="5"/>
+			</objective>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="60"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="75"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="90"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="105"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="120"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="135"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="150"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="165"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="180"/>
+			</action>
+			<action type="UnlockPOI">
+				<property name="phase" value="5"/>
+			</action>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="5000"/>
+			<reward type="Item" id="casinoCoin" value="800"/>
+			<reward type="Item" id="WhiteRiverToCGeneralRandomCrate" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="3"/>
+			<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true"/>
+		</quest>
+		<quest id="tier4_fetch_defend_Tazas">
+			<property name="name_key" value="quest_tier4_fetch_defend_Tazas" param1="name"/>
+			<property name="subtitle_key" value="vetquestreward_toc_taza_subtitle"/>
+			<property name="description_key" value="vetquestreward_toc_taza_description"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="difficulty_tier" value="4" param1="difficulty"/>
+			<property name="offer_key" value="quest_toc_taza_offer" param1="offer"/>
+			<property name="statement_key" value="vetquest_toc_taza_statement"/>
+			<property name="response_key" value="quest_fetch_defend_Tazas_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_fetch_defend_Tazas_completion"/>
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RallyPoint">
+				<!-- <property name="start_mode" value="Create"/> -->
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+			</objective>
+			<objective type="FetchFromContainer">
+				<property name="phase" value="3"/>
+				<property name="quest_item_ID" value="1"/>
+				<property name="item_count" value="1"/>
+				<property name="default_container" value="cntFetchQuestSatchel"/>
+				<property name="nav_object" value="fetch_container"/>
+			</objective>
+			<action type="SpawnEnemy" id="zombieSMGArlenePLUS" value="1" phase="4"/>
+			<objective type="Time" value="180" phase="4"/>
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="5"/>
+			</objective>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="60"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="75"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="90"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="105"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="120"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="135"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="150"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="165"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="180"/>
+			</action>
+			<action type="UnlockPOI">
+				<property name="phase" value="5"/>
+			</action>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="6250"/>
+			<reward type="Item" id="casinoCoin" value="1020"/>
+			<reward type="Item" id="WhiteRiverToCGeneralRandomCrate" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="4"/>
+			<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true"/>
+		</quest>
+		<quest id="tier5_fetch_defend_Tazas">
+			<property name="name_key" value="quest_tier5_fetch_defend_Tazas" param1="name"/>
+			<property name="subtitle_key" value="vetquestreward_toc_taza_subtitle"/>
+			<property name="description_key" value="vetquestreward_toc_taza_description"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="medium"/>
+			<property name="difficulty_tier" value="5" param1="difficulty"/>
+			<property name="offer_key" value="quest_toc_taza_offer" param1="offer"/>
+			<property name="statement_key" value="vetquest_toc_taza_statement"/>
+			<property name="response_key" value="quest_fetch_defend_Tazas_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_fetch_defend_Tazas_completion"/>
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RallyPoint">
+				<!-- <property name="start_mode" value="Create"/> -->
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+			</objective>
+			<objective type="FetchFromContainer">
+				<property name="phase" value="3"/>
+				<property name="quest_item_ID" value="1"/>
+				<property name="item_count" value="1"/>
+				<property name="default_container" value="cntFetchQuestSatchel"/>
+				<property name="nav_object" value="fetch_container"/>
+			</objective>
+			<action type="SpawnEnemy" id="zombieSMGArlenePLUS" value="1" phase="4"/>
+			<objective type="Time" value="180" phase="4"/>
+			<objective type="POIStayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="5"/>
+			</objective>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="60"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="75"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="90"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="105"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="120"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="135"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="150"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="165"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="180"/>
+			</action>
+			<action type="UnlockPOI">
+				<property name="phase" value="5"/>
+			</action>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="12500"/>
+			<reward type="Item" id="casinoCoin" value="2040"/>
+			<reward type="Item" id="WhiteRiverToCGeneralRandomCrate" value="1"/>
+			<reward type="LootItem" id="groupQuestTools" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestArmor,groupQuestMedical" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestWeapons" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="5"/>
+			<reward type="LootItem" id="groupQuestSteel" ischosen="true"/>
+			<reward type="LootItem" id="groupQuestT1SkillMagazineBundle" ischosen="true"/>
+		</quest>
+		<quest id="tier1_buried_supplies_defend_Amelias">
+			<!-- Amelias -->
+			<!-- NG 082523 -->
+			<property name="name_key" value="quest_toc_amelia1_name" param1="name"/>
+			<property name="subtitle_key" value="quest_toc_amelia2_subtitle"/>
+			<property name="description_key" value="quest_toc_amelia1_description"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="easy"/>
+			<property name="difficulty_tier" value="1" param1="difficulty"/>
+			<property name="offer_key" value="quest_toc_amelia1_offer" param1="offer"/>
+			<property name="statement_key" value="quest_toc_amelia2_statement"/>
+			<property name="response_key" value="quest_buried_supplies_Defend_Amelias_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_buried_supplies_Defend_Amelias_completion"/>
+			<objective type="RandomGotoNPC" phase="1">
+				<property name="completion_distance" value="20"/>
+				<property name="distance" value="50-100"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RallyPoint">
+				<property name="start_mode" value="Create"/>
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+			</objective>
+			<objective type="StayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="5"/>
+			</objective>
+			<objective type="TreasureChest">
+				<property name="phase" value="3"/>
+				<property name="block" value="questblock_toc_amelia_coffin" param1="container"/>
+				<property name="default_radius" value="5" param1="radius"/>
+				<property name="container_type" value="Supplies"/>
+				<property name="nav_object" value="treasure"/>
+				<property name="direct_nav_object" value="treasure_direct"/>
+				<property name="blocks_per_reduction" value="10"/>
+				<property name="radius_reduction_sound" value="ui_radius_shrink"/>
+				<property name="use_nearby" value="true"/>
+				<property name="explosion_event" value="quest_treasure_explosion_horde"/>
+			</objective>
+			<event type="TreasureRadiusReduction">
+				<property name="chance" value="1" param1="spawn_chance"/>
+				<action type="SpawnGSEnemy">
+					<property name="gamestage_list" value="SleeperGSList"/>
+					<property name="count" value="3-5" param1="spawn_count"/>
+				</action>
+			</event>
+			<objective type="FetchFromTreasure">
+				<property name="phase" value="3"/>
+				<property name="block" value="questblock_toc_amelia_coffin" param1="container"/>
+				<property name="quest_item_ID" value="1"/>
+				<property name="item_count" value="1"/>
+			</objective>
+			<action type="SpawnEnemy" id="zombieTARifleSoldierPLUS" value="1" phase="4"/>
+			<objective type="Time" value="180" phase="4"/>
+			<objective type="StayWithin">
+				<property name="phase" value="4"/>
+				<property name="radius" value="25"/>
+			</objective>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="0"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="60"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="75"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="90"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="105"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="120"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="135"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="150"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="165"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="4"/>
+				<property name="delay" value="180"/>
+			</action>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="5"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="2500"/>
+			<reward type="Item" id="casinoCoin" value="330"/>
+			<reward type="Item" id="WhiteRiverToCVeteranRandomCrate" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestResources" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestResources,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+		<!-- Vengeance -->
+		<!-- NG 082523 -->
+		<quest id="tier1_defend_Vengeance">
+			<property name="name_key" value="quest_spirit_vengeance_name" param1="name"/>
+			<property name="subtitle_key" value="questreward_spirit_vengeance_subtitle"/>
+			<property name="description_key" value="quest_spirit_vengeance_description"/>
+			<property name="icon" value="ui_game_symbol_quest"/>
+			<property name="repeatable" value="true"/>
+			<property name="category_key" value="challenge"/>
+			<property name="difficulty" value="easy"/>
+			<property name="difficulty_tier" value="1" param1="difficulty"/>
+			<property name="offer_key" value="quest_spirit_vengeance_offer" param1="offer"/>
+			<property name="statement_key" value="quest_spirit_vengeance_statement"/>
+			<property name="response_key" value="quest_Defend_Vengeance_response"/>
+			<property name="login_rally_reset" value="true"/>
+			<property name="reward_choices_count" value="5"/>
+			<property name="extra_tags" value="" param1="extra_tags"/>
+			<property name="shareable" value="true"/>
+			<property name="completiontype" value="TurnIn"/>
+			<property name="completion_key" value="quest_Defend_Vengeance_completion"/>
+			<objective type="RandomPOIGoto">
+				<property name="phase" value="1"/>
+				<property name="nav_object" value="quest"/>
+			</objective>
+			<objective type="RallyPoint">
+				<!-- <property name="start_mode" value="Create"/> -->
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="rally"/>
+			</objective>
+			<action type="SpawnEnemy" id="zombieSteelAxeLumberjackPLUS" value="1" phase="3"/>
+			<objective type="Time" value="180" phase="3"/>
+			<objective type="POIStayWithin">
+				<property name="phase" value="3"/>
+				<property name="radius" value="5"/>
+			</objective>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="0"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="15"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="30"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="45"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="60"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="75"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="90"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="105"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="120"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="135"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="150"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="165"/>
+			</action>
+			<action type="SpawnGSEnemy">
+				<property name="gamestage_list" value="SleeperGSList"/>
+				<property name="count" value="3-5" param1="finish_spawn_count"/>
+				<property name="phase" value="3"/>
+				<property name="delay" value="180"/>
+			</action>
+			<action type="UnlockPOI">
+				<property name="phase" value="4"/>
+			</action>
+			<objective type="ReturnToNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="4"/>
+				<property name="nav_object" value="return_to_trader"/>
+			</objective>
+			<reward type="Exp" value="2500"/>
+			<reward type="Item" id="casinoCoin" value="330"/>
+			<reward type="Item" id="WhiteRiverToCVeteranRandomCrate" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestSchematics" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestMods" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestResources" ischosen="true" value="1"/>
+			<reward type="LootItem" id="groupQuestAmmo,groupQuestResources,groupQuestMods,groupQuestT1SkillMagazineBundle" ischosen="true" value="1"/>
+		</quest>
+	</insertAfter>
+	<!-- Traders -->
+	<append xpath="/quests/quest_list[@id='trader_quests']">
+		<quest id="tier1_fetch_defend_Tazas" prob="0.05"/>
+		<quest id="tier1_buried_supplies_defend_Amelias" prob="0.05"/>
+		<quest id="tier1_defend_Vengeance" prob="0.05"/>
+	</append>
+</config>

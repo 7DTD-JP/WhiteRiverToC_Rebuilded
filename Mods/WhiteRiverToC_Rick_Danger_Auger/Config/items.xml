@@ -1,5 +1,5 @@
 <config>
-	<!-- Reviewed by 7DAYSTODIE_JP. We just revised to remove some warnings/errors but did not look carefully. Join Discord to report bugs, supports and requests. Discord: https://discord.gg/Va9CMv59Ej -->
+<!-- Reviewed by 7DAYSTODIE_JP. We just revised to remove some warnings/errors but did not look carefully. Join Discord to report bugs, supports and requests. Discord: https://discord.gg/Va9CMv59Ej -->
 	<append xpath="/items">
 		<item name="questitem_vetcoin_rickdanger">
 			<property name="Extends" value="casinoCoin"/>
@@ -51,7 +51,7 @@
 			<property name="Tags" value="melee,heavy,tool,motorTool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
 			<property name="DisplayType" value="motorTool"/>
 			<property name="HoldType" value="20"/>
-			<property name="Meshfile" value="@:Other/Items/Tools/augerPrefab.prefab"/>
+			<property name="Meshfile" value="@:Other/Items/Tools/Auger/augerPrefab.prefab"/>
 			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
 			<property name="CustomIconTint" value="cc3300"/>
 			<property name="RepairTools" value="resourceRepairKit"/>
@@ -154,7 +154,7 @@
 			<property name="Tags" value="melee,heavy,tool,motorTool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic"/>
 			<property name="DisplayType" value="motorTool"/>
 			<property name="HoldType" value="20"/>
-			<property name="Meshfile" value="@:Other/Items/Tools/augerPrefab.prefab"/>
+			<property name="Meshfile" value="@:Other/Items/Tools/Auger/augerPrefab.prefab"/>
 			<property name="CustomIcon" value="meleeToolPickT3Auger"/>
 			<property name="CustomIconTint" value="5f40c4"/>
 			<property name="RepairTools" value="resourceRepairKit"/>

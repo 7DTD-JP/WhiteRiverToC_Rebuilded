@@ -1,0 +1,1247 @@
+<config>
+	<!-- Removed unused items -->
+	<!-- REQUIRED -->
+	<!-- OK 082523 -->
+	<remove xpath="/items/item[@name='questitem_toc_declaration_name']"/>
+	<remove xpath="/items/item[@name='questitem_toc_veteranquest_name']"/>
+	<remove xpath="/items/item[@name='questitem_toc_elitequest_name']"/>
+	<remove xpath="/items/item[@name='questitem_toc_randomelite_name']"/>
+	<!--  Taza's -->
+	<!-- OK 082523 -->
+	<remove xpath="/items/item[@name='questToCRewardT2FoodBundle']"/>
+	<remove xpath="/items/item[@name='questToCRewardT3FoodBundle']"/>
+	<remove xpath="/items/item[@name='questToCRewardT4FoodBundle']"/>
+	<remove xpath="/items/item[@name='questitem_toc_taza_name']"/>
+	<remove xpath="/items/item[@name='questwrit_toc_taza_name']"/>
+	<remove xpath="/items/item[@name='vetquestitem_toc_taza_name']"/>
+	<remove xpath="/items/item[@name='vetquestwrit_toc_taza_name']"/>
+	<!-- Amelias -->
+	<!-- OK 082523 -->
+	<remove xpath="/items/item[@name='item_toc_amelia_schem_name']"/>
+	<remove xpath="/items/item[@name='questitem_toc_amelia1_name']"/>
+	<remove xpath="/items/item[@name='writitem_toc_amelia1_name']"/>
+	<remove xpath="/items/item[@name='questitem_toc_amelia1map_name']"/>
+	<remove xpath="/items/item[@name='questitem_toc_amelia_journal_name']"/>
+	<!-- Vengeance -->
+	<!-- OK 082523 -->
+	<remove xpath="/items/item[@name='questitem_spirit_vengeance_name']"/>
+	<remove xpath="/items/item[@name='questwrit_spirit_vengeance_name']"/>
+	<!-- Changes -->
+	<!-- Backpacks -->
+	<!-- OK 082523 -->
+	<set xpath="/items/item[@name='apparelPlantFiberShirt']/property[@name='Tags']/@value">chest,clothing,canHaveCosmetic</set>
+	<set xpath="/items/item[@name='apparelTankTop']/property[@name='Tags']/@value">upperbody,chest,clothing,canHaveCosmetic</set>
+	<set xpath="/items/item[@name='apparelSweatshirt']/property[@name='Tags']/@value">upperbody,chest,clothing,canHaveCosmetic</set>
+	<set xpath="/items/item[@name='apparelTShirtPlain']/property[@name='Tags']/@value">upperbody,chest,clothing,canHaveCosmetic</set>
+	<set xpath="/items/item[@name='apparelHoodySweatshirt']/property[@name='Tags']/@value">upperbody,chest,clothing,canHaveCosmetic</set>
+	<set xpath="/items/item[@name='apparelLongShirt']/property[@name='Tags']/@value">upperbody,chest,clothing,canHaveCosmetic</set>
+	<append xpath="/items/item[@name='apparelFlannelShirt']">
+		<property name="Tags" value="chest,clothing,canHaveCosmetic"/>
+	</append>
+	<append xpath="/items/item[@name='apparelArmyShirt']">
+		<property name="Tags" value="chest,clothing,canHaveCosmetic"/>
+	</append>
+	<append xpath="/items/item[@name='apparelTShirtZU']">
+		<property name="Tags" value="upperbody,chest,clothing,canHaveCosmetic"/>
+	</append>
+	<remove xpath="/items/item[@name='modArmorStoragePocketSchematic']/effect_group"/>
+	<append xpath="/items/item[@name='modArmorStoragePocketSchematic']">
+		<property name="CreativeMode" value="None"/>
+		<property name="DescriptionKey" value="h7sb_backpackRemove"/>
+		<effect_group tiered="false"/>
+	</append>
+	<remove xpath="/items/item[@name='modArmorDoubleStoragePocketSchematic']/effect_group"/>
+	<append xpath="/items/item[@name='modArmorDoubleStoragePocketSchematic']">
+		<property name="CreativeMode" value="None"/>
+		<property name="DescriptionKey" value="h7sb_backpackRemove"/>
+		<effect_group tiered="false"/>
+	</append>
+	<remove xpath="/items/item[@name='modArmorTripleStoragePocketSchematic']/effect_group"/>
+	<append xpath="/items/item[@name='modArmorTripleStoragePocketSchematic']">
+		<property name="CreativeMode" value="None"/>
+		<property name="DescriptionKey" value="h7sb_backpackRemove"/>
+		<effect_group tiered="false"/>
+	</append>
+	<set xpath="/items/item[@name='apparelCigar']/property[@name='EquipSlot']/@value">Eyes</set>
+	<set xpath="/items/item[@name='apparelCigar']/property[@class='UMA']/property[@name='UISlot']/@value">Eyewear</set>
+	<set xpath="/items/item[@name='apparelFacialPiercings']/property[@name='EquipSlot']/@value">Eyes</set>
+	<set xpath="/items/item[@name='apparelFacialPiercings']/property[@class='UMA']/property[@name='UISlot']/@value">Eyewear</set>
+	<set xpath="/items/item[@name='apparelBandana']/property[@name='EquipSlot']/@value">Eyes</set>
+	<set xpath="/items/item[@name='apparelBandana']/property[@class='UMA']/property[@name='UISlot']/@value">Eyewear</set>
+	<!-- <set xpath="/items/item[@name='drugSteroids']/effect_group/display_value[@name='dCarryCapacity']/@value">20</set> -->
+	<!-- <set xpath="/items/item[@name='meleeToolRepairT0StoneAxe']/property[@name='Tags']/@value">axe,melee,light,tool,longShaft,repairTool,miningTool,attStrength,perkMiner69r,perkMotherLode,perkTheHuntsman,canHaveCosmetic,harvestingSkill,corpseRemoval,skillASStrength</set> -->
+	<!-- <set xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']/property[@name='Tags']/@value">axe,melee,light,tool,longShaft,tazas,repairTool,miningTool,attStrength,perkMiner69r,perkMotherLode,perkTheHuntsman,canHaveCosmetic,harvestingSkill,corpseRemoval,skillASStrength</set> -->
+	<set xpath="/items/item[@name='meleeToolRepairT1ClawHammer']/property[@name='Tags']/@value">melee,light,tool,repairTool,longshaft,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,repairingTools,skillASStrength</set>
+	<set xpath="/items/item[@name='meleeToolRepairT3Nailgun']/property[@name='Tags']/@value">tool,nailgun,sideAttachments,repairTool,attStrength,perkMiner69r,canHaveCosmetic,noMods,repairingSkill,skillASStrength</set>
+	<set xpath="/items/item[@name='meleeToolAxeT1IronFireaxe']/property[@name='Tags']/@value">axe,melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,corpseRemoval,skillASStrength</set>
+	<!-- <set xpath="/items/item[@name='meleeToolAxeT2SteelAxe']/property[@name='Tags']/@value">melee,light,tool,repairTool,longshaft,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,repairingTools,skillASStrength</set> -->
+	<set xpath="/items/item[@name='meleeToolPickT1IronPickaxe']/property[@name='Tags']/@value">melee,grunting,medium,tool,longShaft,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic,harvestingSkill,skillASStrength</set>
+	<!-- <set xpath="/items/item[@name='meleeToolPickT2SteelPickaxe']/property[@name='Tags']/@value">melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,skillASStrength</set> -->
+	<!-- <set xpath="/items/item[@name='meleeToolShovelT0StoneShovel']/property[@name='Tags']/@value">melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,skillASStrength</set> -->
+	<set xpath="/items/item[@name='meleeToolShovelT1IronShovel']/property[@name='Tags']/@value">melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,skillASStrength</set>
+	<set xpath="/items/item[@name='meleeToolShovelT2SteelShovel']/property[@name='Tags']/@value">melee,grunting,medium,tool,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill,skillASStrength</set>
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/property[@name='Tags']/@value">melee,heavy,tool,motorTool,attStrength,perkMiner69r,perkMotherLode,chainsaw,canHaveCosmetic,harvestingSkill,corpseRemoval,skillASStrength</set>
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/property[@name='Tags']/@value">melee,heavy,tool,motorTool,attStrength,perkMiner69r,perkMotherLode,miningTool,canHaveCosmetic,harvestingSkill,skillASStrength</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT1Wrench']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,longShaft,attPerception,perkSalvageOperations,canHaveCosmetic,salvageTool,salvagingSkill,skillASPerception</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT2Ratchet']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic,salvagingSkill,skillASPerception</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@name='Tags']/@value">blunt,melee,grunting,light,tool,attPerception,perkSalvageOperations,canHaveCosmetic,salvagingSkill,skillASPerception</set>
+	<!-- <set xpath="/items/item[@name='meleeWpnBladeT0BoneKnife']/property[@name='Tags']/@value">knife,melee,grunting,light,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval,skillASAgility</set> -->
+	<set xpath="/items/item[@name='meleeWpnBladeT1HuntingKnife']/property[@name='Tags']/@value">knife,melee,grunting,light,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval,skillASAgility</set>
+	<!-- <set xpath="/items/item[@name='meleeWpnBladeT1CandyKnife']/property[@name='Tags']/@value">knife,melee,grunting,light,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval,skillASAgility</set> -->
+	<set xpath="/items/item[@name='meleeWpnBladeT3Machete']/property[@name='Tags']/@value">machete,melee,grunting,light,longShaft,perkFlurryOfAgility,weapon,meleeWeapon,attAgility,perkDeepCuts,perkTheHuntsman,canHaveCosmetic,bladeSkill,corpseRemoval,skillASAgility</set>
+	<!-- <set xpath="/items/item[@name='meleeWpnClubT0WoodenClub']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic,clubSkill,skillASStrength</set> -->
+	<set xpath="/items/item[@name='meleeWpnClubT1BaseballBat']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic,clubSkill,skillASStrength</set>
+	<!-- <set xpath="/items/item[@name='meleeWpnClubT1CandyClub']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic,clubSkill,skillASStrength</set> -->
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='Tags']/@value">blunt,club,melee,grunting,light,longShaft,perkFlurryOfStrength,weapon,meleeWeapon,attStrength,perkPummelPete,canHaveCosmetic,clubSkill,skillASStrength</set>
+	<!-- <set xpath="/items/item[@name='meleeWpnBatonT0PipeBaton']/property[@name='Tags']/@value">melee,grunting,light,perkFlurryOfIntellect,weapon,meleeWeapon,noStunEffect,attIntellect,perkElectrocutioner,canHaveCosmetic,roboticsSkill,skillASIntellect</set> -->
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='Tags']/@value">melee,grunting,light,perkFlurryOfIntellect,weapon,meleeWeapon,attIntellect,perkElectrocutioner,canHaveCosmetic,roboticsSkill,stunBaton,skillASIntellect</set>
+	<!-- <set xpath="/items/item[@name='meleeWpnSpearT0StoneSpear']/property[@name='Tags']/@value">melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill,skillASPerception</set> -->
+	<append xpath="/items/item[@name='meleeWpnSpearT1IronSpear']">
+		<property name="Tags" value="melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill,skillASPerception"/>
+	</append>
+	<!-- <set xpath="/items/item[@name='meleeWpnSpearT3SteelSpear']/property[@name='Tags']/@value">melee,grunting,medium,weapon,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill,skillASPerception</set> -->
+	<!-- <set xpath="/items/item[@name='meleeWpnSledgeT0StoneSledgehammer']/property[@name='Tags']/@value">blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,attStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,skillASStrength</set> -->
+	<set xpath="/items/item[@name='meleeWpnSledgeT1IronSledgehammer']/property[@name='Tags']/@value">blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,attStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,skillASStrength</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='Tags']/@value">blunt,melee,grunting,heavy,sledge,weapon,meleeWeapon,longShaft,attStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill,skillASStrength</set>
+	<!-- <set xpath="/items/item[@name='meleeWpnKnucklesT0LeatherKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,noBlades,canHaveCosmetic,knuckleSkill,skillASFortitude</set> -->
+	<set xpath="/items/item[@name='meleeWpnKnucklesT1IronKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,noBlades,canHaveCosmetic,knuckleSkill,skillASFortitude</set>
+	<set xpath="/items/item[@name='meleeWpnKnucklesT3SteelKnuckles']/property[@name='Tags']/@value">blunt,melee,grunting,light,perkFlurryOfFortitude,weapon,attFortitude,perkBrawler,canHaveCosmetic,knuckleSkill,corpseRemoval,skillASFortitude</set>
+	<!-- <set xpath="/items/item[@name='gunHandgunT0PipePistol']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill,skillASAgility</set> -->
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill,skillASAgility</set>
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,firingMode,bottomAttachments,attAgility,perkGunslinger,9mmGun,attachmentsIncluded,canHaveCosmetic,handgunSkill,skillASAgility</set>
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shortRange,revolver,barrelAttachments,sideAttachments,smallTopAttachments,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill,skillASAgility</set>
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@name='Tags']/@value">weapon,ranged,revolver,holdBreathAiming,reloadPenalty,gun,shortRange,pistol,barrelAttachments,sideAttachments,smallTopAttachments,magazine,firingMode,attAgility,perkGunslinger,attachmentsIncluded,canHaveCosmetic,handgunSkill,skillASAgility</set>
+	<!-- <set xpath="/items/item[@name='gunShotgunT0PipeShotgun']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,stock,smallTopAttachments,noScopes,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,shotgunSkill,skillASStrength</set> -->
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,dBarrel,barrelAttachments,sideAttachments,stock,bottomAttachments,attStrength,perkBoomstick,canHaveCosmetic,attachmentsIncluded,shotgunSkill,skillASStrength</set>
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,bottomAttachments,attStrength,perkBoomstick,modGunShotgunTubeExtenderMagazine,attachmentsIncluded,canHaveCosmetic,shotgunSkill,skillASStrength</set>
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,shotgun,shortRange,barrelAttachments,sideAttachments,smallTopAttachments,noScopes,stock,magazine,drumMagazine,firingMode,bottomAttachments,attStrength,perkBoomstick,attachmentsIncluded,canHaveCosmetic,shotgunSkill,skillASStrength</set>
+	<!-- <set xpath="/items/item[@name='gunRifleT0PipeRifle']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,attachmentsIncluded,bottomAttachments,attPerception,perkDeadEye,canHaveCosmetic,rifleSkill,skillASPerception</set> -->
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill,skillASPerception</set>
+	<set xpath="/items/item[@name='gunRifleT2LeverActionRifle']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill,skillASPerception</set>
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,largeTopAttachments,stock,magazine,firingMode,bottomAttachments,attPerception,perkDeadEye,attachmentsIncluded,canHaveCosmetic,rifleSkill,skillASPerception</set>
+	<!-- <set xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill,skillASFortitude</set> -->
+	<set xpath="/items/item[@name='gunMGT1AK47']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill,skillASFortitude</set>
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,mediumTopAttachments,stock,magazine,drumMagazine,firingMode,bottomAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,canHaveCosmetic,attachmentsIncluded,machinegunSkill,skillASFortitude</set>
+	<set xpath="/items/item[@name='gunMGT3M60']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,gun,barrelAttachments,sideAttachments,smallTopAttachments,magazine,drumMagazine,bottomAttachments,mediumTopAttachments,attFortitude,perkMachineGunner,perkBookAutoWeapons,attachmentsIncluded,canHaveCosmetic,machinegunSkill,skillASFortitude</set>
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,launcher,attPerception,perkDemolitionsExpert,canHaveCosmetic,barrelAttachments,noSilencer,sideAttachments,smallTopAttachments,explosivesSkill,skillASPerception</set>
+	<!-- <set xpath="/items/item[@name='gunBowT0PrimitiveBow']/property[@name='Tags']/@value">weapon,ranged,bowDrawPenalty,archery,bow,attAgility,perkArchery,canHaveCosmetic,bowSkill,skillASAgility</set> -->
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='Tags']/@value">weapon,ranged,bowDrawPenalty,archery,bow,attAgility,perkArchery,canHaveCosmetic,bowSkill,skillASAgility</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/property[@name='Tags']/@value">weapon,ranged,bowDrawPenalty,archery,bow,attAgility,perkArchery,canHaveCosmetic,bowSkill,skillASAgility</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,attachmentsIncluded,canHaveCosmetic,bowSkill,skillASAgility</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@name='Tags']/@value">weapon,ranged,holdBreathAiming,reloadPenalty,sideAttachments,smallTopAttachments,mediumTopAttachments,bottomAttachments,attAgility,perkArchery,crossbow,attachmentsIncluded,canHaveCosmetic,bowSkill,skillASAgility</set>
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/property[@name='Tags']/@value">turretMelee,melee,weapon,blunt,longShaft,attIntellect,perkTurrets,canHaveCosmetic,roboticsSkill,skillASIntellect</set>
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/property[@name='Tags']/@value">turretRanged,weapon,ranged,reloadPenalty,drumMagazine,attIntellect,perkTurrets,canHaveCosmetic,roboticsSkill,skillASIntellect</set>
+	<set xpath="/items/item[@name='gunBotT3JunkDrone']/property[@name='Tags']/@value">drone,attIntellect,perkTurrets,canHaveCosmetic,roboticsSkill,skillASIntellect</set>
+	<append xpath="/items">
+		<item name="h7sb_bumbag">
+			<property name="CustomIcon" value="cntPurse01"/>
+			<property name="DescriptionKey" value="h7sb_backpackDesc"/>
+			<property name="DisplayType" value="h7sb_carryCapacity"/>
+			<property name="Group" value="Clothing,Tailor"/>
+			<property name="Tags" value="bumbag"/>
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="@:Other/Items/Misc/sackPrefab.prefab"/>
+			<property name="Material" value="Mh7sb_bumbag"/>
+			<property name="Weight" value="24"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="FuelValue" value="6"/>
+			<property name="EconomicValue" value="1250"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="EquipSlot" value="Face"/>
+			<property class="UMA">
+				<property name="Mesh" value=""/>
+				<property name="Overlay0" value=""/>
+				<property name="Layer" value="1"/>
+				<property name="UISlot" value="Face"/>
+			</property>
+			<property class="Action1">
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+				<property name="Class" value="PlaceAsBlock"/>
+				<property name="Delay" value=".5"/>
+				<property name="Blockname" value="h7sb_bumbagBlock"/>
+			</property>
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<display_value name="dCarryCapacity" value="60"/>
+				<display_value name="dMobility" value="-0.01"/>
+			</effect_group>
+		</item>
+		<item name="h7sb_largeBackpack">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="Tags" value="largeBackpack"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<display_value name="dCarryCapacity" value="40"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackBasicPerception">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackBasicPerceptionDesc"/>
+			<property name="Tags" value="BackpackBasicPerception"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="1"/>
+				<display_value name="dCarryCapacity" value="50"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackMiddlePerception">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackMiddlePerceptionDesc"/>
+			<property name="Tags" value="BackpackMiddlePerception"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverVeteran"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="2"/>
+				<display_value name="dCarryCapacity" value="40"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackAdvancedPerception">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackAdvancedPerceptionDesc"/>
+			<property name="Tags" value="BackpackAdvancedPerception"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverElite"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attPerception" operation="base_add" value="3"/>
+				<display_value name="dCarryCapacity" value="30"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackBasicStrength">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackBasicStrengthDesc"/>
+			<property name="Tags" value="BackpackBasicStrength"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="1"/>
+				<display_value name="dCarryCapacity" value="50"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackMiddleStrength">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackMiddleStrengthDesc"/>
+			<property name="Tags" value="BackpackMiddleStrength"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverVeteran"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="2"/>
+				<display_value name="dCarryCapacity" value="40"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackAdvancedStrength">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackAdvancedStrengthDesc"/>
+			<property name="Tags" value="BackpackAdvancedStrength"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverElite"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attStrength" operation="base_add" value="3"/>
+				<display_value name="dCarryCapacity" value="30"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackBasicFortitude">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackBasicFortitudeDesc"/>
+			<property name="Tags" value="BackpackBasicFortitude"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+				<display_value name="dCarryCapacity" value="50"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackMiddleFortitude">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackMiddleFortitudeDesc"/>
+			<property name="Tags" value="BackpackMiddleFortitude"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverVeteran"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="2"/>
+				<display_value name="dCarryCapacity" value="40"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackAdvancedFortitude">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackAdvancedFortitudeDesc"/>
+			<property name="Tags" value="BackpackAdvancedFortitude"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverElite"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="3"/>
+				<display_value name="dCarryCapacity" value="30"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackBasicAgility">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackBasicAgilityDesc"/>
+			<property name="Tags" value="BackpackBasicAgility"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="1"/>
+				<display_value name="dCarryCapacity" value="50"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackMiddleAgility">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackMiddleAgilityDesc"/>
+			<property name="Tags" value="BackpackMiddleAgility"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverVeteran"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="2"/>
+				<display_value name="dCarryCapacity" value="40"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackAdvancedAgility">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackAdvancedAgilityDesc"/>
+			<property name="Tags" value="BackpackAdvancedAgility"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverElite"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="3"/>
+				<display_value name="dCarryCapacity" value="30"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackBasicIntellect">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackBasicIntellectDesc"/>
+			<property name="Tags" value="BackpackBasicIntellect"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="1"/>
+				<display_value name="dCarryCapacity" value="50"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackMiddleIntellect">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackMiddleIntellectDesc"/>
+			<property name="Tags" value="BackpackMiddleIntellect"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverVeteran"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="2"/>
+				<display_value name="dCarryCapacity" value="40"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+		<item name="BackpackAdvancedIntellect">
+			<property name="Extends" value="h7sb_bumbag"/>
+			<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+			<property name="DescriptionKey" value="BackpackAdvancedIntellectDesc"/>
+			<property name="Tags" value="BackpackAdvancedIntellect"/>
+			<property name="UnlockedBy" value="perkNeedleAndThreadPockets"/>
+			<property name="FuelValue" value="16"/>
+			<property name="EconomicValue" value="10000"/>
+			<property class="Action1">
+				<property name="Blockname" value="h7sb_largeBackpackBlock"/>
+			</property>
+			<property name="Group" value="WRC_Backpacks"/>
+			<!-- <property name="Material" value="MwhiteRiverElite"/> -->
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="AttributeLevel" tags="attIntellect" operation="base_add" value="3"/>
+				<display_value name="dCarryCapacity" value="30"/>
+				<display_value name="dMobility" value="-0.07"/>
+			</effect_group>
+		</item>
+	</append>
+	<!-- DEBUG USE -->
+	<!-- <append xpath="/items/item[@name='harvestingToolsSkillMagazine']">
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="3.0"/>
+			<property name="Sound_start" value="ui_mag_read"/>
+		</property>
+	</append> -->
+	<!-- END -->
+	<!-- REQUIRED -->
+	<!-- OK 082523 -->
+	<append xpath="/items/item[@name='questitem_toc_citizencard_name']">
+		<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+	</append>
+	<append xpath="/items/item[@name='questitem_toc_veterancard_name']">
+		<!-- <property name="Material" value="MwhiteRiverVeteran"/> -->
+	</append>
+	<append xpath="/items/item[@name='questitem_toc_elitecard_name']">
+		<!-- <property name="Material" value="MwhiteRiverElite"/> -->
+	</append>
+	<set xpath="/items/item[@name='questitem_toc_citizencard_name']/property[@name='Group']/@value">WRC_Cards</set>
+	<set xpath="/items/item[@name='questitem_toc_veterancard_name']/property[@name='Group']/@value">WRC_Cards</set>
+	<set xpath="/items/item[@name='questitem_toc_elitecard_name']/property[@name='Group']/@value">WRC_Cards</set>
+	<!--  Taza's -->
+	<!-- OK 082523 -->
+	<append xpath="/items/item[@name='meleeToolRepairT0TazasStoneAxe']">
+		<property name="Group" value="WRC_Tools"/>
+	</append>
+	<!-- Amelias -->
+	<!-- OK 082523 -->
+	<append xpath="/items/item[@name='resourceRefinedLead']">
+		<property name="Group" value="WRC_Tools"/>
+	</append>
+	<append xpath="/items/item[@name='carAmeliaBattery']">
+		<property name="Group" value="WRC_Tools"/>
+		<property name="UnlockedBy" value="craftingAmelias"/>
+	</append>
+	<append xpath="/items/item[@name='vehicleAmeliaGyroCopterAccessories']">
+		<property name="Group" value="WRC_Tools"/>
+	</append>
+	<append xpath="/items/item[@name='vehicleAmeliaGyroCopterChassis']">
+		<property name="Group" value="WRC_Tools"/>
+	</append>
+	<append xpath="/items/item[@name='vehicleAmeliaGyrocopterPlaceable']">
+		<property name="Group" value="WRC_Tools"/>
+		<property name="UnlockedBy" value="craftingAmelias"/>
+	</append>
+	<set xpath="/items/item[@name='resourceRefinedLead']/property[@name='UnlockedBy']/@value">craftingAmelias</set>
+	<set xpath="/items/item[@name='carAmeliaBattery']/property[@name='UnlockedBy']/@value">craftingAmelias</set>
+	<set xpath="/items/item[@name='vehicleAmeliaGyroCopterChassis']/property[@name='UnlockedBy']/@value">craftingAmelias</set>
+	<set xpath="/items/item[@name='vehicleAmeliaGyroCopterAccessories']/property[@name='UnlockedBy']/@value">craftingAmelias</set>
+	<!-- Vengeance -->
+	<!-- OK 082523 -->
+	<append xpath="/items/item[@name='medicalVengeanceFirstAidKit']">
+		<property name="Group" value="WRC_Tools"/>
+		<property name="UnlockedBy" value="craftingVengeance"/>
+	</append>
+	<append xpath="/items/item[@name='vehicleSpiritHellBeastToCPlaceable']">
+		<property name="Group" value="WRC_Tools"/>
+		<property name="UnlockedBy" value="craftingVengeance"/>
+	</append>
+	<!-- Quests -->
+	<!--  Taza's -->
+	<!-- OK 082523 -->
+	<append xpath="/items">
+		<item name="tier1_Tazas">
+			<property name="Extends" value="questMaster"/>
+			<property name="DescriptionKey" value="tier1_Tazas_description"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="EconomicValue" value="300"/>
+			<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier1_fetch_defend_Tazas"/>
+				<property name="Delay" value="0"/>
+			</property>
+			<property name="Group" value="WRC_Quests"/>
+		</item>
+		<item name="qc_Tazas">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_TazasDesc"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="EconomicValue" value="100"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_Tazas"/>
+			</property>
+			<property name="Group" value="WRC_Quests"/>
+			<property name="Tags" value="skillASPerception"/>
+		</item>
+		<item name="qt_Tazas">
+			<property name="Extends" value="treasureQuestMaster"/>
+			<property name="DescriptionKey" value="qt_TazasDesc"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="EconomicValue" value="200"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="treasure_Tazas"/>
+			</property>
+			<property name="Group" value="WRC_Quests"/>
+		</item>
+		<item name="tier1_Amelias">
+			<property name="Extends" value="questMaster"/>
+			<property name="DescriptionKey" value="tier1_Amelias_description"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="EconomicValue" value="300"/>
+			<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier1_buried_supplies_defend_Amelias"/>
+				<property name="Delay" value="0"/>
+			</property>
+			<property name="Group" value="WRC_Quests"/>
+		</item>
+		<item name="qc_Amelias">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_AmeliasDesc"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="EconomicValue" value="100"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_Amelias"/>
+			</property>
+			<property name="Group" value="WRC_Quests"/>
+		</item>
+		<item name="qt_Amelias">
+			<property name="Extends" value="treasureQuestMaster"/>
+			<property name="DescriptionKey" value="qt_AmeliasDesc"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="EconomicValue" value="200"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="treasure_Amelias"/>
+			</property>
+			<property name="Group" value="WRC_Quests"/>
+		</item>
+		<item name="tier1_Vengeance">
+			<property name="Extends" value="questMaster"/>
+			<property name="DescriptionKey" value="tier1_Vengeance_description"/>
+			<property name="CustomIcon" value="challengeQuestMaster"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="EconomicValue" value="300"/>
+			<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+			<property class="Action0">
+				<property name="Class" value="Quest"/>
+				<property name="QuestGiven" value="tier1_defend_Vengeance"/>
+				<property name="Delay" value="0"/>
+			</property>
+			<property name="Group" value="WRC_Quests"/>
+		</item>
+		<item name="qc_Vengeance">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_VengeanceDesc"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="EconomicValue" value="100"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_Vengeance"/>
+			</property>
+			<property name="Group" value="WRC_Quests"/>
+		</item>
+		<item name="qt_Vengeance">
+			<property name="Extends" value="treasureQuestMaster"/>
+			<property name="DescriptionKey" value="qt_VengeanceDesc"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="EconomicValue" value="200"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="treasure_Vengeance"/>
+			</property>
+			<property name="Group" value="WRC_Quests"/>
+		</item>
+	</append>
+	<!-- Coins -->
+	<set xpath="/items/item[@name='questitem_coin_taza']">
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="CustomIcon" value="casinoCoin"/>
+		<property name="CustomIconTint" value="2eb200"/>
+		<property name="MeltTimePerUnit" value="10"/>
+		<property name="DescriptionKey" value="WRC_CoinGroup"/>
+		<property name="Unlocks" value="craftingTazas"/>
+		<property name="Stacknumber" value="10"/>
+		<property name="NoScrapping" value="true"/>
+		<property name="Tags" value="ToC_coin"/>
+		<property name="Material" value="MwhiteRiverCitizen"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTazas" level="1"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+		<property name="Group" value="WRC_Coins"/>
+	</set>
+	<set xpath="/items/item[@name='questitem_vetcoin_taza']">
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="CustomIcon" value="casinoCoin"/>
+		<property name="CustomIconTint" value="2eb200"/>
+		<property name="MeltTimePerUnit" value="10"/>
+		<property name="DescriptionKey" value="WRC_CoinGroup"/>
+		<property name="Unlocks" value="craftingTazas"/>
+		<property name="Stacknumber" value="10"/>
+		<property name="NoScrapping" value="true"/>
+		<property name="Tags" value="ToC_coin"/>
+		<property name="Material" value="MwhiteRiverVeteran"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTazas" level="2"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+		<property name="Group" value="WRC_Coins"/>
+	</set>
+	<!-- Amelias -->
+	<!-- OK 082523 -->
+	<set xpath="/items/item[@name='questitem_vetcoin_amelia']">
+		<property name="Extends" value="masterSkillMagazine"/>
+		<property name="CustomIcon" value="casinoCoin"/>
+		<property name="CustomIconTint" value="2eb200"/>
+		<property name="MeltTimePerUnit" value="10"/>
+		<property name="DescriptionKey" value="WRC_CoinGroup"/>
+		<property name="Unlocks" value="craftingAmelias"/>
+		<property name="Stacknumber" value="10"/>
+		<property name="NoScrapping" value="true"/>
+		<property name="Tags" value="ToC_coin"/>
+		<property name="Material" value="MwhiteRiverVeteran"/>
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTazas" level="2"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+		</effect_group>
+		<property name="Group" value="WRC_Coins"/>
+	</set>
+	<!-- Vengeance -->
+	<!-- OK 082523 -->
+	<insertAfter xpath="/items/item[@name='questitem_vetcoin_amelia']">
+		<item name="questitem_vetcoin_Vengeance">
+			<property name="Extends" value="masterSkillMagazine"/>
+			<property name="CustomIcon" value="casinoCoin"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="MeltTimePerUnit" value="10"/>
+			<property name="DescriptionKey" value="WRC_CoinGroup"/>
+			<property name="Unlocks" value="craftingVengeance"/>
+			<property name="Stacknumber" value="10"/>
+			<property name="NoScrapping" value="true"/>
+			<property name="Tags" value="ToC_coin"/>
+			<property name="Material" value="MwhiteRiverVeteran"/>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddProgressionLevel" progression_name="craftingTazas" level="2"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
+			</effect_group>
+			<property name="Group" value="WRC_Coins"/>
+		</item>
+	</insertAfter>
+	<!-- REQUIRED -->
+	<!-- OK 082523 -->
+	<append xpath="/items">
+		<!-- 
+		<item name="qc_drunkanddisorderly">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="challenge_drunkanddisorderly"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		-->
+		<item name="qc_nurseyoubacktohealth">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_nurseyoubacktohealth"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<item name="qc_starvingtourists">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_starvingtourists"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<!-- <item name="qc_dogdaysareover">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_dogdaysareover"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<item name="qc_itsbitsyspider">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_itsybitsyspider"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<item name="qc_ladykiller">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_ladykiller"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<item name="qc_maneater">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_maneater"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<item name="qc_imalumberjackandimokay">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_imalumberjackandimokay"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<item name="qc_yournothingspecial">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_yournothingspecial"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item> -->
+		<!-- <item name="qc_thatlldopig">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_AnimalGroupDesc"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_thatlldopig"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<item name="qc_stagparty">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_AnimalGroupDesc"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_stagparty"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<item name="qc_dontfeedthebears">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="qc_AnimalGroupDesc"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_dontfeedthebears"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item> -->
+		<!-- 
+		<item name="qc_buythefarm">
+		<property name="Extends" value="challengeQuestMaster"/>
+		<property name="DescriptionKey" value="qc_AnimalGroupDesc"/>
+		<property class="Action0">
+			<property name="QuestGiven" value="challenge_buythefarm"/>
+		</property>
+			<property name="Group" value="Quests"/>
+		</item> 
+		-->
+		<!-- <item name="qc_dishonorabledischarge">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_dishonorabledischarge"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<item name="qc_cableguysnevermadeit">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_cableguysnevermadeit"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<item name="qc_itsjustbusinessman">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_itsjustbusinessman"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item>
+		<item name="qc_partyallthetime">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_partyallthetime"/>
+			</property>
+			<property name="Group" value="Quests"/>
+		</item> -->
+		<item name="unit_whiteRiverCitizen">
+			<property name="Extends" value="unit_iron"/>
+			<property name="CustomIcon" value="XP"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="CreativeMode" value="None"/>
+			<!-- <property name="Material" value="MwhiteRiverCitizen"/> -->
+			<property name="Stacknumber" value="1500"/>
+		</item>
+		<item name="unit_whiteRiverVeteran">
+			<property name="Extends" value="unit_iron"/>
+			<property name="CustomIcon" value="XP"/>
+			<property name="CustomIconTint" value="7fa6ff"/>
+			<property name="CreativeMode" value="None"/>
+			<!-- <property name="Material" value="MwhiteRiverVeteran"/> -->
+			<property name="Stacknumber" value="1500"/>
+		</item>
+		<item name="unit_whiteRiverElite">
+			<property name="Extends" value="unit_iron"/>
+			<property name="CustomIcon" value="XP"/>
+			<property name="CustomIconTint" value="5f40c4"/>
+			<property name="CreativeMode" value="None"/>
+			<!-- <property name="Material" value="MwhiteRiverElite"/> -->
+			<property name="Stacknumber" value="1500"/>
+		</item>
+		<!--  Taza's -->
+		<!-- NG 082523 -->
+		<item name="meleeToolShovelT0TazasStoneShovel">
+			<property name="Extends" value="meleeToolShovelT0StoneShovel"/>
+			<property name="Tags" value="melee,grunting,medium,tool,tazas,longShaft,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic,harvestingSkill"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="TraderStageTemplate" value="baseTier0"/>
+			<property name="CustomIcon" value="meleeToolShovelT0StoneShovel"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="Group" value="WRC_Tools"/>
+			<effect_group name="meleeToolShovelT0TazasStoneShovel">
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="50" tags="perkMiner69r"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="18.2" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="300,675" tier="1,6" tags="perkMiner69r"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkMiner69r"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkMiner69r"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,1,2,2,3" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="12" tags="perkMiner69r"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/>
+				<!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="base_set" value="54" tags="perkMiner69r"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkMiner69r"/>
+				<!-- tier bonus -->
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.7" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="metal"/>
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<!-- 
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
+				-->
+				<passive_effect name="StaminaLoss" operation="base_set" value="34.5" tags="secondary"/>
+			</effect_group>
+		</item>
+		<item name="meleeWpnSpearT0TazasStoneSpear">
+			<property name="Extends" value="meleeWpnSpearT0StoneSpear"/>
+			<property name="Tags" value="melee,grunting,medium,weapon,tazas,meleeWeapon,longShaft,attPerception,perkJavelinMaster,perkFlurryOfPerception,canHaveCosmetic,spearSkill"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="TraderStageTemplate" value="baseTier0"/>
+			<property name="CustomIcon" value="meleeWpnSpearT0StoneSpear"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="Group" value="WRC_Tools"/>
+			<effect_group name="meleeWpnSpearT0StoneSpear">
+				<passive_effect name="TargetArmor" operation="perc_add" value="-.3" tags="perkJavelinMaster"/>
+				<display_value name="dTargetArmor" value="-.3"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="55" tags="perkJavelinMaster,perkFlurryOfPerception"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="20.5" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="150,300" tier="1,6" tags="perkJavelinMaster"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkJavelinMaster"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkJavelinMaster"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,1,2,2,3" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="18" tags="perkJavelinMaster"/>
+				<!-- meleeWpnSpearT0StoneSpear -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/>
+				<!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="base_set" value="7.5" tags="perkJavelinMaster"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkJavelinMaster"/>
+				<!-- tier bonus -->
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.9" tags="metal"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+			</effect_group>
+			<!-- <effect_group name="Throw"> -->
+			<!-- <passive_effect name="EntityDamage" operation="perc_add" value="2.85" tags="secondary"/> -->
+			<!-- <passive_effect name="BlockDamage" operation="perc_add" value="2.85" tags="secondary"/> -->
+			<!-- <passive_effect name="StaminaLoss" operation="base_set" value="36.9" tags="secondary"/> -->
+			<!-- </effect_group> -->
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="28.1" tags="secondary"/>
+				<passive_effect name="EntityPenetrationCount" operation="base_set" value="1" tags="perkJavelinMaster">
+					<requirement name="ProgressionLevel" progression_name="perkSpearHunter6PenetratingShaft" operation="Equals" value="1"/>
+				</passive_effect>
+				<passive_effect name="BlockPenetrationFactor" operation="base_set" value="10000" tags="perkJavelinMaster"/>
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="AddJournalEntry" journal="powerAttackTip"/>
+			</effect_group>
+		</item>
+		<item name="meleeWpnSledgeT0TazasStoneSledgehammer">
+			<property name="Extends" value="meleeWpnSledgeT0StoneSledgehammer"/>
+			<property name="Tags" value="blunt,melee,grunting,heavy,sledge,weapon,tazas,meleeWeapon,longShaft,attStrength,perkSkullCrusher,perkFlurryOfStrength,canHaveCosmetic,sledgeSkill"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="TraderStageTemplate" value="baseTier0"/>
+			<property name="CustomIcon" value="meleeWpnSledgeT0StoneSledgehammer"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="Group" value="WRC_Tools"/>
+			<effect_group name="meleeWpnSledgeT0StoneSledgehammer">
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="50" tags="perkSkullCrusher,perkFlurryOfStrength"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="24.3" tags="primary"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="150,300" tier="1,6" tags="perkSkullCrusher"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkSkullCrusher"/>
+				<passive_effect name="MaxRange" operation="base_set" value="2.6" tags="perkSkullCrusher"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3.5" tags="perkSkullCrusher"/>
+				<passive_effect name="DismemberChance" operation="base_add" value=".1" tags="perkSkullCrusher,primary"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,1,2,2,3" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="27" tags="perkSkullCrusher"/>
+				<!-- meleeWpnSledgeT0StoneSledgehammer -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkSkullCrusher"/>
+				<!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="base_set" value="42" tags="perkSkullCrusher"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value=".1,.5" tier="2,6" tags="perkSkullCrusher"/>
+				<!-- tier bonus -->
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="allToolsHarvest"/>
+				<passive_effect name="HarvestCount" operation="base_add" value="-.75" tags="oreWoodHarvest"/>
+			</effect_group>
+			<effect_group name="Power Attack">
+				<passive_effect name="EntityDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="GrazeDamageMultiplier" operation="base_set" value=".1" tags="secondary"/>
+				<passive_effect name="BlockDamage" operation="perc_add" value="1.25" tags="secondary"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="47.7" tags="secondary"/>
+				<passive_effect name="DismemberChance" operation="base_add" value=".3" tags="secondary"/>
+			</effect_group>
+		</item>
+		<item name="gunBowT0TazasPrimitiveBow">
+			<property name="Extends" value="gunBowT0PrimitiveBow"/>
+			<property name="Tags" value="weapon,ranged,bowDrawPenalty,archery,bow,tazas,attAgility,perkArchery,canHaveCosmetic,bowSkill"/>
+			<property name="EconomicValue" value="1000"/>
+			<property name="TraderStageTemplate" value="baseTier0"/>
+			<property name="CustomIcon" value="gunBowT0PrimitiveBow"/>
+			<property name="CustomIconTint" value="ffb0b0"/>
+			<property name="Group" value="WRC_Tools"/>
+			<effect_group name="gunBowT0PrimitiveBow">
+				<passive_effect name="ProjectileVelocity" operation="perc_add" value="-.3" tags="perkArchery"/>
+				<passive_effect name="DamageFalloffRange" operation="base_set" value="20" tags="perkArchery"/>
+				<passive_effect name="MaxRange" operation="base_set" value="100" tags="perkArchery"/>
+				<passive_effect name="MagazineSize" operation="base_set" value="1" tags="perkArchery"/>
+				<passive_effect name="EntityDamage" operation="base_add" value="-5" tags="perkArchery"/>
+				<!-- damage offset -->
+				<passive_effect name="EntityDamage" operation="perc_add" value=".07,.35" tier="2,6" tags="perkArchery"/>
+				<!-- tier bonus -->
+				<passive_effect name="BlockDamage" operation="perc_add" value=".15,.75" tier="2,6" tags="perkArchery"/>
+				<!-- tier bonus -->
+				<passive_effect name="SpreadDegreesVertical" operation="base_set" value="2.8" tags="perkArchery"/>
+				<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="2.8" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierAiming" operation="base_set" value=".26" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierCrouching" operation="base_set" value=".8" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierWalking" operation="base_set" value="1.5" tags="perkArchery"/>
+				<passive_effect name="SpreadMultiplierRunning" operation="base_set" value="2.2" tags="perkArchery"/>
+				<passive_effect name="IncrementalSpreadMultiplier" operation="base_set" value="2" tags="perkArchery"/>
+				<passive_effect name="WeaponHandling" operation="base_set" value=".9" tags="perkArchery"/>
+				<!-- crosshair reset speed -->
+				<passive_effect name="RoundsPerMinute" operation="base_set" value="75" tags="perkArchery,bowDrawPenalty"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value=".9" tags="perkArchery"/>
+				<!--
+				<passive_effect name="AttacksPerMinute" operation="perc_add" value="15"/>
+				-->
+				<!-- 
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="166"/>
+				AttacksPerMinute, RoundsPerMinute  do NOT affect bow rate of fire
+				-->
+				<passive_effect name="BurstRoundCount" operation="base_set" value="1" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMin" operation="base_set" value=".5" tags="perkArchery"/>
+				<passive_effect name="KickDegreesVerticalMax" operation="base_set" value=".5" tags="perkArchery"/>
+				<passive_effect name="KickDegreesHorizontalMin" operation="base_set" value="-.2" tags="perkArchery"/>
+				<passive_effect name="KickDegreesHorizontalMax" operation="base_set" value=".2" tags="perkArchery"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="150,300" tier="1,6" tags="perkArchery"/>
+				<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkArchery"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1,1,1,2,2,3" tier="1,2,3,4,5,6"/>
+				<passive_effect name="ModPowerBonus" operation="perc_add" value=".10" tags="EntityDamage,BlockDamage"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+			</effect_group>
+			<effect_group name="sneak damage bonus">
+				<requirement name="CVarCompare" cvar="_crouching" operation="Equals" value="1"/>
+				<requirement name="CVarCompare" cvar="_notAlerted" operation="GT" value="0" target="other"/>
+				<passive_effect name="DamageBonus" operation="base_add" value="2"/>
+				<passive_effect name="EntityDamage" operation="perc_add" value="2" tags="perkArchery"/>
+				<display_value name="dEntityDamageSneak" value="2"/>
+			</effect_group>
+		</item>
+		<!-- Bosses -->
+		<!-- Taza's -->
+		<!-- OK 082523 -->
+		<item name="meleeHandBansheeQueen">
+			<property name="Extends" value="meleeHandMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="Degradation" value="99999" param1="true"/>
+			<property class="Action0">
+				<property name="Range" value="4"/>
+				<property name="DamageEntity" value="60"/>
+				<property name="DamageBlock" value="1000"/>
+			</property>
+			<effect_group name="meleeHandBansheeQueen" tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			</effect_group>
+		</item>
+	</append>
+	<!-- Wasteland Radiation -->
+	<!-- OK 082523 -->
+	<append xpath="/items/item[@name='apparelHazmatMask']/effect_group">
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitMask"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitMask"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatJacket']/effect_group">
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitChest"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitChest"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatGloves']/effect_group">
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitGloves"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitGloves"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatPants']/effect_group">
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitLegs"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitLegs"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatBoots']/effect_group">
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="buffRadSuitBoots"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuitBoots"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="buffRadSuit"/>
+	</append>
+	<append xpath="/items">
+		<item name="qc_zombieHazmat">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property class="Action0">
+				<property name="QuestGiven" value="challenge_zombieHazmat"/>
+			</property>
+			<property name="PickupJournalEntry" value="journalTipwastelandRadiationTip"/>
+		</item>
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatBoots']">
+		<property name="PickupJournalEntry" value="journalTipwastelandRadiation"/>
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatPants']">
+		<property name="PickupJournalEntry" value="journalTipwastelandRadiation"/>
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatJacket']">
+		<property name="PickupJournalEntry" value="journalTipwastelandRadiation"/>
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatGloves']">
+		<property name="PickupJournalEntry" value="journalTipwastelandRadiation"/>
+	</append>
+	<append xpath="/items/item[@name='apparelHazmatMask']">
+		<property name="PickupJournalEntry" value="journalTipwastelandRadiation"/>
+	</append>
+	<append xpath="/items/item[@name='harvestingToolsSkillMagazine']">
+		<property class="Action0">
+			<requirement name="CVarCompare" cvar="$challengeQuest" operation="Equals" value="1"/>
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="1.0"/>
+			<property name="Sound_start" value="ui_mag_read"/>
+		</property>
+	</append>
+	<!-- 
+		<item name="bookTazasStoneAxeMaster1">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="DescriptionKey" value="perkTazasStoneAxeMaster1LongDesc"/>
+			<property name="Unlocks" value="perkTazasStoneAxeMaster1"/>
+			<property class="Action0">
+				<property name="Create_item" value="bookTazasStoneAxeMaster1"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster1" level="1"/>
+			</effect_group>
+			<property name="Group" value="Q1"/>
+		</item>
+		<item name="bookTazasStoneAxeMaster2">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="DescriptionKey" value="perkTazasStoneAxeMaster2LongDesc"/>
+			<property name="Unlocks" value="perkTazasStoneAxeMaster2"/>
+			<property class="Action0">
+				<property name="Create_item" value="bookTazasStoneAxeMaster2"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster1" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster2" level="1"/>
+			</effect_group>
+			<property name="Group" value="Q2"/>
+		</item>
+		<item name="bookTazasStoneAxeMaster3">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="DescriptionKey" value="perkTazasStoneAxeMaster3LongDesc"/>
+			<property name="Unlocks" value="perkTazasStoneAxeMaster3"/>
+			<property class="Action0">
+				<property name="Create_item" value="bookTazasStoneAxeMaster3"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster1" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster2" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster3" level="1"/>
+			</effect_group>
+			<property name="Group" value="Q3"/>
+		</item>
+		<item name="bookTazasStoneAxeMaster4">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="DescriptionKey" value="perkTazasStoneAxeMaster4LongDesc"/>
+			<property name="Unlocks" value="perkTazasStoneAxeMaster4"/>
+			<property class="Action0">
+				<property name="Create_item" value="bookTazasStoneAxeMaster4"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster1" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster2" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster3" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster4" level="1"/>
+			</effect_group>
+			<property name="Group" value="Q4"/>
+		</item>
+		<item name="bookTazasStoneAxeMaster5">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="DescriptionKey" value="perkTazasStoneAxeMaster5LongDesc"/>
+			<property name="Unlocks" value="perkTazasStoneAxeMaster5"/>
+			<property class="Action0">
+				<property name="Create_item" value="bookTazasStoneAxeMaster5"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster1" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster2" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster3" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster4" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster5" level="1"/>
+			</effect_group>
+			<property name="Group" value="Q5"/>
+		</item>
+		<item name="bookTazasStoneAxeMaster6">
+			<property name="Extends" value="bookFiremansAlmanacHeat"/>
+			<property name="CustomIcon" value="meleeToolRepairT0StoneAxe"/>
+			<property name="CustomIconTint" value="2eb200"/>
+			<property name="DescriptionKey" value="perkTazasStoneAxeMaster6LongDesc"/>
+			<property name="Unlocks" value="perkTazasStoneAxeMaster6"/>
+			<property class="Action0">
+				<property name="Create_item" value="bookTazasStoneAxeMaster6"/>
+			</property>
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster1" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster2" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster3" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster4" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster5" level="1"/>
+				<triggered_effect trigger="onSelfPrimaryActionEnd" action="SetProgressionLevel" progression_name="perkTazasStoneAxeMaster6" level="1"/>
+			</effect_group>
+			<property name="Group" value="Q6"/>
+		</item> 
+		-->
+</config>

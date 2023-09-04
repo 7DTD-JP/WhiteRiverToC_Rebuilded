@@ -1,0 +1,247 @@
+<config>
+	<!-- Removed unused items -->
+	<!-- REQUIRED -->
+	<!-- OK 08252023 -->
+	<remove xpath="/recipes/recipe[@name='questitem_toc_randomelite_name']"/>
+	<!-- Taza's -->
+	<!-- OK 08252023 -->
+	<remove xpath="/recipes/recipe[@name='questitem_toc_taza_name']"/>
+	<remove xpath="/recipes/recipe[@name='questwrit_toc_taza_name']"/>
+	<remove xpath="/recipes/recipe[@name='vetquestitem_toc_taza_name']"/>
+	<remove xpath="/recipes/recipe[@name='vetquestwrit_toc_taza_name']"/>
+	<!-- Amelias -->
+	<!-- OK 08252023 -->
+	<remove xpath="/recipes/recipe[@name='resourceRefinedLead']"/>
+	<remove xpath="/recipes/recipe[@name='carAmeliaBattery']"/>
+	<remove xpath="/recipes/recipe[@name='vehicleAmeliaGyroCopterAccessories']"/>
+	<remove xpath="/recipes/recipe[@name='vehicleAmeliaGyroCopterChassis']"/>
+	<remove xpath="/recipes/recipe[@name='vehicleAmeliaGyrocopterPlaceable']"/>
+	<remove xpath="/recipes/recipe[@name='questitem_toc_amelia1_name']"/>
+	<remove xpath="/recipes/recipe[@name='writitem_toc_amelia1_name']"/>
+	<!-- Vengeance -->
+	<!-- OK 08252023 -->
+	<remove xpath="/recipes/recipe[@name='questitem_spirit_vengeance_name']"/>
+	<!-- Added recipes -->
+	<append xpath="/recipes">
+		<!-- Quests -->
+		<recipe name="qc_Tazas" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="10"/>
+		</recipe>
+		<recipe name="qc_Amelias" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="10"/>
+		</recipe>
+		<recipe name="qc_Vengeance" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="10"/>
+		</recipe>
+		<!-- Crates -->
+		<recipe name="WhiteRiverToCGeneralRandomCrate" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="30"/>
+		</recipe>
+		<recipe name="WhiteRiverToCVeteranRandomCrate" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverVeteran" count="30"/>
+		</recipe>
+		<recipe name="WhiteRiverToCEliteRandomCrate" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverElite" count="30"/>
+		</recipe>
+		<!-- Backpacks -->
+		<!-- NG 08252023 -->
+		<!-- <recipe name="BackpackBasicPerception" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackBasicStrength" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackBasicFortitude" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackBasicAgility" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackBasicIntellect" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackMiddlePerception" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackMiddleStrength" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackMiddleFortitude" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackMiddleAgility" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackMiddleIntellect" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackAdvancedPerception" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackAdvancedStrength" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackAdvancedFortitude" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackAdvancedAgility" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="BackpackAdvancedIntellect" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe> -->
+		<recipe name="BackpackBasicPerception" count="1" craft_time="5">
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackBasicStrength" count="1" craft_time="5">
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackBasicFortitude" count="1" craft_time="5">
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackBasicAgility" count="1" craft_time="5">
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackBasicIntellect" count="1" craft_time="5">
+			<ingredient name="questitem_toc_citizencard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackMiddlePerception" count="1" craft_time="5">
+			<ingredient name="BackpackBasicPerception" count="1"/>
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackMiddleStrength" count="1" craft_time="5">
+			<ingredient name="BackpackBasicStrength" count="1"/>
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackMiddleFortitude" count="1" craft_time="5">
+			<ingredient name="BackpackBasicFortitude" count="1"/>
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackMiddleAgility" count="1" craft_time="5">
+			<ingredient name="BackpackBasicAgility" count="1"/>
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackMiddleIntellect" count="1" craft_time="5">
+			<ingredient name="BackpackBasicIntellect" count="1"/>
+			<ingredient name="questitem_toc_veterancard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackAdvancedPerception" count="1" craft_time="5">
+			<ingredient name="BackpackMiddlePerception" count="1"/>
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackAdvancedStrength" count="1" craft_time="5">
+			<ingredient name="BackpackMiddleStrength" count="1"/>
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackAdvancedFortitude" count="1" craft_time="5">
+			<ingredient name="BackpackMiddleFortitude" count="1"/>
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackAdvancedAgility" count="1" craft_time="5">
+			<ingredient name="BackpackMiddleAgility" count="1"/>
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
+		</recipe>
+		<recipe name="BackpackAdvancedIntellect" count="1" craft_time="5">
+			<ingredient name="BackpackMiddleIntellect" count="1"/>
+			<ingredient name="questitem_toc_elitecard_name" count="1"/>
+		</recipe>
+		<!-- REQUIRED -->
+		<!-- NG 08252023 -->
+		<recipe name="questitem_toc_citizencard_name" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="100"/>
+		</recipe>
+		<recipe name="questitem_toc_veterancard_name" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverVeteran" count="100"/>
+		</recipe>
+		<recipe name="questitem_toc_elitecard_name" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverElite" count="100"/>
+		</recipe>
+		<!-- Taza's -->
+		<!-- NG 08252023 -->
+		<!--<recipe name="meleeToolRepairT0TazasStoneAxe" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="meleeToolShovelT0TazasStoneShovel" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="meleeWpnSledgeT0TazasStoneSledgehammer" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="meleeWpnSpearT0TazasStoneSpear" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="gunBowT0TazasPrimitiveBow" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe> -->
+		<!-- <recipe name="questitem_coin_taza" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="questitem_vetcoin_taza" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe> -->
+		<!-- Amelias -->
+		<!-- NG 08252023 -->
+		<!-- <recipe name="questitem_vetcoin_amelia" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="resourceRefinedLead" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="carAmeliaBattery" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="vehicleAmeliaGyroCopterAccessories" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="vehicleAmeliaGyroCopterChassis" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe> -->
+		<!-- <recipe name="vehicleAmeliaGyrocopterPlaceable" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverElite" count="1"/>
+		</recipe> -->
+		<!-- DEBUG USE -->
+		<!-- Vengeance -->
+		<!-- NG 08252023 -->
+		<!-- <recipe name="questitem_vetcoin_Vengeance" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="medicalVengeanceFirstAidKit" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe>
+		<recipe name="vehicleSpiritHellBeastToCPlaceable" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="1"/>
+		</recipe> -->
+		<!-- 
+		<recipe name="graveStone01_basic" time="1" always_unlocked="true">
+			<ingredient name="questitem_toc_declaration_name" count="1"/>
+			<ingredient name="resourceRockSmall" count="5"/>
+		</recipe>
+		<recipe name="graveStone01_middle" time="1" always_unlocked="true">
+			<ingredient name="questitem_toc_veteranquest_name" count="1"/>
+			<ingredient name="resourceRockSmall" count="5"/>
+		</recipe>
+		<recipe name="graveStone01_advanced" time="1" always_unlocked="true">
+			<ingredient name="questitem_toc_elitequest_name" count="1"/>
+			<ingredient name="resourceRockSmall" count="5"/>
+		</recipe>
+		<recipe name="bookTazasStoneAxeMaster1" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="24"/>
+		</recipe>
+		<recipe name="bookTazasStoneAxeMaster2" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="36"/>
+		</recipe>
+		<recipe name="bookTazasStoneAxeMaster3" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="48"/>
+		</recipe>
+		<recipe name="bookTazasStoneAxeMaster4" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="60"/>
+		</recipe>
+		<recipe name="bookTazasStoneAxeMaster5" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="120"/>
+		</recipe>
+		<recipe name="bookTazasStoneAxeMaster6" count="1" material_based="true" craft_area="WRC_Station" craft_time="1" craft_exp_gain="0" always_unlocked="true" use_ingredient_modifier="false">
+			<ingredient name="unit_whiteRiverCitizen" count="180"/>
+		</recipe>
+		-->
+	</append>
+</config>

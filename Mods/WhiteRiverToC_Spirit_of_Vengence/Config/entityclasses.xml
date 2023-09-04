@@ -7,7 +7,7 @@
 			<property name="Tags" value="vehicle,vehiclespirithellbeast"/>
 			<property name="Class" value="EntityMotorcycle"/>
 			<property name="Parent" value="Cars"/>
-			<property name="Prefab" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/>
+			<property name="Prefab" value="@:Entities/Vehicles/motorcycle_Prefab.prefab"/>
 			<property name="ModelType" value="Standard"/>
 			<property name="SurfaceCategory" value="metal"/>
 			<property name="IgnoreTrigger" value="true"/>

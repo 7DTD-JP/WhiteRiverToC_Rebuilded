@@ -1,0 +1,20 @@
+<config>
+	<!-- Backpacks -->
+	<!-- NG 082523 -->
+	<append xpath="/ui_display_info/item_display">
+		<item_display_info display_type="h7sb_carryCapacity" display_group="modAttire">
+			<display_entry name="dCarryCapacity" title_key="statCarryCapacity" display_leading_plus="true"/>
+			<display_entry name="dMobility" title_key="statMobility" display_type="Percent" negative_preferred="false"/>
+		</item_display_info>
+	</append>
+	<!-- REQUIRED -->
+	<!-- OK 082523 -->
+	<append xpath="/ui_display_info/crafting_category_display">
+		<crafting_category_list display_type="WRC_Station">
+			<crafting_category name="WRC_Cards" icon="ui_game_symbol_shape_schematics" display_name="lblWRC_Cards"/>
+			<!-- <crafting_category name="WRC_Traders" icon="ui_game_symbol_map_trader" display_name="lblWRC_Traders"/> -->
+			<crafting_category name="WRC_Crates" icon="ui_game_symbol_twitch_drop" display_name="lblWRC_Crates"/>
+			<crafting_category name="WRC_Quests" icon="ui_game_symbol_quest" display_name="lblWRC_Quests"/>
+		</crafting_category_list>
+	</append>
+</config>
