@@ -3,11 +3,11 @@ This project is for rebuilding "WhiteRiverToC" mod. This mod has been stopped up
 *Please note: We did look all of them carefully so we will fix and add contents for future updates. Please join our Discord to share your ideas.
 
 ## Ver.1.0.1
-* Fixed quest name <br>
-* Fixed the followings. <br>
- * WhiteRiverToC_Spirit_of_Vengence <br>
- * WhiteRiverToC_Amelias_Gyrocopter <br>
- * WhiteRiverToC_Bambis_Bow <br>
+1. Fixed quest name
+2. Fixed the followings.
+- WhiteRiverToC_Spirit_of_Vengence: Revised vehicle and temorary assigned quest zombie.
+- WhiteRiverToC_Amelias_Gyrocopter: Revised vehicle and temorary assigned quest zombie.
+- WhiteRiverToC_Bambis_Bow ​​​​​​: Added. (Sorry it was missing in previous release)​
 
 ### Note: We fixed all of quest name so please overwrite all of files to previous version.
 
